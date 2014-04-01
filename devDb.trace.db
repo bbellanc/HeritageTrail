@@ -1,0 +1,42 @@
+03-24 10:53:48 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FE7F64713 [42102-173]
+03-24 10:53:48 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FECC084230 [42102-173]
+03-24 10:54:45 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FE7F64713 [42102-173]
+03-24 10:54:45 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FECC084230 [42102-173]
+03-24 10:55:32 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FE7F64713 [42102-173]
+03-24 10:55:32 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FECC084230 [42102-173]
+03-24 10:56:16 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FE7F64713 [42102-173]
+03-24 10:56:16 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FECC084230 [42102-173]
+03-24 13:58:42 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FE7F64713 [42102-173]
+03-24 13:58:42 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FECC084230 [42102-173]
+03-24 14:50:11 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FE7F64713 [42102-173]
+03-24 14:50:11 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FECC084230 [42102-173]
+03-31 21:59:50 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FE7F64713 [42102-173]
+03-31 21:59:50 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FECC084230 [42102-173]

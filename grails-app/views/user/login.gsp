@@ -29,8 +29,7 @@
 				</table>
 			</div>
 			<div class="buttons">
-				<span class="button"> <input class="save" type="submit"
-					value="Login" />
+				<span class="button"> <input class="save" type="submit" value="Login" />
 				</span>
 			</div>
 		</g:form>

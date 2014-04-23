@@ -15,7 +15,7 @@ class User {
 	static hasMany = [entries:Entry]
 	
 	static constraints = {
-		firstName(nullable:false, blank:false)
+		firstName(blank:false)
 		lastName(nullable:false, blank:false)
 		login(nullable:false, blank:false, unique:true)
 		email(nullable:false, blank:false, unique:true, email:true)

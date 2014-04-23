@@ -21,39 +21,59 @@
 				<h1 class="blue">Register</h1>
 			
 	
-				<div id="validationerrors">
-					<g:renderErrors bean="${user}" />
-				</div>
+
 				
 				<g:form controller="user" action="create">
 					<dl>
 						<dt>First Name:</dt>
 						<dd>
 							<g:textField name="firstName" size="30" />
+							<g:hasErrors bean="${user}">
+    							<li><g:message code='heritagetrail.user.firstName.blank' /></li>
+							</g:hasErrors>
+							
 						</dd>
 						<dt>Last Name:</dt>
 						<dd>
 							<g:textField name="lastName" size="30" />
+							<g:hasErrors bean="${user}">
+    							<li><g:message code='heritagetrail.user.lastName.blank' /></li>
+							</g:hasErrors>
 						</dd>
 						<dt>Username:</dt>
 						<dd>
 							<g:textField name="login" size="30" />
-						</dd>
+							<g:hasErrors bean="${user}">
+    							<li><g:message code='heritagetrail.user.login.blank' /></li>
+							</g:hasErrors>					
+										</dd>
 						<dt>Email Address:</dt>
 						<dd>
 							<g:textField name="email" size="30" />
+							<g:hasErrors bean="${user}">
+    							<li><g:message code='heritagetrail.user.email.blank' /></li>
+							</g:hasErrors>
 						</dd>
 						<dt>Password:</dt>
 						<dd>
 							<g:passwordField name="password" size="30" />
+							<g:hasErrors bean="${user}">
+    							<li><g:message code='heritagetrail.user.password.blank' /></li>
+							</g:hasErrors>
 						</dd>
 						<dt>Confirm Password:</dt>
 						<dd>
 							<g:passwordField name="password2" size="30" />
+							<g:hasErrors bean="${user}">
+    							<li><g:message code='heritagetrail.user.password2.blank' /></li>
+							</g:hasErrors>
 						</dd>
 						<dt>Age:</dt>
 						<dd>
 							<g:textField name="age" size="30" />
+							<g:hasErrors bean="${user}">
+    							<li><g:message code='heritagetrail.user.age.blank' /></li>
+							</g:hasErrors>
 						</dd>
 
 					</dl>

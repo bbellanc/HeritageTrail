@@ -28,7 +28,6 @@ class UserController {
 
 
 	def create(){
-
 		if(params.size() <= 3){
 			render(view:'create')
 		}

@@ -22,6 +22,7 @@ p{ line-height:20px;}
 	background: #f9f9f9;
 	width: 380px; display: block;
 	margin: 100px auto 0 auto;
+  padding-bottom: 50px;
 }
 
 #content {padding: 23px 28px;} 
@@ -40,21 +41,11 @@ p{ line-height:20px;}
 .fb:active {margin-top: 11px}
 .btn_2 {padding: 8px 0 0 31px; text-shadow: -1px -1px 0px #366c96; color:#fff; font-weight: bold; font-size: 12px; height: 32px; display: block;}
 
-.button {-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; display: inline-block; float: right; margin-top: 18px;}
+.button { display: inline-block; float: right; margin-top: 18px;}
 .button a {padding: 9px 26px 8px 26px; color:#fff; font-weight: bold; font-size: 14px; display: block;}
 
 .button.green {
-	background-image: linear-gradient(bottom, #2D922B 0%, #58BD56 100%);
-	background-image: -o-linear-gradient(bottom, #2D922B 0%, #58BD56 100%);
-	background-image: -moz-linear-gradient(bottom, #2D922B 0%, #58BD56 100%);
-	background-image: -webkit-linear-gradient(bottom, #2D922B 0%, #58BD56 100%);
-	background-image: -ms-linear-gradient(bottom, #2D922B 0%, #58BD56 100%);
-	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #2D922B),color-stop(1, #58BD56));
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#58BD56, endColorstr=#2D922B)";
 	border: 1px solid #309230;
-	border-bottom: 2px solid #166d16;
-	box-shadow: inset 0px 1px 0px #a1daa0;
-	text-shadow: -1px -1px 0px #369135;
 	background-color: #49ac47;
 }
 
@@ -62,16 +53,7 @@ p{ line-height:20px;}
 .button.green:active {margin-top: 19px;}
 
 .button.blue {
-	background-image: linear-gradient(bottom, #1F7FB6 0%, #4EABE0 100%);
-	background-image: -o-linear-gradient(bottom, #1F7FB6 0%, #4EABE0 100%);
-	background-image: -moz-linear-gradient(bottom, #1F7FB6 0%, #4EABE0 100%);
-	background-image: -webkit-linear-gradient(bottom, #1F7FB6 0%, #4EABE0 100%);
-	background-image: -ms-linear-gradient(bottom, #1F7FB6 0%, #4EABE0 100%);
-	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #1F7FB6),color-stop(1, #4EABE0));
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#4EABE0, endColorstr=#1F7FB6)";    
-	border: 1px solid #2a76a2; border-bottom: 2px solid #215f82;
-	box-shadow: inset 0px 1px 0px #9cd0ee;
-	text-shadow: -1px -1px 0px #246c95;
+	border: 1px solid #2a76a2; 
 	background-color: #3897cd;
 }
 

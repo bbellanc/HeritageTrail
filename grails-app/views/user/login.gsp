@@ -34,8 +34,8 @@
 			</div>
 		</g:form>
 		
-		<g:link controller="user" action="create">Create an account</g:link>
-		
+		<g:link controller="user" action="create">Create an account</g:link><br><br>
+		<g:link controller="user" action="resetPassword">Forgot Password</g:link>
 	</div>
 </body>
 </html>

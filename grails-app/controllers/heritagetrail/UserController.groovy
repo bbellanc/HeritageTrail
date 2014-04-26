@@ -58,4 +58,8 @@ class UserController {
 		}
 		//login
 	}
+	
+	def resetPassword={
+		render(view:'resetPassword')
+	}
 }

@@ -1,4 +1,4 @@
-<%@ page import="heritagetrail.Entry" %>
+<%@ page import="heritagetrail.Admin" %>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -25,10 +25,6 @@
 		<br>
 		
 		<div class="showStats" method="Get">
-			<g:form action="userDataExample">
-			 <g:select name="statList" from="${1..10}"/>
-			 <g:actionSubmit value="Get Stats"/>
-			</g:form>
 			Here is where we pull in all the stats divided up by each age group<br>
 			This Will be an AJAX call. Your welcome Branden.
 		

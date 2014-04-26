@@ -42,7 +42,7 @@ p{ line-height:20px;}
 .btn_2 {padding: 8px 0 0 31px; text-shadow: -1px -1px 0px #366c96; color:#fff; font-weight: bold; font-size: 12px; height: 32px; display: block;}
 
 .button { display: inline-block; float: right; margin-top: 18px;}
-.button input {padding: 9px 26px 8px 26px; color:#fff; font-weight: bold; font-size: 14px; display: block;}
+.button {padding: 9px 26px 8px 26px; color:#fff; font-weight: bold; font-size: 14px; display: block;}
 
 .button.green {
 	border: 1px solid #309230;

@@ -16,7 +16,7 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="${resource(dir: 'css', file: 'respond.min.js')}"></script>
+<script src="${resource(dir: 'js', file: 'respond.min.js')}"></script>
 
 </head>
 <body>

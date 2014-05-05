@@ -1,6 +1,9 @@
 package heritagetrail
 
-class Admin {	
+class Admin {
+	
+	static hasMany = [users : User]
+	
     static constraints = {
     }
 }

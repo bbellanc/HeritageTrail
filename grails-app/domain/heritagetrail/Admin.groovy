@@ -1,9 +1,6 @@
 package heritagetrail
 
-class Admin {
-	String currentEvent
-	
+class Admin {	
     static constraints = {
-		currentEvent(blank:false)
     }
 }

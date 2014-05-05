@@ -6,8 +6,8 @@
 <title>Register</title>
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'
 	rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" href="${resource(dir: 'css', file: 'register.css')}"  type="text/css">
-	
+<link rel="stylesheet"
+	href="${resource(dir: 'css', file: 'register.css')}" type="text/css">
 </head>
 
 <body>
@@ -20,57 +20,83 @@
 			<div class="inner">
 
 				<h1 class="blue">Register</h1>
-			
-	
 
-				
+
+
+
 				<g:form controller="user" action="create">
 					<dl>
 						<dd>
-						    <input type="text" name="firstName" onblur="if(this.value=='')this.value='First Name';" onfocus="if(this.value=='First Name')this.value='';" value="First Name" class="register"><g:message code='heritagetrail.user.firstName.blank' /></input>
+							<input type="text" name="firstName"
+								onblur="if(this.value=='')this.value='First Name';"
+								onfocus="if(this.value=='First Name')this.value='';"
+								value="First Name" class="register"></input>
 							<g:hasErrors bean="${user}">
-    							<li><g:message code='heritagetrail.user.firstName.blank' /></li>
+								<li><g:message code='heritagetrail.user.firstName.blank' /></li>
 							</g:hasErrors>
-							
+
 						</dd>
 						<dd>
-						    <input type="text" name="lastName" onblur="if(this.value=='')this.value='Last Name';" onfocus="if(this.value=='Last Name')this.value='';" value="Last Name" class="register"><g:message code='heritagetrail.user.lastName.blank' /></input>
+							<input type="text" name="lastName"
+								onblur="if(this.value=='')this.value='Last Name';"
+								onfocus="if(this.value=='Last Name')this.value='';"
+								value="Last Name" class="register"></input>
 							<g:hasErrors bean="${user}">
-    							<li><g:message code='heritagetrail.user.lastName.blank' /></li>
+								<li><g:message code='heritagetrail.user.lastName.blank' /></li>
 							</g:hasErrors>
 						</dd>
 						<dd>
-							<input type="text" name="login" onblur="if(this.value=='')this.value='Username';" onfocus="if(this.value=='Username')this.value='';" value="Username" class="register"><g:message code='heritagetrail.user.login.blank' /></input>
+							<input type="text" name="login"
+								onblur="if(this.value=='')this.value='Username';"
+								onfocus="if(this.value=='Username')this.value='';"
+								value="Username" class="register"></input>
 							<g:hasErrors bean="${user}">
-    							<li><g:message code='heritagetrail.user.login.blank' /></li>
-							</g:hasErrors>					
-										</dd>
-						<dt>Email Address:</dt>
-						<dd>
-							<g:textField name="email" size="30" />
-							<g:hasErrors bean="${user}">
-    							<li><g:message code='heritagetrail.user.email.blank' /></li>
+								<li><g:message code='heritagetrail.user.login.blank' /></li>
 							</g:hasErrors>
 						</dd>
-						<dt>Password:</dt>
 						<dd>
-							<g:passwordField name="password" size="30" />
+
+							<input name="email" type="text"
+								onblur="if(this.value=='')this.value='Email';"
+								onfocus="if(this.value=='Email')this.value='';" value="Email"
+								class="register"></input>
 							<g:hasErrors bean="${user}">
-    							<li><g:message code='heritagetrail.user.password.blank' /></li>
+								<li><g:message code='heritagetrail.user.email.blank' /></li>
 							</g:hasErrors>
 						</dd>
-						<dt>Confirm Password:</dt>
+
 						<dd>
-							<g:passwordField name="password2" size="30" />
+
+							<input name="password" type="text"
+								onblur="if(this.value=='')this.value='Password';"
+								onfocus="if(this.value=='Password')this.value='';"
+								value="Password" class="register"></input>
+
 							<g:hasErrors bean="${user}">
-    							<li><g:message code='heritagetrail.user.password2.blank' /></li>
+								<li><g:message code='heritagetrail.user.password.blank' /></li>
 							</g:hasErrors>
 						</dd>
-						<dt>Age:</dt>
+
 						<dd>
-							<g:textField name="age" size="30" />
+
+							<input name="password2" type="text"
+								onblur="if(this.value=='')this.value='Confirm Password';"
+								onfocus="if(this.value=='Confirm Password')this.value='';"
+								value="Confirm Password" class="register"></input>
+
 							<g:hasErrors bean="${user}">
-    							<li><g:message code='heritagetrail.user.age.blank' /></li>
+								<li><g:message code='heritagetrail.user.password2.blank' /></li>
+							</g:hasErrors>
+						</dd>
+						<dd>
+
+							<input name="age" type="text"
+								onblur="if(this.value=='')this.value='Age';"
+								onfocus="if(this.value=='Age')this.value='';" value="Age"
+								class="register"></input>
+
+							<g:hasErrors bean="${user}">
+								<li><g:message code='heritagetrail.user.age.blank' /></li>
 							</g:hasErrors>
 						</dd>
 
@@ -79,8 +105,8 @@
 
 					<g:submitButton class="button blue" name="submit" value="Register" />
 				</g:form>
-				
-				
+
+
 
 				<!-- Checkbox -->
 				<div class="checkbox">
@@ -110,9 +136,10 @@
 		<div id="bottom_text">
 			Already have an account? <a id="blue" href="login.html">Sign In</a><br />
 		</div>
-		</div>
+	</div>
 </body>
-</html><%--
+</html>
+<%--
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">

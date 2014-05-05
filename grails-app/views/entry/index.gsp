@@ -33,6 +33,8 @@
 				
 				<div class="data">
 					<h1>${session.user.firstName} ${session.user.lastName}</h1>
+					<br/>
+					<h2>${session.event.title}</h2>
 					<div class="socialMediaLinks">
 						<a href="http://twitter.com/jakerocheleau" rel="me" target="_blank"><img src="${resource(dir: 'images', file: 'twitter.png')}" alt="@jakerocheleau" /></a>
 						<a href="http://gowalla.com/users/JakeRocheleau" rel="me" target="_blank"><img src="${resource(dir: 'images', file: 'gowalla.png')}" /></a>

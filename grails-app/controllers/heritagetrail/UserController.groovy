@@ -10,8 +10,10 @@ class UserController {
 
 	def authenticate = {
 		def user = User.findByLoginAndPassword(params.login, params.password)
+		def event = Event.findBy(params.login, params.password)
 		if(user){
-			session.user = user
+			session.user = user		
+			session.event = event
 			flash.message = "Hello ${user.firstName}!"
 			redirect(controller:"entry", view:"show")
 		}else{

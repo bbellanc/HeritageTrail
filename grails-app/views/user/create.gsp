@@ -67,7 +67,7 @@
 
 						<dd>
 
-							<input name="password" type="text"
+							<input name="password" type="password"
 								onblur="if(this.value=='')this.value='Password';"
 								onfocus="if(this.value=='Password')this.value='';"
 								value="Password" class="register"></input>
@@ -79,7 +79,7 @@
 
 						<dd>
 
-							<input name="password2" type="text"
+							<input name="password2" type="password"
 								onblur="if(this.value=='')this.value='Confirm Password';"
 								onfocus="if(this.value=='Confirm Password')this.value='';"
 								value="Confirm Password" class="register"></input>

@@ -505,3 +505,21 @@ alter table user_entry drop constraint FK728B12FE7F64713 [42102-173]
 05-04 20:47:48 jdbc[11]: exception
 org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
 alter table user_entry drop constraint FK728B12FECC084230 [42102-173]
+05-04 21:26:52 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ADMIN_USER" not found; SQL statement:
+alter table admin_user drop constraint FK29045ABB3CCA021 [42102-173]
+05-04 21:26:52 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ADMIN_USER" not found; SQL statement:
+alter table admin_user drop constraint FK29045ABB8A4C438A [42102-173]
+05-04 21:36:26 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ADMIN_USER" not found; SQL statement:
+alter table admin_user drop constraint FK29045ABB3CCA021 [42102-173]
+05-04 21:36:26 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ADMIN_USER" not found; SQL statement:
+alter table admin_user drop constraint FK29045ABB8A4C438A [42102-173]
+05-04 21:36:26 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FE7F64713 [42102-173]
+05-04 21:36:26 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_ENTRY" not found; SQL statement:
+alter table user_entry drop constraint FK728B12FECC084230 [42102-173]

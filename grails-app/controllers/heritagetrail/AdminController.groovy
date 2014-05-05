@@ -18,4 +18,8 @@ class AdminController {
 		
 	}
 	
+	def createEvent(){
+		
+	}
+	
 }

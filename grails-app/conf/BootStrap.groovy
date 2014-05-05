@@ -1,3 +1,4 @@
+import heritagetrail.Admin
 import heritagetrail.User
 
 class BootStrap {
@@ -6,6 +7,8 @@ class BootStrap {
 		
 		def admin = new User(firstName:"Site", lastName:"Admin",login:"admin", password:"password",password2:"password",email:"blank@blank.com", age: 0, ageBracket:"0-100", role: "admin")
 		admin.save()
+		
+		def event = new Admin(currentEvent:"Trek the Trail: Memorial Day Event")
     }
     def destroy = {
     }

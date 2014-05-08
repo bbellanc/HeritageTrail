@@ -75,6 +75,8 @@
 						<p>Keep excercising to unlock trophies!</p>
 
 						<div class="badgeCount">
+							
+						
 							<a href="#"><img
 								src="${resource(dir: 'images', file: 'foursquare-badge.png')}" /></a>
 							<a href="#"><img

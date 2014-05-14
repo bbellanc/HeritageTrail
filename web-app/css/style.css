@@ -763,6 +763,14 @@ section.footer p.right {
     line-height: 20px;
 }
 
+ul.settings {
+  list-style-type: none;
+  margin-top: 20px;
+}
+ul.settings li {
+  margin-bottom: 20px;
+}
+  
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */

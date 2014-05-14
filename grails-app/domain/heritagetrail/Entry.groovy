@@ -4,10 +4,11 @@ class Entry {
     String time
     String activity
     boolean water
-    boolean stroller
     boolean groupActivity
     boolean pet
     Integer distanceTraveled
+
+    static belongsTo = [user:User]
 
     static constraints = {
     }

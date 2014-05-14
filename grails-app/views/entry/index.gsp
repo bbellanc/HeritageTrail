@@ -1,3 +1,4 @@
+<%@ page import="heritagetrail.Entry"%>
 <!doctype html>
 <!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
 <!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
@@ -8,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Heritage Trail Fitness Tracker</title>
+    <title>Trek the Trail Fitness Tracker</title>
 
 
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
@@ -24,7 +25,7 @@
 <nav>
     <ul>
         <li>
-            <a href="about.html">
+            <a href="index.html">
                 <span>Home</span>
             </a>
         </li>
@@ -39,6 +40,9 @@
             </a>
         </li>
     </ul>
+    <div id=loginControl style="position: absolute; right: 0px;">
+        <g:loginControl></g:loginControl>
+    </div>
 </nav>
 
 <div class="gridContainer clearfix">
@@ -49,12 +53,12 @@
                     <a href="#"><img src="${resource(dir: 'images', file: 'logo.jpg')}" /></a>
                 </div>
                 <div class="data">
-                    <h1>Johnny Appleseed</h1>
+                    <h1>${session.user.firstName} ${session.user.lastName}</h1>
                     <ul class="points">
                         <li>Your current point total is</li>
                         <li><strong>10768</strong></li>
                         <div class="sep"></div>
-                        <li>Your current activity level is</li>
+                        <li>Activity level</li>
                         <li class="level">1</li>
                     </ul>
                 </div>
@@ -103,9 +107,6 @@
                         <g:checkBox id="water" name="water" type="checkbox" />
                         <label for="water" onclick="">Stayed hydrated</label>
 
-                        <g:checkBox id="stroller" name="stroller" type="checkbox" />
-                        <label for="stroller" onclick="">Pushed a stroller</label>
-
                         <g:checkBox id="group" name="groupActivity" type="checkbox" />
                         <label for="group" onclick="">Exercised with a group</label>
 
@@ -122,6 +123,8 @@
                         <output id="rangevalue">1</output>
                     </div>
 
+                    <g:hiddenField name="login" value="${session.user.login}" />
+
                     <g:submitButton name="submit" value="Add Activity" />
                 </div>
 
@@ -133,13 +136,15 @@
                 <div class="boxy">
                     <p>Keep exercising to unlock more medals!</p>
                     <div class="badgeCount">
-                        <a href="#"><img src="images/medals/active.png" /></a>
-                        <a href="#"><img src="images/medals/group.png" /></a>
-                        <a href="#"><img src="images/medals/morning.png" /></a>
-                        <a href="#"><img src="images/medals/night.png" /></a>
-                        <a href="#"><img src="images/medals/pet.png" /></a>
-                        <a href="#"><img src="images/medals/stroller.png" /></a>
-                        <a href="#"><img src="images/medals/water.png" /></a>
+
+                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'active.png')}" /></a>
+                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'group.png')}" /></a>
+                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'morning.png')}" /></a>
+                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'night.png')}" /></a>
+                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'pet.png')}" /></a>
+                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'water.png')}" /></a>
+
+
                     </div>
                     <a href="#">Learn more about medals…</a>
                 </div>

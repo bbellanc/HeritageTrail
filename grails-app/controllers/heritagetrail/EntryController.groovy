@@ -18,19 +18,28 @@ class EntryController {
         if(params.water != null) params.water = false
         else params.water = true
 
-        if(params.stroller != null) params.stroller = false
-        else params.stroller = true
-
         if(params.groupActivity != null) params.groupActivity = false
         else params.groupActivity = true
 
         if(params.pet != null) params.pet = false
         else params.pet = true
 
-        def activity = new Entry(params)
-        activity.save()
-        print activity
+        def currentLogin = params.login
 
+        def activity = new Entry()
+        activity.time = params.time
+        activity.activity = params.activity
+        activity.water = params.water
+        activity.groupActivity = params.groupActivity
+        activity.pet = params.pet
+        activity.distanceTraveled = params.distanceTraveled
+        activity.user = session.user
+
+        if(activity.save()) {
+
+
+        }
+        else
+            println "FAILED!!!!"
     }
     }
-

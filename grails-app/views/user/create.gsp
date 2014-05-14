@@ -30,7 +30,7 @@
 							<input type="text" name="firstName"
 								onblur="if(this.value=='')this.value='First Name';"
 								onfocus="if(this.value=='First Name')this.value='';"
-								value="First Name" class="register"></input>
+								value="First Name" class="register" />
 							<g:hasErrors bean="${user}">
 								<li><g:message code='heritagetrail.user.firstName.blank' /></li>
 							</g:hasErrors>
@@ -40,7 +40,7 @@
 							<input type="text" name="lastName"
 								onblur="if(this.value=='')this.value='Last Name';"
 								onfocus="if(this.value=='Last Name')this.value='';"
-								value="Last Name" class="register"></input>
+								value="Last Name" class="register" />
 							<g:hasErrors bean="${user}">
 								<li><g:message code='heritagetrail.user.lastName.blank' /></li>
 							</g:hasErrors>
@@ -49,7 +49,7 @@
 							<input type="text" name="login"
 								onblur="if(this.value=='')this.value='Username';"
 								onfocus="if(this.value=='Username')this.value='';"
-								value="Username" class="register"></input>
+								value="Username" class="register" />
 							<g:hasErrors bean="${user}">
 								<li><g:message code='heritagetrail.user.login.blank' /></li>
 							</g:hasErrors>
@@ -59,7 +59,7 @@
 							<input name="email" type="text"
 								onblur="if(this.value=='')this.value='Email';"
 								onfocus="if(this.value=='Email')this.value='';" value="Email"
-								class="register"></input>
+								class="register" />
 							<g:hasErrors bean="${user}">
 								<li><g:message code='heritagetrail.user.email.blank' /></li>
 							</g:hasErrors>
@@ -70,7 +70,7 @@
 							<input name="password" type="password"
 								onblur="if(this.value=='')this.value='Password';"
 								onfocus="if(this.value=='Password')this.value='';"
-								value="Password" class="register"></input>
+								value="Password" class="register" />
 
 							<g:hasErrors bean="${user}">
 								<li><g:message code='heritagetrail.user.password.blank' /></li>
@@ -82,7 +82,7 @@
 							<input name="password2" type="password"
 								onblur="if(this.value=='')this.value='Confirm Password';"
 								onfocus="if(this.value=='Confirm Password')this.value='';"
-								value="Confirm Password" class="register"></input>
+								value="Confirm Password" class="register" />
 
 							<g:hasErrors bean="${user}">
 								<li><g:message code='heritagetrail.user.password2.blank' /></li>
@@ -93,7 +93,7 @@
 							<input name="age" type="text"
 								onblur="if(this.value=='')this.value='Age';"
 								onfocus="if(this.value=='Age')this.value='';" value="Age"
-								class="register"></input>
+								class="register" />
 
 							<g:hasErrors bean="${user}">
 								<li><g:message code='heritagetrail.user.age.blank' /></li>

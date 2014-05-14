@@ -41,6 +41,54 @@ img, object, embed, video {
     display: none;
 }
 
+#left { 
+display: block; 
+width: 100%; 
+float: left; 
+overflow: hidden; 
+}
+
+#userStats .data {
+  width: 100%;
+}
+
+#userStats .data ul.points li strong { 
+color: #434343; 
+display: block; 
+font-size: 5em; 
+line-height: 1.1em; 
+font-weight: bold; 
+}
+
+#userStats .imager { 
+float: left; 
+height: 256px;
+width: 100%;
+padding: 12px; 
+}
+
+#userStats .data h1 { 
+float: left;
+width: 90%;
+color: #474747;
+line-height: 40px;
+margin-bottom: 10px;
+display: block;
+}
+
+#left .gcontent .boxy .badgeCount a img { margin: 0 8px 8px 0; width: 30%; }
+
+section.footer {
+  position: fixed;
+  bottom: 0;
+  width: 96%;
+  max-width: 1232px;
+  height: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
@@ -62,6 +110,55 @@ img, object, embed, video {
 .hide_tablet {
     display: none;
 }
+
+#left { 
+display: block; 
+width: 100%; 
+float: left; 
+overflow: hidden; 
+}
+
+#userStats .data {
+  width: auto;
+}
+
+#userStats .data ul.points li strong { 
+color: #434343; 
+display: block; 
+font-size: 5em; 
+line-height: 1.1em; 
+font-weight: bold; 
+}
+
+#userStats .imager { 
+float: left; 
+width: 35%;
+height: auto;
+padding: 12px; 
+}
+
+#userStats .data h1 { 
+float: left;
+width: 100%;
+color: #474747;
+margin-bottom: 30px;
+}
+
+#left .gcontent .boxy { border: 1px solid #ccc; border-top: 0px; padding: 10px 2%; background: #f9f9f9; }
+
+#left .gcontent .boxy .badgeCount a img { margin: 0 1.6% 8px 0; width: 12%; }
+
+section.footer {
+  position: fixed;
+  bottom: 0;
+  width: 97.5%;
+  max-width: 1232px;
+  height: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
 }
 
 /* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
@@ -87,4 +184,51 @@ img, object, embed, video {
 .hide_desktop {
     display: none;
 }
+
+#left { 
+width: 100%; 
+float: left; 
+display: block;
+overflow: hidden; 
+}
+
+#userStats .data {
+  width: auto;
+}
+
+#userStats .imager { 
+float: left; 
+height: auto;
+width: 256px;
+padding: 12px; 
+}
+
+#userStats .data h1 { 
+float: left;
+width: 100%;
+color: #474747;
+margin-bottom: 30px;
+}
+
+#userStats .data ul.points li strong { 
+color: #434343; 
+display: block; 
+font-size: 5em; 
+line-height: 1.1em; 
+font-weight: bold; 
+}
+
+#left .gcontent .boxy .badgeCount a img { margin: 0 8px 8px 0; width: auto; }
+
+section.footer {
+  position: fixed;
+  bottom: 0;
+  width: 98.333%;
+  max-width: 1232px;
+  height: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
 }

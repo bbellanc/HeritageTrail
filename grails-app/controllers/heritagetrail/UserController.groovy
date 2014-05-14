@@ -17,7 +17,7 @@ class UserController {
 			flash.message = "Hello ${user.firstName}!"
 
 			if(user.role == "admin"){
-				redirect(controller:"admin", view:"admin")
+				redirect(controller:"admin", view:"index")
 				}
 			else{
 				redirect(controller:"entry", view:"show")
@@ -43,17 +43,14 @@ class UserController {
 		else{
 			def user = new User(params)
 
-			if(user.age < 20){
-				user.ageBracket = "0-20"
+			if(user.age < 19){
+				user.ageBracket = "0"
 			}
-			else if(user.age < 40){
-				user.ageBracket = "21-40"
-			}
-			else if(user.age < 60){
-				user.ageBracket = "41-60"
+			else if(user.age < 65){
+				user.ageBracket = "1"
 			}
 			else{
-				user.ageBracket= "61+"
+				user.ageBracket= "2"
 			}
 			if(user.save()) {
 				redirect(action:'login')

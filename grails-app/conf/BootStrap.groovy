@@ -14,6 +14,9 @@ class BootStrap {
 		
 		def currentEvent = new Event(title:"Trek the Trail: Memorial Day Event",description:"Get fit on Wheeling's Heritage trail this summer!",currentEvent:true)
 		currentEvent.save()
+		
+		def testEvent = new Event(title:"Test Title",description:"Test Description")
+		testEvent.save()
     }	
 	
     def destroy = {

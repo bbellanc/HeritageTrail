@@ -1,0 +1,152 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heritage Trail Fitness Tracker</title>
+<link href="css/toggle-switch.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="about.html">
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="profile.html">
+          <span>Profile</span>
+        </a>
+      </li>
+      <li>
+        <a href="settings.html">
+          <span>Settings</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+    
+  <div class="gridContainer clearfix">
+    <div id="div1" class="fluid">
+      <section id="left">
+        <div id="userStats" class="clearfix">
+          <div class="imager">
+            <a href="#"><img src="images/logo.jpg" /></a>
+          </div>
+          <div class="data">
+            <h1>Johnny Appleseed</h1>
+            <ul class="points">
+              <li>Your current point total is</li>
+              <li><strong>10768</strong></li>
+              <div class="sep"></div>
+              <li>Your current activity level is</li>
+              <li class="level">1</li>
+            </ul>
+          </div>
+        </div>
+        
+        
+        <div class="gcontent">
+          <div class="head"><h1>Add an Activity</h1></div>
+          <div class="boxy">
+            <h4>Time of Day</h4>
+            <div class="switch-toggle switch-3 switch-android">
+              
+              <input id="morning" name="time" type="radio" checked>
+              <label for="morning" onclick="">Morning</label>
+
+              <input id="afternoon" name="time" type="radio">
+              <label for="afternoon" onclick="">Afternoon</label>
+
+              <input id="evening" name="time" type="radio">
+              <label for="evening" onclick="">Evening</label>
+
+              <a></a>
+            </div>        
+
+            <h4>Type of Activity</h4>
+            <div class="switch-toggle switch-4 switch-android">
+              
+              <input id="walking" name="activity" type="radio" checked>
+              <label for="walking" onclick="">Walking</label>
+
+              <input id="running" name="activity" type="radio">
+              <label for="running" onclick="">Running</label>
+
+              <input id="cycling" name="activity" type="radio">
+              <label for="cycling" onclick="">Cycling</label>
+              
+              <input id="other" name="activity" type="radio">
+              <label for="other" onclick="">Other</label>
+              
+              <a></a>
+            </div>
+
+            <h4>Other Accomplishments</h4>
+            <div class="checkboxes">
+              
+              <input id="water" name="water" type="checkbox">
+              <label for="water" onclick="">Stayed hydrated</label>
+              
+              <input id="stroller" name="stroller" type="checkbox">
+              <label for="stroller" onclick="">Pushed a stroller</label>
+              
+              <input id="group" name="group" type="checkbox">
+              <label for="group" onclick="">Exercised with a group</label>
+              
+              <input id="pet" name="pet" type="checkbox">
+              <label for="pet" onclick="">Walked a pet</label>
+              
+              <a></a>
+            </div>
+                        
+            
+            <div class="slider">
+              <h4>Miles Traveled</h4>
+            <input name="distanceTraveled" type ="range" step="1" min="1" max="25" value="1" onchange="rangevalue.value=value"/>
+            <output id="rangevalue">1</output>
+            </div>
+
+            <input type="submit" name="submit" value="Add Activity">
+          </div>
+
+        </div>
+        
+        <div class="gcontent">
+          <div class="head"><h1>Medals</h1></div>
+          <div class="boxy">
+            <p>Keep exercising to unlock more medals!</p>
+            <div class="badgeCount">
+              <a href="#"><img src="images/medals/active.png" /></a>
+              <a href="#"><img src="images/medals/group.png" /></a>
+              <a href="#"><img src="images/medals/morning.png" /></a>
+              <a href="#"><img src="images/medals/night.png" /></a>
+              <a href="#"><img src="images/medals/pet.png" /></a>
+              <a href="#"><img src="images/medals/stroller.png" /></a>
+              <a href="#"><img src="images/medals/water.png" /></a>
+            </div>            
+            <a href="#">Learn more about medals…</a>
+          </div>
+        </div>
+
+      </section>
+      <section class="footer">
+        <p>&copy; 2014</p>
+        <p class="right">version 1.0</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

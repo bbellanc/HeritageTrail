@@ -66,9 +66,6 @@
 			});
 		});
 	</script>
-</head>
-<body>
-
 	<button class=button1>Create Event</button>
 	<div class="toggleCreate">
 
@@ -101,6 +98,7 @@
 					
 				</tr>
 				
+<g:form controller="event" method="post">
 				<g:each in="${allEvents}">
 					<tr>
 						<td>
@@ -110,11 +108,14 @@
 							${it.description}
 						</td>
 						<td>
-							${it.currentEvent}
+						<g:radio name="currentEventRadio" value="${it.id}" checked="${it.currentEvent}" />
 						</td>
 					</tr>
 				</g:each>
 			</table>
+
+		<g:actionSubmit value="setEvent" action="setEvent" />
+	</g:form>
 
 
 

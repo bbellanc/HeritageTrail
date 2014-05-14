@@ -1,9 +1,14 @@
 package heritagetrail
 
+import org.springframework.web.servlet.ModelAndView
+
 class AdminController {
 
 	def index = {
-		render(view: "admin")
+		def allEvents = Event.findAll()
+		println Event.findAll()
+		return new ModelAndView("/admin/admin", [ allEvents : allEvents ])
+//		render(view: "admin")
 	}
 
 	def getProfile() {

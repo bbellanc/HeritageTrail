@@ -56,10 +56,10 @@
                     <h1>${session.user.firstName} ${session.user.lastName}</h1>
                     <ul class="points">
                         <li>Your current point total is</li>
-                        <li><strong>10768</strong></li>
+                        <li><strong>${session.user.points}</strong></li>
                         <div class="sep"></div>
                         <li>Activity level</li>
-                        <li class="level">1</li>
+                        <li class="level">${session.user.activityLevel}</li>
                     </ul>
                 </div>
             </div>

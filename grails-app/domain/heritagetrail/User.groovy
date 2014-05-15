@@ -9,12 +9,14 @@ class User {
 	String email
 	Integer points = 0
 	Integer age
-	String ageBracket
+    Integer activityLevel = 1
 	String role = "user"
 
 	static hasMany = [entries:Entry]
 	
 	static constraints = {
+
+        activityLevel(nullable:false,blank:false, size: 1..10)
 		firstName(blank:false)
 		lastName(nullable:false, blank:false)
 		login(nullable:false, blank:false, unique:true)
@@ -25,7 +27,6 @@ class User {
          password2 == password ? true : ['invalid.matchingpasswords']
      })
 		age(nullable:false, blank:false)
-		ageBracket(nullable:false, blank:false)
 		role(inList:["admin", "user"])
 	}
 	

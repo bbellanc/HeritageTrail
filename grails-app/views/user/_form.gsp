@@ -42,14 +42,6 @@
 	<g:field name="age" type="number" value="${userInstance.age}" required=""/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: userInstance, field: 'ageBracket', 'error')} required">
-	<label for="ageBracket">
-		<g:message code="user.ageBracket.label" default="Age Bracket" />
-		<span class="required-indicator">*</span>
-	</label>
-	<g:textField name="ageBracket" required="" value="${userInstance?.ageBracket}"/>
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'role', 'error')} ">
 	<label for="role">
 		<g:message code="user.role.label" default="Role" />

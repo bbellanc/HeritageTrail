@@ -43,15 +43,6 @@ class UserController {
 		else{
 			def user = new User(params)
 
-			if(user.age < 19){
-				user.ageBracket = "0"
-			}
-			else if(user.age < 65){
-				user.ageBracket = "1"
-			}
-			else{
-				user.ageBracket= "2"
-			}
 			if(user.save()) {
 				redirect(action:'login')
 			}

@@ -137,16 +137,33 @@
                     <p>Keep exercising to unlock more medals!</p>
                     <div class="badgeCount">
 
-                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'active.png')}" /></a>
-                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'group.png')}" /></a>
-                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'morning.png')}" /></a>
-                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'night.png')}" /></a>
-                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'pet.png')}" /></a>
-                        <a href="#"><img src="${resource(dir: 'images/medals', file: 'water.png')}" /></a>
+                        <g:if test="${session.user.morningCount >= 10}">
+                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'morning.png')}" /></a>
+                        </g:if>
 
+                        <g:if test="${session.user.eveningCount >= 10}">
+                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'night.png')}" /></a>
+                        </g:if>
+
+                        <g:if test="${session.user.groupCount >= 5}">
+                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'group.png')}" /></a>
+                        </g:if>
+
+                        <g:if test="${session.user.petCount >= 5}">
+                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'pet.png')}" /></a>
+                        </g:if>
+
+                        <g:if test="${session.user.waterCount >= 5}">
+                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'water.png')}" /></a>
+                        </g:if>
+
+                        <g:if test="${name == 'fred'}">
+                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'active.png')}" /></a>
+                        </g:if>
 
                     </div>
                     <a href="#">Learn more about medals…</a>
+
                 </div>
             </div>
 

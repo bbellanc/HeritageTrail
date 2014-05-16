@@ -11,6 +11,12 @@ class User {
 	Integer age
     Integer activityLevel = 1
 	String role = "user"
+    Integer waterCount = 0
+    Integer groupCount = 0
+    Integer petCount = 0
+    Integer morningCount = 0
+    Integer afternoonCount = 0
+    Integer eveningCount = 0
 
 	static hasMany = [entries:Entry]
 	

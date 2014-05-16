@@ -16,24 +16,34 @@ class EntryController {
 
     def addActivity() {
 
-        if (params.water != null) params.water = false
-        else params.water = true
+        if (params.water != null) params.water = true
+        else params.water = false
 
-        if (params.groupActivity != null) params.groupActivity = false
-        else params.groupActivity = true
+        if (params.groupActivity != null) params.groupActivity = true
+        else params.groupActivity = false
 
-        if (params.pet != null) params.pet = false
-        else params.pet = true
+        if (params.pet != null) params.pet = true
+        else params.pet = false
 
         def currentLogin = params.login
 
         def activity = new Entry(params)
 
-        activity.user = session.user
+        activity.activityDate = new Date();
+
+        activity.user = User.findById(session.user.id)
 
         def points_earned = (activity.user.age >= 50) ? (2 * activity.distanceTraveled) : (1 * activity.distanceTraveled)
         activity.user.points += points_earned
 
+
+        if(activity.water) activity.user.waterCount = activity.user.waterCount++
+        if(activity.groupActivity) activity.user.groupCount++
+        if(activity.pet) activity.user.petCount++
+
+        if(activity.time == 'morning') activity.user.morningCount++
+        if(activity.time == 'afternoon') activity.user.afternoonCount++
+        if(activity.time == 'evening') activity.user.eveningCount++
 
         switch(activity.user.points) {
             case{it < 10}:
@@ -67,6 +77,10 @@ class EntryController {
                 activity.user.activityLevel = 10
                 break
         }
+
+
+
+        session.user = activity.user
 
         if (activity.save()) {
             redirect(controller: 'entry', action:'index')

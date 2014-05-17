@@ -17,6 +17,9 @@ class User {
     Integer morningCount = 0
     Integer afternoonCount = 0
     Integer eveningCount = 0
+	static List securityQuestion
+	String securityAnswer
+	String question
 
 	static hasMany = [entries:Entry]
 	
@@ -34,6 +37,15 @@ class User {
      })
 		age(nullable:false, blank:false)
 		role(inList:["admin", "user"])
+		securityAnswer(nullable:false,blank:false)
+		question(blank:false)
+	}
+	static {
+		securityQuestion=['What is your mother\'s maiden name',
+						   'What city were you born in',
+						   'What is your father\'s middle name',
+						   'What is the make and model of your first car']
+		
 	}
 	
 	//static transients = ['password2']

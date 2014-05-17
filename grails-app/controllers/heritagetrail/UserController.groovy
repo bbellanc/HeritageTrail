@@ -36,11 +36,7 @@ class UserController {
 
 
 	def create(){
-		if(params.size() <= 3){
-			render(view:'create')
-		}
 
-		else{
 			def user = new User(params)
 
 			if(user.save()) {
@@ -50,9 +46,49 @@ class UserController {
 				flash.message = "error(s) creating user"
 				render(view:'create',model:[user:user])
 			}
-		}
+		
 		//login
 	}
 
 	def resetPassword={ render(view:'resetPassword') }
+	
+	def checkUsernameAndEmail(){
+		flash.message = null
+		
+		def user = User.findByEmail(params.email)
+//		println(user)
+//		println(params)
+		if(user == null || !user.login.equalsIgnoreCase(params.username)){
+			flash.message = PASSWORD_AND_USERNAME_MISMATCH_MESSAGE
+			render(view:'resetPassword')
+		}else{
+		session['user'] = user
+		render(controller:'user', view:'resetPassword', model:[user:user]) }
+		}
+	
+	def checkSecurityQuestion(){
+		println(params)
+		def user = session['user']
+		if(user.securityAnswer == params.securityAnswer){
+		render(view:"setNewPassword")}
+		else{
+			flash.message = "Invalid Selection"
+			render(view:'resetPassword')
+		}
+	}
+	
+	def setNewPassword(){
+		flash.message = null
+		if(params.password1 != params.password2){
+			flash.message = "Passwords do not match"
+			render(view:"setNewPassword")
+		}else{
+			def user = User.findByLogin(session['user'].login)
+			user.password = params.password1
+			user.password2 = params.password2
+			user.save()
+			session['user'] = null
+			render(view:"login")
+		}
+	}
 }

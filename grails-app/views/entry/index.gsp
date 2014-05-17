@@ -25,19 +25,19 @@
 <nav>
     <ul>
         <li>
-            <a href="index.html">
+            <g:link controller="user" action="about">
                 <span>Home</span>
-            </a>
+            </g:link>
         </li>
         <li>
-            <a href="profile.html">
+            <g:link controller="entry" action="index">
                 <span>Profile</span>
-            </a>
+            </g:link>
         </li>
         <li>
-            <a href="settings.html">
+            <g:link controller="user" action="settings">
                 <span>Settings</span>
-            </a>
+            </g:link>
         </li>
     </ul>
     <div id=loginControl style="position: absolute; right: 0px;">

@@ -99,35 +99,28 @@
 								<li><g:message code='heritagetrail.user.age.blank' /></li>
 							</g:hasErrors>
 						</dd>
+						<dd><br />
+						<label for="question">
+							<g:message code="user.securityQuestion.label" default="Security Question" />
+   					    </label>
+							<g:select class="register" name="question" from="${user.securityQuestion.sort() }" noSelection="${['':"Select One"]}" style="width:320px"/>
+						<div class="field-error"><br/>
+							<g:renderErrors bean="${user}" as="list" field="question"/>
+						</div>
+								<input name="securityAnswer" type="text"
+								onblur="if(this.value=='')this.value='Answer';"
+								onfocus="if(this.value=='Answer')this.value='';"value="Answer"
+								class="register"></input> 	
+							<g:hasErrors bean="${user}"><br/>
+								<li><g:message code='heritagetrail.user.securityquestion.blank' /></li>
+							</g:hasErrors>										
+						</dd>
 
 					</dl>
 
 
 					<g:submitButton class="button blue" name="submit" value="Register" />
 				</g:form>
-
-
-
-				<!-- Checkbox -->
-				<div class="checkbox">
-					<li>
-						<fieldset>
-							<![if !IE | (gte IE 8)]>
-							<legend id="title2" class="desc"></legend>
-							<![endif]>
-							<!--[if lt IE 8]><label id="title2" class="desc"></label><![endif]-->
-							<div>
-								<span> <input id="Field" name="Field" type="checkbox"
-									class="field checkbox" value="First Choice" tabindex="4"
-									onchange="handleInput(this);" /> <label class="choice"
-									for="Field">I have read and I agree<br /> the Terms of
-										Use
-								</label>
-								</span>
-							</div>
-						</fieldset>
-					</li>
-				</div>
 
 			</div>
 		</div>

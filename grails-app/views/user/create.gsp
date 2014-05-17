@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -31,7 +32,7 @@
 								onblur="if(this.value=='')this.value='First Name';"
 								onfocus="if(this.value=='First Name')this.value='';"
 								value="First Name" class="register" />
-							<g:hasErrors bean="${user}">
+							<g:hasErrors bean="${user}"><br/>
 								<li><g:message code='heritagetrail.user.firstName.blank' /></li>
 							</g:hasErrors>
 
@@ -41,7 +42,7 @@
 								onblur="if(this.value=='')this.value='Last Name';"
 								onfocus="if(this.value=='Last Name')this.value='';"
 								value="Last Name" class="register" />
-							<g:hasErrors bean="${user}">
+							<g:hasErrors bean="${user}"><br/>
 								<li><g:message code='heritagetrail.user.lastName.blank' /></li>
 							</g:hasErrors>
 						</dd>
@@ -50,7 +51,7 @@
 								onblur="if(this.value=='')this.value='Username';"
 								onfocus="if(this.value=='Username')this.value='';"
 								value="Username" class="register" />
-							<g:hasErrors bean="${user}">
+							<g:hasErrors bean="${user}"><br/>
 								<li><g:message code='heritagetrail.user.login.blank' /></li>
 							</g:hasErrors>
 						</dd>
@@ -60,7 +61,7 @@
 								onblur="if(this.value=='')this.value='Email';"
 								onfocus="if(this.value=='Email')this.value='';" value="Email"
 								class="register" />
-							<g:hasErrors bean="${user}">
+							<g:hasErrors bean="${user}"><br/>
 								<li><g:message code='heritagetrail.user.email.blank' /></li>
 							</g:hasErrors>
 						</dd>
@@ -72,7 +73,7 @@
 								onfocus="if(this.value=='Password')this.value='';"
 								value="Password" class="register" />
 
-							<g:hasErrors bean="${user}">
+							<g:hasErrors bean="${user}"><br/>
 								<li><g:message code='heritagetrail.user.password.blank' /></li>
 							</g:hasErrors>
 						</dd>
@@ -84,21 +85,21 @@
 								onfocus="if(this.value=='Confirm Password')this.value='';"
 								value="Confirm Password" class="register" />
 
-							<g:hasErrors bean="${user}">
+							<g:hasErrors bean="${user}"><br/>
 								<li><g:message code='heritagetrail.user.password2.blank' /></li>
 							</g:hasErrors>
 						</dd>
 						<dd>
-
+					
 							<input name="age" type="text"
 								onblur="if(this.value=='')this.value='Age';"
 								onfocus="if(this.value=='Age')this.value='';" value="Age"
 								class="register" />
-
-							<g:hasErrors bean="${user}">
+							<g:hasErrors bean="${user}"><br/>
 								<li><g:message code='heritagetrail.user.age.blank' /></li>
 							</g:hasErrors>
 						</dd>
+						
 						<dd><br />
 						<label for="question">
 							<g:message code="user.securityQuestion.label" default="Security Question" />

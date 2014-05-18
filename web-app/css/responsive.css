@@ -25,9 +25,7 @@ img, object, embed, video {
 .gridContainer {
 	margin-left: auto;
 	margin-right: auto;
-	width: 96%;
-	padding-left: 2%;
-	padding-right: 2%;
+	width: 100%;
 	clear: none;
 	float: none;
 }
@@ -61,10 +59,14 @@ font-weight: bold;
 }
 
 #userStats .imager { 
-float: left; 
-height: 256px;
 width: 100%;
-padding: 12px; 
+max-width: 200px;
+margin: 0 auto 20px auto;
+}
+
+#userStats .imager img { 
+width: 100%;
+margin: 0 auto;
 }
 
 #userStats .data h1 { 
@@ -76,12 +78,12 @@ margin-bottom: 10px;
 display: block;
 }
 
-#left .gcontent .boxy .badgeCount a img { margin: 0 8px 8px 0; width: 30%; }
+#left .gcontent .boxy .badgeCount a img { margin: 0 3.5% 3.5% 0; width: 29%; z-index: 1;}
 
 section.footer {
   position: fixed;
   bottom: 0;
-  width: 96%;
+  width: 100%;
   max-width: 1232px;
   height: 30px;
   background-color: #f9f9f9;
@@ -89,14 +91,26 @@ section.footer {
   border-bottom: none;
 }
 
+.onesquare:nth-child(4n) {
+    margin: 0;
+}
+
+.onesquare {
+    width: 19.5%;
+    margin: 0 6.79% 6.79% 0;
+    padding-bottom: 19.5%;
+    background-color: red;
+    float: left;
+    display: block;
+}
+
+
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
 
 .gridContainer {
-	width: 97.5%;
-	padding-left: 1.25%;
-	padding-right: 1.25%;
+	width: 100%;
 	clear: none;
 	float: none;
 	margin-left: auto;
@@ -134,7 +148,7 @@ font-weight: bold;
 float: left; 
 width: 35%;
 height: auto;
-padding: 12px; 
+margin-right: 20px;
 }
 
 #userStats .data h1 { 
@@ -144,19 +158,34 @@ color: #474747;
 margin-bottom: 30px;
 }
 
-#left .gcontent .boxy { border: 1px solid #ccc; border-top: 0px; padding: 10px 2%; background: #f9f9f9; }
-
-#left .gcontent .boxy .badgeCount a img { margin: 0 1.6% 8px 0; width: 12%; }
+#left .gcontent .boxy .badgeCount a img { margin: 0 1.143% 8px 1.143%; width: 13.6%; }
 
 section.footer {
   position: fixed;
   bottom: 0;
-  width: 97.5%;
+  width: 100%;
   max-width: 1232px;
   height: 30px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-bottom: none;
+}
+
+.onesquare:nth-child(4n) {
+    margin: 0 2.88% 2.88% 0;
+}
+
+.onesquare:nth-child(8n) {
+    margin: 0;
+}
+
+.onesquare {
+    width: 10%;
+    margin: 0 2.88% 2.88% 0;
+    padding-bottom: 10%;
+    background-color: red;
+    float: left;
+    display: block;
 }
 
 }
@@ -166,10 +195,8 @@ section.footer {
 @media only screen and (min-width: 769px) {
 
 .gridContainer {
-	width: 98.3333%;
+	width: 100%;
 	max-width: 1232px;
-	padding-left: 0.8333%;
-	padding-right: 0.8333%;
 	margin: auto;
 	clear: none;
 	float: none;
@@ -200,7 +227,7 @@ overflow: hidden;
 float: left; 
 height: auto;
 width: 256px;
-padding: 12px; 
+margin-right: 20px;
 }
 
 #userStats .data h1 { 
@@ -223,12 +250,33 @@ font-weight: bold;
 section.footer {
   position: fixed;
   bottom: 0;
-  width: 98.333%;
+  width: 100%;
   max-width: 1232px;
   height: 30px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
   border-bottom: none;
+}
+
+.onesquare:nth-child(4n) {
+    margin: 0 2.5% 2.5% 0;
+}
+
+.onesquare:nth-child(8n) {
+    margin: 0 2.5% 2.5% 0;
+}
+
+.onesquare:nth-child(10n) {
+    margin: 0 0 2.5% 0;
+}
+
+.onesquare {
+    width: 7.75%;
+    margin: 0 2.5% 2.5% 0;
+    padding-bottom: 7.75%;
+    background-color: red;
+    float: left;
+    display: block;
 }
 
 }

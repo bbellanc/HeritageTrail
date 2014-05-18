@@ -37,13 +37,15 @@
       </li>
     </ul>
   </nav>
+  <div class="hello">Hello Joe! (logout)</div>
+  <div id="logo"></div>
     
   <div class="gridContainer clearfix">
     <div id="div1" class="fluid">
       <section id="left">
         <div id="userStats" class="clearfix">
           <div class="imager">
-            <a href="#"><img src="images/logo.jpg" /></a>
+            <a href="#"><img src="images/progress10.png" /></a>
           </div>
           <div class="data">
             <h1>Johnny Appleseed</h1>
@@ -56,7 +58,6 @@
             </ul>
           </div>
         </div>
-        
         
         <div class="gcontent">
           <div class="head"><h1>Add an Activity</h1></div>
@@ -96,7 +97,7 @@
 
             <h4>Other Accomplishments</h4>
             <div class="checkboxes">
-              
+
               <input id="water" name="water" type="checkbox">
               <label for="water" onclick="">Stayed hydrated</label>
               
@@ -111,12 +112,26 @@
                         
             
             <div class="slider">
-              <h4>Miles Traveled</h4>
+              <h4>Miles Traveled:</h4>
             <input type ="range" step="1" min="1" max="25" value="1" onchange="rangevalue.value=value"/>
             <output id="rangevalue">1</output>
             </div>
 
             <input type="submit" name="submit" value="Add Activity">
+          </div>
+
+        </div>
+        
+        <div class="gcontent">
+          <div class="head"><h1>Recent Activity</h1></div>
+          <div class="boxy">
+            <ul class="recent">
+              <li>5/15/2014 You ran 5 miles.</li>
+              <li>5/13/2014 You walked 2 miles.</li>
+              <li>5/12/2014 You cycled 12 miles.</li>
+              <li>5/10/2014 You exercised 5 miles.</li>
+              <li>5/7/2014 You ran 6 miles.</li>
+            </ul>
           </div>
 
         </div>
@@ -133,12 +148,54 @@
               <a href="#"><img src="images/medals/pet.png" /></a>
               <a href="#"><img src="images/medals/water.png" /></a>
             </div>            
-            <a href="#">Learn more about medals…</a>
+            
+            <article>
+              <input type="checkbox" id="read_more" role="button">
+              <label for="read_more" onclick=""><span>Learn more about medals and points…</span><span>Hide</span></label>    
+              <section>
+              </section>    
+
+              <section>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+                <div class="onesquare"></div>
+              </section>
+            </article>
+            
           </div>
         </div>
 
       </section>
-      <section class="footer">
+      <section id="bot" class="footer">
         <p>&copy; 2014</p>
         <p class="right">version 1.0</p>
       </section>

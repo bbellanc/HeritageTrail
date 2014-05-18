@@ -41,11 +41,12 @@ html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    background: url(../images/body-bg.png);
 }
 
 html,button,input,select,textarea {
     font-family: “Helvetica Neue”, Arial, Helvetica, sans-serif;
-    color: #222;
+    color: #838383;
 }
 
 body {
@@ -397,7 +398,7 @@ p {
     font-size: 19px;
     line-height: 22px;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #838383;
     margin-bottom: 15px;
 }
 
@@ -425,7 +426,7 @@ h3 {
 }
 
 h4 {
-    color: #232323;
+    color: #838383;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
     line-height: 20px;
@@ -435,10 +436,9 @@ h4 {
 /* @group navigation */
 nav {
     width: auto;
-    background: #3c9bbd;
+    background: #2b83b6;
     height: 42px;
     border-bottom: 1px solid #dadada;
-    margin-bottom: 30px;
 }
 
 ul#n {
@@ -483,10 +483,11 @@ ul#n li.sel a {
     width: auto;
     background-color: #f9f9f9;
     margin-top: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #bfbfbf;
     overflow: hidden;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
+    padding: 20px;
 }
 
 #userStats .pic {
@@ -498,26 +499,26 @@ ul#n li.sel a {
 #userStats .pic a img {
     padding: 7px;
     background: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #bfbfbf;
 }
 
 #userStats .data {
     float: left;
     display: block;
     position: relative;
-    padding: 15px;
+    padding: 0 15px;
 }
 
 #userStats .data h1 {
     float: left;
     width: 100%;
-    color: #474747;
+    color: #838383;
     text-shadow: 0 1px 1px #fff;
     margin-bottom: 20px;
 }
 
 #userStats .data h3 {
-    color: #666;
+    color: #838383;
     line-height: .9em;
     margin-bottom: 5px;
 }
@@ -532,7 +533,7 @@ ul#n li.sel a {
     margin-top: 0;
     width: 80%;
     height: 1px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #bfbfbf;
     margin-bottom: 10px;
 }
 
@@ -595,7 +596,7 @@ ul#n li.sel a {
     padding: 4px;
     padding: 15px;
     background: #e6e6e6;
-    border: 1px solid #ccc;
+    border: 1px solid #bfbfbf;
     border-top: 0;
     overflow: hidden;
     box-sizing: border-box;
@@ -609,7 +610,7 @@ ul#n li.sel a {
 }
 
 #left .gcontent .head {
-    background: #3c9bbd;
+    background: #2b83b6;
     border: 1px solid #3e82a7;
     padding-left: 8px;
     height: 40px;
@@ -622,20 +623,14 @@ ul#n li.sel a {
 }
 
 #left .gcontent .boxy {
-    border: 1px solid #ccc;
+    border: 1px solid #bfbfbf;
     border-top: 0;
-    padding: 10px 8px;
+    padding: 2%;
     background: #f9f9f9;
 }
 
 #left .gcontent .boxy .badgeCount {
     margin-bottom: 30px;
-}
-
-#left .gcontent .boxy span {
-    font-size: 1.2em;
-    display: block;
-    margin-bottom: 7px;
 }
 
 nav ul {
@@ -697,10 +692,12 @@ nav ul li a span {
     left: 120px;
     top: 10px;
     display: none;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover span {
     display: block;
+    transition: all 0.3s ease;
 }
 
 nav ul li a span {
@@ -711,14 +708,25 @@ nav ul li a span {
     border: 1px solid #e6e6e6;
     padding: 10px;
     font: inherit;
+    color: #fff;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 #left .gcontent .boxy input[type=submit]:hover {
-    background-color: #474646;
+    background-color: #2d932b;
     color: #fff;
+}
+
+section.footer {
+   -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
 }
 
 section.footer p {
@@ -730,6 +738,27 @@ section.footer p {
 section.footer p.right {
     float: right;
     padding: 5px 5px 0 0;
+}
+
+div.hello {
+    float: right;
+    padding: 12px;
+}
+
+ul.recent {
+    list-style-type: none;
+}
+
+ul.recent li {
+    padding: 5px;
+}
+
+ul.recent li:nth-child(5) {
+    border-bottom: none;
+}
+
+ul.recent li:nth-child(odd) {
+    background-color: #eee;
 }
 
 .checkboxes label {
@@ -750,7 +779,7 @@ section.footer p.right {
     position: absolute;
     left: 0;
     bottom: 1px;
-    background-color: #aaa;
+    background-color: #bfbfbf;
 }
 .checkboxes input[type=checkbox] {
     display: none;
@@ -758,7 +787,7 @@ section.footer p.right {
 .checkboxes input[type=checkbox]:checked + label:before {
     content:"\2713";
     font-size: 20px;
-    color: #f3f3f3;
+    color: #2d932b;
     text-align: center;
     line-height: 20px;
 }
@@ -770,7 +799,95 @@ ul.settings {
 ul.settings li {
   margin-bottom: 20px;
 }
-  
+
+/* ==|== CSS Properties for show/hide button ================================ */
+
+article {
+    margin-bottom: 3rem;
+    position: relative;
+    *zoom: 1;
+}
+
+article:before, article:after {
+    content: "";
+    display: table;
+}
+
+article:after { clear: both }
+
+article section:first-of-type {
+    float: left;
+    width: 100%;
+}
+
+article section:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+section {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+input[type=checkbox] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+[for="read_more"] {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    background-color: #bfbfbf;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+[for="read_more"]:hover {
+    background-color: #2d932b;
+    color: #fff;
+}
+
+[for="read_more"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="read_more"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
+    display: block;
+    visibility: visible;
+}
+
+div#logo {
+    width:296px;
+    height: 208px;
+    margin: 40px auto 40px auto;
+    background-image: url(../images/logo.png);
+}
+
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
    ========================================================================== */

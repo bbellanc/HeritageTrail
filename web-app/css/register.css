@@ -129,6 +129,89 @@ p{ line-height:20px;}
 	background-position: 0 -15px;
 }
 
+nav {
+    width: auto;
+    background: #2b83b6;
+    height: 42px;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    padding: 8px 0 0 8px;
+}
+
+nav ul li {
+    float: left;
+    padding: 0 8px 0 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+}
+
+nav ul li:nth-child(1) a {
+    background-position: 0 0;
+}
+
+nav ul li:nth-child(2) a {
+    background-position: -26px 0;
+}
+
+nav ul li:nth-child(3) a {
+    background-position: -52px 0;
+}
+
+nav ul li a:hover {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/icons_hover.png);
+    background-repeat: no-repeat;
+}
+
+nav ul li:nth-child(1) a:hover {
+    background-position: 0 0;
+    background-color: rgba(255,255,255,.1);
+}
+
+nav ul li:nth-child(2) a:hover {
+    background-position: -26px 0;
+}
+
+nav ul li:nth-child(3) a:hover {
+    background-position: -52px 0;
+}
+
+nav ul li a span {
+    font-size: 16px;
+    position: absolute;
+    left: 120px;
+    top: 10px;
+    display: none;
+}
+
+nav ul li a:hover span {
+    display: block;
+}
+
+nav ul li a span {
+    color: #fff;
+}
+
+div#logo {
+    width:296px;
+    height: 208px;
+    margin: 80px auto 0 auto;
+    background-image: url(../images/logo.png);
+}
 /** Text Under Box**/
 #bottom_text {margin: 12px auto; width: 300px; display: block; text-align: center; text-shadow: 1px 1px 0px #fff; line-height: 19px;}
 #bottom_text #link {cursor: pointer; color: #2d932b; font-weight: bold; padding: 0 8px 0 0; background: url(../images/bullet.png) no-repeat 100% 50%;}

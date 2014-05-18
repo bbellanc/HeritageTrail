@@ -6,7 +6,7 @@ class UserController {
 	def index = {
 		redirect(action: "login", params: params)
 	}
-	def login = {}
+	def login = {if(session.user != null) redirect(controller:"entry", view: "index") }
 
 	def authenticate = {
 		def user = User.findByLoginAndPassword(params.login, params.password)
@@ -34,6 +34,9 @@ class UserController {
 		redirect(controller:"user", view:"login")
 	}
 
+    def settings = {
+        render(view: "settings")
+    }
 
 	def create(){
 

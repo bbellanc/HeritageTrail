@@ -35,7 +35,7 @@ class User {
          if(password2 == null) return true // skip matching password validation (only important when setting/resetting pass)
          password2 == password ? true : ['invalid.matchingpasswords']
      })
-		age(nullable:false, blank:false)
+		age(nullable:false, blank:false, size: 1..100)
 		role(inList:["admin", "user"])
 		securityAnswer(nullable:false,blank:false)
 		question(blank:false)

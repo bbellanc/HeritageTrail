@@ -4,11 +4,29 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
 <title>Heritage Trail Fitness Login</title>
-<link rel="stylesheet" href="${resource(dir: 'css', file: 'register.css')}"  type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'register.css')}"  type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
 </head>
 
 <body>
+<nav>
+    <ul>
+        <li>
+            <g:link controller="user" action="about">
+                <span>Home</span>
+            </g:link>
+        </li>
+        <li>
+            <g:link controller="entry" action="index">
+                <span>Profile</span>
+            </g:link>
+        </li>
+
+    </ul>
+</nav>
+
 
 <!-- Box Start-->
 <div id="box_bg">

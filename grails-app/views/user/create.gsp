@@ -9,9 +9,24 @@
 	rel='stylesheet' type='text/css' />
 <link rel="stylesheet"
 	href="${resource(dir: 'css', file: 'register.css')}" type="text/css">
+
 </head>
 
 <body>
+<nav>
+    <ul>
+        <li>
+            <g:link controller="user" action="about">
+                <span>Home</span>
+            </g:link>
+        </li>
+        <li>
+            <g:link controller="entry" action="index">
+                <span>Profile</span>
+            </g:link>
+        </li>
+     </ul>
+</nav>
 
 	<!-- Box Start-->
 	<div id="box_bg">
@@ -21,8 +36,6 @@
 			<div class="inner">
 
 				<h1 class="blue">Register</h1>
-
-
 
 
 				<g:form controller="user" action="create">
@@ -51,7 +64,7 @@
 								onblur="if(this.value=='')this.value='Username';"
 								onfocus="if(this.value=='Username')this.value='';"
 								value="Username" class="register" />
-							<g:hasErrors bean="${user}"><br/>
+							<g:hasErrors bean="${user}" class="errors"><br/>
 								<li><g:message code='heritagetrail.user.login.blank' /></li>
 							</g:hasErrors>
 						</dd>
@@ -111,7 +124,7 @@
 								<input name="securityAnswer" type="text"
 								onblur="if(this.value=='')this.value='Answer';"
 								onfocus="if(this.value=='Answer')this.value='';"value="Answer"
-								class="register"></input> 	
+								class="register"></input>
 							<g:hasErrors bean="${user}"><br/>
 								<li><g:message code='heritagetrail.user.securityquestion.blank' /></li>
 							</g:hasErrors>										

@@ -10,12 +10,12 @@
 <link rel="stylesheet"href="${resource(dir: 'css', file: 'register.css')}" type="text/css">
 	</head>
 	<body>
-		<g:if test = "${flash.message}">
-			<div class="errors">${flash.message }</div>
+		<g:if test ="${flash.message}">
+			<div class="errors">${flash.message}</div>
 		</g:if>
 		<g:form>
-			<g:passwordField name="password1"/><br/>
-			<g:passwordField name="password2"/><br/>
+			Password:<g:passwordField name="password1"/><br/>
+			Confirm: <g:passwordField name="password2"/><br/>
 			<g:actionSubmit value="Set Password" action="setNewPassword"/><br/>
 		
 		</g:form>

@@ -39,7 +39,16 @@
                 <span>Settings</span>
             </g:link>
         </li>
+        <li>
+        	<g:link controller="user" action="deleteUser">
+        		<span>Delete Profile</span>
+        	</g:link>
+        	
+        		
+        	
+        </li>
     </ul>
+    
     <div id=loginControl style="position: absolute; right: 0px;">
         <g:loginControl></g:loginControl>
     </div>

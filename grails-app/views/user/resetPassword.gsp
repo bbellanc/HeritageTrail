@@ -11,15 +11,19 @@
 <body>
 
 <p>Please Enter your email address below for password reset</p>
-		<g:if test = "${flash.message}">
-			<div class="errors">${flash.message }</div>
-		</g:if>
 	<g:if test="${user==null }">
+	
   	<g:form controller="user" >
+  	<label for="city">
+			<g:message code="user.email.label" default="Email:" />		
+	</label>
 		<g:textField name="email"
 					 onfocus="if(this.value=='Enter Email')this.value='';" 
 					 onblur="if(this.value=='')this.value='Enter Email';"
 					 value="Enter Email"class="registration"/><br/>
+	 <label for="login">
+			<g:message code="user.login.label" default="Username:" />		
+	</label>
 		<g:textField name="username"		
 					 onfocus="if(this.value=='Enter Username')this.value='';" 
 					 onblur="if(this.value=='')this.value='Enter Username';"

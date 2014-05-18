@@ -64,6 +64,7 @@
     <orderEntry type="library" scope="PROVIDED" name="grails-2.3.5" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="grails-2.3.5" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="grails-2.3.5" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="grails-2.3.5" level="application" />
     <orderEntry type="module-library" exported="">
       <library name="Grails User Library (HeritageTrail-grailsPlugins)">
         <CLASSES>

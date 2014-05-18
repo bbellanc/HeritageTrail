@@ -969,3 +969,12 @@ alter table admin_user drop constraint FK29045ABB8A4C438A [42102-173]
 05-15 22:01:52 jdbc[11]: exception
 org.h2.jdbc.JdbcSQLException: Table "ENTRY" not found; SQL statement:
 alter table entry drop constraint FK5C308723CCA021 [42102-173]
+05-17 13:44:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ADMIN_USER" not found; SQL statement:
+alter table admin_user drop constraint FK29045ABB3CCA021 [42102-173]
+05-17 13:44:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ADMIN_USER" not found; SQL statement:
+alter table admin_user drop constraint FK29045ABB8A4C438A [42102-173]
+05-17 13:44:24 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "ENTRY" not found; SQL statement:
+alter table entry drop constraint FK5C308723CCA021 [42102-173]

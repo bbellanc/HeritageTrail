@@ -322,4 +322,7 @@
       <column name="ID" sqlType="INTEGER" precision="10" scale="0" nullable="true" jdbcType="4"/>
     </table>
   </data-source>
+  <data-source source="LOCAL" name="HeritageTrail dev" uuid="67c3802e-f078-449c-94ad-9f22ba3ec665">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>

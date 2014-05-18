@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1902266621">
+  <component name="DataSourceManagerImpl" format="xml" hash="3120006544">
     <data-source source="LOCAL" name="H2 - devDb:8080" uuid="57155951-2fcc-434c-9517-c6f73fde4004">
       <driver-ref>h2.embedded</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.h2.Driver</jdbc-driver>
       <jdbc-url>jdbc:h2:file:devDb:8080</jdbc-url>
       <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="HeritageTrail dev" uuid="67c3802e-f078-449c-94ad-9f22ba3ec665">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost/sec_treasurer?useUnicode=yes&amp;characterEncoding=UTF-8</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <libraries>
+        <library>
+          <url>file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.27/mysql-connector-java-5.1.27.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

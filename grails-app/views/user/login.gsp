@@ -11,6 +11,22 @@
 </head>
 
 <body>
+<nav>
+    <ul>
+        <li>
+            <g:link controller="user" action="about">
+                <span>Home</span>
+            </g:link>
+        </li>
+        <li>
+            <g:link controller="entry" action="index">
+                <span>Profile</span>
+            </g:link>
+        </li>
+
+    </ul>
+</nav>
+
 
 <nav>
     <ul>

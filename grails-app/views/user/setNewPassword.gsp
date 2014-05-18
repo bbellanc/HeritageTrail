@@ -16,7 +16,7 @@
 		<g:form>
 			Password:<g:passwordField name="password1"/><br/>
 			Confirm: <g:passwordField name="password2"/><br/>
-			<g:actionSubmit value="Set Password" action="setNewPassword"/><br/>
+			<g:actionSubmit value="Set Password" action="forgotPassword"/><br/>
 		
 		</g:form>
 	</body>

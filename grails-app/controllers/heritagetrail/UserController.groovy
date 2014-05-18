@@ -38,16 +38,13 @@ class UserController {
         render(view: "settings")
     }
 
-		def create(){
-
+	def create(){
 		def user = new User(params)
-
-			if(user.save()) {
-				redirect(action:'login')
+			if(params.size() <= 3){
+				render(view:'create',model:[user:user])
 			}
 	
 			else{
-				
 				if(user.save()) {
 					redirect(action:'login')
 				}
@@ -87,12 +84,11 @@ class UserController {
 		}
 	}
 	
-	def setNewPassword(){
+	def forgotPassword(){
 		flash.message = null
 		setPassword()
 		if(flash.message == null){
 		session['user'] = null
-		flash.message = "Password has been Reset"
 		render(view:"login")}
 		}
 	
@@ -112,6 +108,22 @@ class UserController {
 			def user = User.findByLogin(session['user'].login)
 			user.password = params.password1
 			user.password2 = params.password2
-			user.save()}
+			user.save()
+			flash.message = "Password has been Reset"}
 		}
+	def setUserPassword(){
+		
+		this.setPassword()
+		flash.message = "Password Saved"
+		render(view:'settings')
+	}
+	
+	def setNewEmail(){
+		def user = User.findByLogin(session['user'].login)
+		user.email = params.newEmail
+		user.save()
+		flash.message = "Email Saved"
+		render(view:'settings')
+	}
+	
 }

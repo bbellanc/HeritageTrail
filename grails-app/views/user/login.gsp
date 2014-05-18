@@ -27,23 +27,6 @@
     </ul>
 </nav>
 
-
-<nav>
-    <ul>
-        <li>
-            <g:link controller="user" action="about">
-                <span>Home</span>
-            </g:link>
-        </li>
-        <li>
-            <g:link controller="entry" action="index">
-                <span>Profile</span>
-            </g:link>
-        </li>
-
-    </ul>
-</nav>
-
 <!-- Box Start-->
 <div id="box_bg">
 		<g:if test ="${flash.message}">

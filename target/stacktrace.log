@@ -43912,3 +43912,428 @@ Possible solutions: create(), every(), sleep(long), every(groovy.lang.Closure), 
 groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.delete() is applicable for argument types: (null) values: [null]
 Possible solutions: create(), every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
 	at heritagetrail.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:124)
+2014-05-18 16:05:21,839 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+model.entryInstanceCount == 0
+|     |                  |
+[:]   null               false
+
+	at heritagetrail.EntryControllerSpec.Test the index action returns the correct model(EntryControllerSpec.groovy:25)
+2014-05-18 16:05:21,845 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+model.entryInstanceCount == 0
+|     |                  |
+[:]   null               false
+
+	at heritagetrail.EntryControllerSpec.Test the index action returns the correct model(EntryControllerSpec.groovy:25)
+2014-05-18 16:05:21,847 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.entryInstanceCount == 0
+|     |                  |
+[:]   null               false
+
+	at heritagetrail.EntryControllerSpec.Test the index action returns the correct model(EntryControllerSpec.groovy:25)
+2014-05-18 16:05:21,848 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.entryInstanceCount == 0
+|     |                  |
+[:]   null               false
+
+	at heritagetrail.EntryControllerSpec.Test the index action returns the correct model(EntryControllerSpec.groovy:25)
+2014-05-18 16:05:21,858 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.entryInstanceCount == 0
+|     |                  |
+[:]   null               false
+
+	at heritagetrail.EntryControllerSpec.Test the index action returns the correct model(EntryControllerSpec.groovy:25)
+2014-05-18 16:05:21,858 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.entryInstanceCount == 0
+|     |                  |
+[:]   null               false
+
+	at heritagetrail.EntryControllerSpec.Test the index action returns the correct model(EntryControllerSpec.groovy:25)
+2014-05-18 16:05:22,204 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.create() is applicable for argument types: () values: []
+Possible solutions: grep(), chain(java.util.Map), raw(java.lang.Object), render(groovy.lang.Closure), render(java.lang.Object), render(java.lang.String)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.EntryControllerSpec.Test the create action returns the correct model(EntryControllerSpec.groovy:30)
+2014-05-18 16:05:22,298 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.create() is applicable for argument types: () values: []
+Possible solutions: grep(), chain(java.util.Map), raw(java.lang.Object), render(groovy.lang.Closure), render(java.lang.Object), render(java.lang.String)
+	at heritagetrail.EntryControllerSpec.Test the create action returns the correct model(EntryControllerSpec.groovy:30)
+2014-05-18 16:05:22,377 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.create() is applicable for argument types: () values: []
+Possible solutions: grep(), chain(java.util.Map), raw(java.lang.Object), render(groovy.lang.Closure), render(java.lang.Object), render(java.lang.String)
+	at heritagetrail.EntryControllerSpec.Test the create action returns the correct model(EntryControllerSpec.groovy:30)
+2014-05-18 16:05:22,379 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.create() is applicable for argument types: () values: []
+Possible solutions: grep(), chain(java.util.Map), raw(java.lang.Object), render(groovy.lang.Closure), render(java.lang.Object), render(java.lang.String)
+	at heritagetrail.EntryControllerSpec.Test the create action returns the correct model(EntryControllerSpec.groovy:30)
+2014-05-18 16:05:22,385 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.create() is applicable for argument types: () values: []
+Possible solutions: grep(), chain(java.util.Map), raw(java.lang.Object), render(groovy.lang.Closure), render(java.lang.Object), render(java.lang.String)
+	at heritagetrail.EntryControllerSpec.Test the create action returns the correct model(EntryControllerSpec.groovy:30)
+2014-05-18 16:05:22,416 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.create() is applicable for argument types: () values: []
+Possible solutions: grep(), chain(java.util.Map), raw(java.lang.Object), render(groovy.lang.Closure), render(java.lang.Object), render(java.lang.String)
+	at heritagetrail.EntryControllerSpec.Test the create action returns the correct model(EntryControllerSpec.groovy:30)
+2014-05-18 16:05:22,764 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.save() is applicable for argument types: (heritagetrail.Entry) values: [heritagetrail.Entry : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.EntryControllerSpec.Test the save action correctly persists an instance(EntryControllerSpec.groovy:41)
+2014-05-18 16:05:22,767 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.save() is applicable for argument types: (heritagetrail.Entry) values: [heritagetrail.Entry : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at heritagetrail.EntryControllerSpec.Test the save action correctly persists an instance(EntryControllerSpec.groovy:41)
+2014-05-18 16:05:22,769 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.save() is applicable for argument types: (heritagetrail.Entry) values: [heritagetrail.Entry : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at heritagetrail.EntryControllerSpec.Test the save action correctly persists an instance(EntryControllerSpec.groovy:41)
+2014-05-18 16:05:22,770 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.save() is applicable for argument types: (heritagetrail.Entry) values: [heritagetrail.Entry : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at heritagetrail.EntryControllerSpec.Test the save action correctly persists an instance(EntryControllerSpec.groovy:41)
+2014-05-18 16:05:22,791 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.save() is applicable for argument types: (heritagetrail.Entry) values: [heritagetrail.Entry : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at heritagetrail.EntryControllerSpec.Test the save action correctly persists an instance(EntryControllerSpec.groovy:41)
+2014-05-18 16:05:22,792 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.save() is applicable for argument types: (heritagetrail.Entry) values: [heritagetrail.Entry : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at heritagetrail.EntryControllerSpec.Test the save action correctly persists an instance(EntryControllerSpec.groovy:41)
+2014-05-18 16:05:22,989 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), auth(), find(), any(), dump()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.EntryControllerSpec.Test that the show action returns the correct model(EntryControllerSpec.groovy:62)
+2014-05-18 16:05:22,994 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), auth(), find(), any(), dump()
+	at heritagetrail.EntryControllerSpec.Test that the show action returns the correct model(EntryControllerSpec.groovy:62)
+2014-05-18 16:05:22,998 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), auth(), find(), any(), dump()
+	at heritagetrail.EntryControllerSpec.Test that the show action returns the correct model(EntryControllerSpec.groovy:62)
+2014-05-18 16:05:22,999 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), auth(), find(), any(), dump()
+	at heritagetrail.EntryControllerSpec.Test that the show action returns the correct model(EntryControllerSpec.groovy:62)
+2014-05-18 16:05:23,006 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), auth(), find(), any(), dump()
+	at heritagetrail.EntryControllerSpec.Test that the show action returns the correct model(EntryControllerSpec.groovy:62)
+2014-05-18 16:05:23,008 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), auth(), find(), any(), dump()
+	at heritagetrail.EntryControllerSpec.Test that the show action returns the correct model(EntryControllerSpec.groovy:62)
+2014-05-18 16:05:23,161 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.EntryControllerSpec.Test that the edit action returns the correct model(EntryControllerSpec.groovy:78)
+2014-05-18 16:05:23,187 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at heritagetrail.EntryControllerSpec.Test that the edit action returns the correct model(EntryControllerSpec.groovy:78)
+2014-05-18 16:05:23,193 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at heritagetrail.EntryControllerSpec.Test that the edit action returns the correct model(EntryControllerSpec.groovy:78)
+2014-05-18 16:05:23,194 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at heritagetrail.EntryControllerSpec.Test that the edit action returns the correct model(EntryControllerSpec.groovy:78)
+2014-05-18 16:05:23,196 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at heritagetrail.EntryControllerSpec.Test that the edit action returns the correct model(EntryControllerSpec.groovy:78)
+2014-05-18 16:05:23,197 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at heritagetrail.EntryControllerSpec.Test that the edit action returns the correct model(EntryControllerSpec.groovy:78)
+2014-05-18 16:05:23,344 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.EntryControllerSpec.Test the update action performs an update on a valid domain instance(EntryControllerSpec.groovy:94)
+2014-05-18 16:05:23,345 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at heritagetrail.EntryControllerSpec.Test the update action performs an update on a valid domain instance(EntryControllerSpec.groovy:94)
+2014-05-18 16:05:23,346 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at heritagetrail.EntryControllerSpec.Test the update action performs an update on a valid domain instance(EntryControllerSpec.groovy:94)
+2014-05-18 16:05:23,347 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at heritagetrail.EntryControllerSpec.Test the update action performs an update on a valid domain instance(EntryControllerSpec.groovy:94)
+2014-05-18 16:05:23,349 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at heritagetrail.EntryControllerSpec.Test the update action performs an update on a valid domain instance(EntryControllerSpec.groovy:94)
+2014-05-18 16:05:23,350 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at heritagetrail.EntryControllerSpec.Test the update action performs an update on a valid domain instance(EntryControllerSpec.groovy:94)
+2014-05-18 16:05:23,507 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.EntryControllerSpec.Test that the delete action deletes an instance if it exists(EntryControllerSpec.groovy:124)
+2014-05-18 16:05:23,508 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at heritagetrail.EntryControllerSpec.Test that the delete action deletes an instance if it exists(EntryControllerSpec.groovy:124)
+2014-05-18 16:05:23,509 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at heritagetrail.EntryControllerSpec.Test that the delete action deletes an instance if it exists(EntryControllerSpec.groovy:124)
+2014-05-18 16:05:23,512 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at heritagetrail.EntryControllerSpec.Test that the delete action deletes an instance if it exists(EntryControllerSpec.groovy:124)
+2014-05-18 16:05:23,514 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at heritagetrail.EntryControllerSpec.Test that the delete action deletes an instance if it exists(EntryControllerSpec.groovy:124)
+2014-05-18 16:05:23,514 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.EntryController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at heritagetrail.EntryControllerSpec.Test that the delete action deletes an instance if it exists(EntryControllerSpec.groovy:124)
+2014-05-18 16:05:24,617 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+model.userInstanceCount == 0
+|     |                 |
+[:]   null              false
+
+	at heritagetrail.UserControllerSpec.Test the index action returns the correct model(UserControllerSpec.groovy:25)
+2014-05-18 16:05:24,618 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+model.userInstanceCount == 0
+|     |                 |
+[:]   null              false
+
+	at heritagetrail.UserControllerSpec.Test the index action returns the correct model(UserControllerSpec.groovy:25)
+2014-05-18 16:05:24,621 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.userInstanceCount == 0
+|     |                 |
+[:]   null              false
+
+	at heritagetrail.UserControllerSpec.Test the index action returns the correct model(UserControllerSpec.groovy:25)
+2014-05-18 16:05:24,621 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.userInstanceCount == 0
+|     |                 |
+[:]   null              false
+
+	at heritagetrail.UserControllerSpec.Test the index action returns the correct model(UserControllerSpec.groovy:25)
+2014-05-18 16:05:24,621 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.userInstanceCount == 0
+|     |                 |
+[:]   null              false
+
+	at heritagetrail.UserControllerSpec.Test the index action returns the correct model(UserControllerSpec.groovy:25)
+2014-05-18 16:05:24,621 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.userInstanceCount == 0
+|     |                 |
+[:]   null              false
+
+	at heritagetrail.UserControllerSpec.Test the index action returns the correct model(UserControllerSpec.groovy:25)
+2014-05-18 16:05:25,097 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+model.userInstance!= null
+|     |           |
+|     null        false
+[user:heritagetrail.User : (unsaved)]
+
+	at heritagetrail.UserControllerSpec.Test the create action returns the correct model(UserControllerSpec.groovy:33)
+2014-05-18 16:05:25,098 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+model.userInstance!= null
+|     |           |
+|     null        false
+[user:heritagetrail.User : (unsaved)]
+
+	at heritagetrail.UserControllerSpec.Test the create action returns the correct model(UserControllerSpec.groovy:33)
+2014-05-18 16:05:25,101 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.userInstance!= null
+|     |           |
+|     null        false
+[user:heritagetrail.User : (unsaved)]
+
+	at heritagetrail.UserControllerSpec.Test the create action returns the correct model(UserControllerSpec.groovy:33)
+2014-05-18 16:05:25,101 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.userInstance!= null
+|     |           |
+|     null        false
+[user:heritagetrail.User : (unsaved)]
+
+	at heritagetrail.UserControllerSpec.Test the create action returns the correct model(UserControllerSpec.groovy:33)
+2014-05-18 16:05:25,101 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.userInstance!= null
+|     |           |
+|     null        false
+[user:heritagetrail.User : (unsaved)]
+
+	at heritagetrail.UserControllerSpec.Test the create action returns the correct model(UserControllerSpec.groovy:33)
+2014-05-18 16:05:25,101 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+model.userInstance!= null
+|     |           |
+|     null        false
+[user:heritagetrail.User : (unsaved)]
+
+	at heritagetrail.UserControllerSpec.Test the create action returns the correct model(UserControllerSpec.groovy:33)
+2014-05-18 16:05:25,270 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.save() is applicable for argument types: (heritagetrail.User) values: [heritagetrail.User : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:41)
+2014-05-18 16:05:25,270 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.save() is applicable for argument types: (heritagetrail.User) values: [heritagetrail.User : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at heritagetrail.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:41)
+2014-05-18 16:05:25,271 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.save() is applicable for argument types: (heritagetrail.User) values: [heritagetrail.User : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at heritagetrail.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:41)
+2014-05-18 16:05:25,272 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.save() is applicable for argument types: (heritagetrail.User) values: [heritagetrail.User : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at heritagetrail.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:41)
+2014-05-18 16:05:25,274 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.save() is applicable for argument types: (heritagetrail.User) values: [heritagetrail.User : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at heritagetrail.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:41)
+2014-05-18 16:05:25,274 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.save() is applicable for argument types: (heritagetrail.User) values: [heritagetrail.User : (unsaved)]
+Possible solutions: wait(), any(), wait(long), raw(java.lang.Object), each(groovy.lang.Closure), sleep(long)
+	at heritagetrail.UserControllerSpec.Test the save action correctly persists an instance(UserControllerSpec.groovy:41)
+2014-05-18 16:05:25,432 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), find(), any(), dump(), grep()
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.UserControllerSpec.Test that the show action returns the correct model(UserControllerSpec.groovy:62)
+2014-05-18 16:05:25,433 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), find(), any(), dump(), grep()
+	at heritagetrail.UserControllerSpec.Test that the show action returns the correct model(UserControllerSpec.groovy:62)
+2014-05-18 16:05:25,434 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), find(), any(), dump(), grep()
+	at heritagetrail.UserControllerSpec.Test that the show action returns the correct model(UserControllerSpec.groovy:62)
+2014-05-18 16:05:25,435 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), find(), any(), dump(), grep()
+	at heritagetrail.UserControllerSpec.Test that the show action returns the correct model(UserControllerSpec.groovy:62)
+2014-05-18 16:05:25,436 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), find(), any(), dump(), grep()
+	at heritagetrail.UserControllerSpec.Test that the show action returns the correct model(UserControllerSpec.groovy:62)
+2014-05-18 16:05:25,437 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.show() is applicable for argument types: (null) values: [null]
+Possible solutions: raw(java.lang.Object), wait(), find(), any(), dump(), grep()
+	at heritagetrail.UserControllerSpec.Test that the show action returns the correct model(UserControllerSpec.groovy:62)
+2014-05-18 16:05:25,577 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.UserControllerSpec.Test that the edit action returns the correct model(UserControllerSpec.groovy:78)
+2014-05-18 16:05:25,577 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at heritagetrail.UserControllerSpec.Test that the edit action returns the correct model(UserControllerSpec.groovy:78)
+2014-05-18 16:05:25,578 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at heritagetrail.UserControllerSpec.Test that the edit action returns the correct model(UserControllerSpec.groovy:78)
+2014-05-18 16:05:25,579 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at heritagetrail.UserControllerSpec.Test that the edit action returns the correct model(UserControllerSpec.groovy:78)
+2014-05-18 16:05:25,580 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at heritagetrail.UserControllerSpec.Test that the edit action returns the correct model(UserControllerSpec.groovy:78)
+2014-05-18 16:05:25,581 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.edit() is applicable for argument types: (null) values: [null]
+Possible solutions: wait(), wait(long), wait(long, int), each(groovy.lang.Closure), is(java.lang.Object), split(groovy.lang.Closure)
+	at heritagetrail.UserControllerSpec.Test that the edit action returns the correct model(UserControllerSpec.groovy:78)
+2014-05-18 16:05:25,717 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:94)
+2014-05-18 16:05:25,718 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at heritagetrail.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:94)
+2014-05-18 16:05:25,719 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at heritagetrail.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:94)
+2014-05-18 16:05:25,719 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at heritagetrail.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:94)
+2014-05-18 16:05:25,721 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at heritagetrail.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:94)
+2014-05-18 16:05:25,722 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.update() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), split(groovy.lang.Closure), isCase(java.lang.Object), putAt(java.lang.String, java.lang.Object), use([Ljava.lang.Object;)
+	at heritagetrail.UserControllerSpec.Test the update action performs an update on a valid domain instance(UserControllerSpec.groovy:94)
+2014-05-18 16:05:25,864 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at org.codehaus.groovy.grails.plugins.web.api.ControllerTagLibraryApi.methodMissing(ControllerTagLibraryApi.java:95)
+	at heritagetrail.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:124)
+2014-05-18 16:05:25,865 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at heritagetrail.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:124)
+2014-05-18 16:05:25,868 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at heritagetrail.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:124)
+2014-05-18 16:05:25,869 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at heritagetrail.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:124)
+2014-05-18 16:05:25,882 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at heritagetrail.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:124)
+2014-05-18 16:05:25,882 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: heritagetrail.UserController.delete() is applicable for argument types: (null) values: [null]
+Possible solutions: create(), every(), sleep(long), every(groovy.lang.Closure), split(groovy.lang.Closure), getAt(java.lang.String)
+	at heritagetrail.UserControllerSpec.Test that the delete action deletes an instance if it exists(UserControllerSpec.groovy:124)

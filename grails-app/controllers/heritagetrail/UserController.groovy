@@ -6,7 +6,7 @@ class UserController {
 	def index = {
 		redirect(action: "login", params: params)
 	}
-	def login = {}
+	def login = {if(session.user != null) redirect(controller:"entry", view: "index") }
 
 	def authenticate = {
 		def user = User.findByLoginAndPassword(params.login, params.password)
@@ -34,21 +34,31 @@ class UserController {
 		redirect(controller:"user", view:"login")
 	}
 
+    def settings = {
+        render(view: "settings")
+    }
 
-	def create(){
+		def create(){
 
-			def user = new User(params)
+		def user = new User(params)
 
 			if(user.save()) {
 				redirect(action:'login')
 			}
-			else {
-				flash.message = "error(s) creating user"
-				render(view:'create',model:[user:user])
+	
+			else{
+				
+				if(user.save()) {
+					redirect(action:'login')
+				}
+				else {
+					flash.message = "error(s) creating user"
+					render(view:'create',model:[user:user])
+				}
 			}
-		
-		//login
-	}
+			//login
+		}
+	
 
 	def resetPassword={ render(view:'resetPassword') }
 	
@@ -79,6 +89,22 @@ class UserController {
 	
 	def setNewPassword(){
 		flash.message = null
+		setPassword()
+		if(flash.message == null){
+		session['user'] = null
+		flash.message = "Password has been Reset"
+		render(view:"login")}
+		}
+	
+	
+	def deleteUser(){		
+		def user = session['user']
+		this.logout()
+		user.delete()		
+	}
+	
+	def setPassword(){
+		println(params)
 		if(params.password1 != params.password2){
 			flash.message = "Passwords do not match"
 			render(view:"setNewPassword")
@@ -86,9 +112,6 @@ class UserController {
 			def user = User.findByLogin(session['user'].login)
 			user.password = params.password1
 			user.password2 = params.password2
-			user.save()
-			session['user'] = null
-			render(view:"login")
+			user.save()}
 		}
-	}
 }

@@ -25,7 +25,7 @@
 <nav>
     <ul>
         <li>
-            <g:link controller="user" action="about">
+            <g:link controller="entry" action="about">
                 <span>Home</span>
             </g:link>
         </li>
@@ -39,12 +39,8 @@
                 <span>Settings</span>
             </g:link>
         </li>
-
     </ul>
-    
-    <div id=loginControl style="position: absolute; right: 0px;">
-        <g:loginControl></g:loginControl>
-    </div>
+    <div class="hello"><g:loginControl></g:loginControl></div>
 </nav>
 
 <div class="gridContainer clearfix">
@@ -139,30 +135,9 @@
                     <p>Keep exercising to unlock more medals!</p>
                     <div class="badgeCount">
 
-                        <g:if test="${session.user.morningCount >= 10}">
-                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'morning.png')}" /></a>
-                        </g:if>
-
-                        <g:if test="${session.user.eveningCount >= 10}">
-                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'night.png')}" /></a>
-                        </g:if>
-
-                        <g:if test="${session.user.groupCount >= 5}">
-                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'group.png')}" /></a>
-                        </g:if>
-
-                        <g:if test="${session.user.petCount >= 5}">
-                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'pet.png')}" /></a>
-                        </g:if>
-
-                        <g:if test="${session.user.waterCount >= 5}">
-                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'water.png')}" /></a>
-                        </g:if>
-
-                        <g:if test="${name == 'fred'}">
-                            <a href="#"><img src="${resource(dir: 'images/medals', file: 'active.png')}" /></a>
-                        </g:if>
-
+                        <g:each in="${session.user.badges}" var="badge">
+                            <a href="#"><img src="${resource(dir: 'images/medals', file:badge)}" /></a>
+                        </g:each>
                     </div>
                     <a href="#">Learn more about medals…</a>
 

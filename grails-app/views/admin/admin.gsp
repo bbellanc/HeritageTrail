@@ -1,16 +1,33 @@
 <%@ page import="heritagetrail.Admin"%>
 <!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
 <html>
+<!--<![endif]-->
 <head>
-<meta name="layout" content="main">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heritage Trail Fitness - Home</title>
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'toggle-switch.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="respond.min.js"></script>
 <body>
-
+	 <div id=loginControl style="position: absolute; right: 0px;">
+        <g:loginControl></g:loginControl>
+    </div>
 	<h3>Find a User</h3>
 	<br />
 	<g:form controller="admin" method="post">
-		<g:textField class='searchBar' name='value' />
-		<g:actionSubmit value="Find User" action="getProfile" />
+		Search Username, First name, or Last name<br/>
+		<g:textField class='searchBar' name='value' /><br/>
+		<g:select class="register" name="ages" from="${Admin.ageBracket.sort() }" noSelection="${['':"Select One"]}"/><br/>
+		<g:actionSubmit value="Find User" action="getProfile" /><br/>
 	</g:form>
 	<br />
 
@@ -21,6 +38,7 @@
 				<th>Last Name</th>
 				<th>Username</th>
 				<th>Email</th>
+				<th>Age</th>
 				<th>Points</th>
 			</tr>
 			<g:each in="${user}">
@@ -37,6 +55,9 @@
 					<td><a href="mailto:${it.email}"> ${it.email}
 					</a></td>
 					<td>
+						${it.age}
+					</td>
+					<td>
 						${it.points}
 					</td>
 				</tr>
@@ -45,7 +66,7 @@
 	</g:if>
 
 	<br />
-	<h3>Create an Event</h3>
+	<!-- <h3>Create an Event</h3>
 
 	<script
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
@@ -119,7 +140,7 @@
 
 
 
-	</div>
+	</div>-->
 
 </body>
 </html>

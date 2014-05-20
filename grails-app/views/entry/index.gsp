@@ -135,9 +135,11 @@
                     <p>Keep exercising to unlock more medals!</p>
                     <div class="badgeCount">
 
-                        <g:each in="${session.user.badges}" var="badge">
+                      <g:if test="${session.user.badges != ""}">
+                        <g:each in="${session.user.badges.split(' ')}" var="badge">
                             <a href="#"><img src="${resource(dir: 'images/medals', file:badge)}" /></a>
                         </g:each>
+                      </g:if>
                     </div>
                     <a href="#">Learn more about medals…</a>
 

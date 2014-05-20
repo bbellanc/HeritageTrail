@@ -49,10 +49,10 @@ class EntryController {
         if(activity.time == 'afternoon') activity.user.afternoonCount++
         if(activity.time == 'evening') activity.user.eveningCount++
 
-        if(activity.activity == 'walking') activity.user.walkCount++
-        if(activity.activity == 'running') activity.user.runCount++
-        if(activity.activity == 'cycling') activity.user.cyclingCount++
-        if(activity.activity == 'other') activity.user.otherCount++
+        if(activity.activity == 'walking') activity.user.walkCount+= activity.distanceTraveled
+        if(activity.activity == 'running') activity.user.runCount+= activity.distanceTraveled
+        if(activity.activity == 'cycling') activity.user.cyclingCount+= activity.distanceTraveled
+        if(activity.activity == 'other') activity.user.otherCount+= activity.distanceTraveled
 
 
 
@@ -88,75 +88,81 @@ class EntryController {
                 activity.user.activityLevel = 10
                 break
         }
+        println 'AAAAAAA'
+        println activity.user.morningCount
+        def badgeList = []
 
-        activity.user.badges.add '1_activity.png'
+        badgeList.add '1_activity.png'
 
         if(activity.user.morningCount >= 10)
-            activity.user.badges.add 'morning.png'
+            badgeList.add 'morning.png'
 
         if(activity.user.eveningCount >= 10)
-            activity.user.badges.add 'night.png'
+            badgeList.add 'night.png'
 
         if(activity.user.groupCount >= 5)
-            activity.user.badges.add 'group.png'
+            badgeList.add 'group.png'
 
         if(activity.user.petCount >= 5)
-            activity.user.badges.add 'pet.png'
+            badgeList.add 'pet.png'
 
         if(activity.user.waterCount >= 5)
-            activity.user.badges.add 'water.png'
+            badgeList.add 'water.png'
 
 //        if(activity.user.morningCount >= 10)
-//            activity.user.badges.add 'active.png'
+//            badgeList.add 'active.png'
 
         if(activity.user.walkCount >= 10)
-            activity.user.badges.add 'walk_10.png'
+            badgeList.add 'walk_10.png'
 
         if(activity.user.walkCount >= 50)
-            activity.user.badges.add 'walk_50.png'
+            badgeList.add 'walk_50.png'
 
         if(activity.user.walkCount >= 100)
-            activity.user.badges.add 'walk_100.png'
+            badgeList.add 'walk_100.png'
 
 
         if(activity.user.runCount >= 10)
-            activity.user.badges.add 'run_10.png'
+            badgeList.add 'run_10.png'
 
         if(activity.user.runCount >= 50)
-            activity.user.badges.add 'run_50.png'
+            badgeList.add 'run_50.png'
 
         if(activity.user.runCount >= 100)
-            activity.user.badges.add 'run_100.png'
+            badgeList.add 'run_100.png'
 
 
         if(activity.user.cyclingCount >= 10)
-            activity.user.badges.add 'bike_10.png'
+            badgeList.add 'bike_10.png'
 
         if(activity.user.cyclingCount >= 50)
-            activity.user.badges.add 'bike_50.png'
+            badgeList.add 'bike_50.png'
 
         if(activity.user.cyclingCount >= 100)
-            activity.user.badges.add 'bike_100.png'
+            badgeList.add 'bike_100.png'
 
 
         if(activity.user.otherCount >= 10)
-            activity.user.badges.add 'other_10.png'
+            badgeList.add 'other_10.png'
 
         if(activity.user.otherCount >= 50)
-            activity.user.badges.add 'other_50.png'
+            badgeList.add 'other_50.png'
 
         if(activity.user.otherCount >= 100)
-            activity.user.badges.add 'other_100.png'
+            badgeList.add 'other_100.png'
 
         if(activity.user.totalNumberOfActivities >= 100)
-            activity.user.badges.add '100_activities.png'
+            badgeList.add '100_activities.png'
 
 
-        def badgeFix = activity.user.badges.unique()
-        activity.user.badges = badgeFix
+        badgeList.unique()
 
+        def badgeSave = ""
+        badgeList.each {badge -> badgeSave+= "${badge} " }
 
-        if (activity.save()) {
+        activity.user.badges = badgeSave
+
+        if (activity.save(flush:true)) {
             session.user = activity.user
             redirect(controller: 'entry', action:'index')
         } else

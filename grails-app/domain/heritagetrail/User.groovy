@@ -25,7 +25,7 @@ class User {
 	static List securityQuestion
 	String securityAnswer
 	String question
-    ArrayList badges = []
+    String badges = ""
 	static hasMany = [entries:Entry]
 	
 	static constraints = {

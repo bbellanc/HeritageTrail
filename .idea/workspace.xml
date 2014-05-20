@@ -1,27 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="349fb81e-313d-4380-a64e-e7214dbacdae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/entry/about.gsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-app/images/medals/stroller.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/active.png" afterPath="$PROJECT_DIR$/web-app/images/medals/active.png" />
+    <list default="true" id="349fb81e-313d-4380-a64e-e7214dbacdae" name="Default" comment="finishing badges logic">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/100_activities.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/10_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/1_activity.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/1_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/2_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/3_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/4_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/5_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/6_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/7_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/8_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/9_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/TailOntheTrail.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/bike_10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/bike_100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/bike_50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/other_10.png.tmp$$" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/other_10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/other_100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/other_50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/progress10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/run_10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/run_100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/run_50.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/walk_10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/walk_100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/images/medals/walk_50.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devDb.h2.db" afterPath="$PROJECT_DIR$/devDb.h2.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/group.png" afterPath="$PROJECT_DIR$/web-app/images/medals/group.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/morning.png" afterPath="$PROJECT_DIR$/web-app/images/medals/morning.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/night.png" afterPath="$PROJECT_DIR$/web-app/images/medals/night.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/pet.png" afterPath="$PROJECT_DIR$/web-app/images/medals/pet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/water.png" afterPath="$PROJECT_DIR$/web-app/images/medals/water.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HeritageTrail.iml" afterPath="$PROJECT_DIR$/HeritageTrail.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/taglib/heritagetrail/LoginTagLib.groovy" afterPath="$PROJECT_DIR$/grails-app/taglib/heritagetrail/LoginTagLib.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/domain/heritagetrail/User.groovy" afterPath="$PROJECT_DIR$/grails-app/domain/heritagetrail/User.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/heritagetrail/UserController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/heritagetrail/UserController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/create.gsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/entry/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/entry/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/login.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/login.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/resetPassword.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/resetPassword.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/settings.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/settings.gsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -50,8 +64,8 @@
       <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/views/entry/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.361702" vertical-offset="1850" max-vertical-offset="3945">
-              <caret line="137" column="53" selection-start-line="137" selection-start-column="53" selection-end-line="137" selection-end-column="53" />
+            <state vertical-scroll-proportion="-4.361702" vertical-offset="1850" max-vertical-offset="3975">
+              <caret line="137" column="60" selection-start-line="137" selection-start-column="60" selection-end-line="137" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -67,24 +81,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntryController.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="EntryController.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.043478" vertical-offset="2140" max-vertical-offset="2700">
-              <caret line="155" column="39" selection-start-line="155" selection-start-column="39" selection-end-line="155" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.7209945" vertical-offset="504" max-vertical-offset="2790">
+              <caret line="51" column="69" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="logo.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-app/images/logo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/domain/heritagetrail/User.groovy">
           <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3668478" vertical-offset="240" max-vertical-offset="1035">
-              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <state vertical-scroll-proportion="-3.0" vertical-offset="255" max-vertical-offset="1035">
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -106,8 +127,8 @@
       <file leaf-file-name="UserController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/UserController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.347826" vertical-offset="0" max-vertical-offset="2475">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state vertical-scroll-proportion="-6.7391305" vertical-offset="400" max-vertical-offset="2490">
+              <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -143,9 +164,9 @@
         <option value="$PROJECT_DIR$/grails-app/views/user/settings.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/admin/admin.gsp" />
         <option value="$PROJECT_DIR$/grails-app/views/user/resetPassword.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/views/entry/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/heritagetrail/UserController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/heritagetrail/User.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/entry/index.gsp" />
         <option value="$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy" />
       </list>
     </option>
@@ -200,60 +221,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="HeritageTrail" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HeritageTrail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HeritageTrail" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HeritageTrail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HeritageTrail" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HeritageTrail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HeritageTrail" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web-app" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="medals" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -435,6 +402,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="LayoutCode.rearrangeEntriesGSP" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web-app/images/medals" />
+      <recent name="$PROJECT_DIR$/web-app/images" />
+    </key>
   </component>
   <component name="RunManager" selected="Grails.Grails:HeritageTrail">
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
@@ -704,7 +680,7 @@
       <workItem from="1400360271778" duration="1528000" />
       <workItem from="1400361926958" duration="4043000" />
       <workItem from="1400449515378" duration="1214000" />
-      <workItem from="1400451567367" duration="12360000" />
+      <workItem from="1400451567367" duration="16578000" />
     </task>
     <task id="LOCAL-00001" summary="working on profile page">
       <created>1400026789510</created>
@@ -758,15 +734,19 @@
       <created>1400460651618</created>
       <updated>1400460651618</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="working on badges">
+      <created>1400466405062</created>
+      <updated>1400466405062</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59034000" />
+    <option name="totallyTimeSpent" value="63252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -782,8 +762,8 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23182553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3431517" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23182553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31222385" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20913108" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -828,7 +808,8 @@
     <MESSAGE value="pom work!!" />
     <MESSAGE value="mvn" />
     <MESSAGE value="adding html" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding html" />
+    <MESSAGE value="working on badges" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on badges" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -840,22 +821,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/heritagetrail/Entry.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="330">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="1440">
-          <caret line="33" column="0" selection-start-line="31" selection-start-column="6" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/heritagetrail/User.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="645">
@@ -1190,12 +1155,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/UserController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/heritagetrail/Entry.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.347826" vertical-offset="0" max-vertical-offset="2475">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="375">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/UserController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.7391305" vertical-offset="400" max-vertical-offset="2490">
+          <caret line="37" column="20" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/images/progress10.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-app/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
@@ -1208,40 +1194,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/entry/index.gsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.361702" vertical-offset="1850" max-vertical-offset="3945">
-          <caret line="137" column="53" selection-start-line="137" selection-start-column="53" selection-end-line="137" selection-end-column="53" />
+        <state vertical-scroll-proportion="-4.361702" vertical-offset="1850" max-vertical-offset="3975">
+          <caret line="137" column="60" selection-start-line="137" selection-start-column="60" selection-end-line="137" selection-end-column="60" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.043478" vertical-offset="2140" max-vertical-offset="2700">
-          <caret line="155" column="39" selection-start-line="155" selection-start-column="39" selection-end-line="155" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/heritagetrail/Entry.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="375">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/domain/heritagetrail/User.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3668478" vertical-offset="240" max-vertical-offset="1035">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+        <state vertical-scroll-proportion="-3.0" vertical-offset="255" max-vertical-offset="1035">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7209945" vertical-offset="504" max-vertical-offset="2790">
+          <caret line="51" column="69" selection-start-line="51" selection-start-column="69" selection-end-line="51" selection-end-column="69" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
@@ -1271,6 +1246,94 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Hibernate</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>grails-2.3.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>HeritageTrail</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

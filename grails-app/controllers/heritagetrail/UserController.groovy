@@ -30,7 +30,8 @@ class UserController {
 	}
 
 	def logout = {
-		session.user = null
+        println session.user.badges
+        session.user = null
 		redirect(controller:"user", view:"login")
 	}
 

@@ -36,7 +36,7 @@
 <nav>
     <ul>
         <li>
-            <g:link controller="user" action="about">
+            <g:link controller="entry" action="about">
                 <span>Home</span>
             </g:link>
         </li>
@@ -51,11 +51,11 @@
             </g:link>
         </li>
     </ul>
-    <div id=loginControl style="position: absolute; right: 0px;">
-        <g:loginControl></g:loginControl>
-    </div>
 </nav>
-
+<div id=loginControl style="position: absolute; right: 0px;">
+    <div class="hello"><g:loginControl></g:loginControl></div>
+</div>
+<br /><br />
 <div class="gridContainer clearfix">
 
     <div id="div1" class="fluid">
@@ -91,7 +91,7 @@
                         
                         
                         <li>
-        					<g:link controller="user" action="deleteUser" onclick="return confirm('Are you sure you want to delete your profile?(Changes cannot be undone)')">Delete Profile</g:link>      	       	
+        					<g:link controller="user" action="deleteUser" onclick="return confirm('Are you sure you want to delete your profile?(Changes cannot be undone)')">Delete Profile</g:link>
         				</li>
                     </ul>
                 </div>

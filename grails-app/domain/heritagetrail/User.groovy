@@ -17,10 +17,15 @@ class User {
     Integer morningCount = 0
     Integer afternoonCount = 0
     Integer eveningCount = 0
+    Integer walkCount = 0
+    Integer runCount = 0
+    Integer cyclingCount = 0
+    Integer otherCount = 0
+    Integer totalNumberOfActivities = 0
 	static List securityQuestion
 	String securityAnswer
 	String question
-
+    String badges = ""
 	static hasMany = [entries:Entry]
 	
 	static constraints = {
@@ -39,6 +44,12 @@ class User {
 		role(inList:["admin", "user"])
 		securityAnswer(nullable:false,blank:false)
 		question(blank:false)
+//        badges(inList:['100_activities.png','bike_50.png', 'other_100.png', 'walk_10.png',
+//                       '1_activity.png', 'group.png', 'other_50.png', 'walk_100.png',
+//                       'TailOntheTrail.png', 'pet.png', 'walk_50.png',
+//                       'active.png', 'morning.png',	'run_10.png', 'water.png',
+//                       'bike_10.png', 'night.png', 'run_100.png',
+//                       'bike_100.png','other_10.png','run_50.png'])
 	}
 	static {
 		securityQuestion=['What is your mother\'s maiden name',

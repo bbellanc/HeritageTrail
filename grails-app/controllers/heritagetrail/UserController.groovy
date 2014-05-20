@@ -20,6 +20,7 @@ class UserController {
 				redirect(controller:"admin", view:"index")
 				}
 			else{
+                println session.user.badges
 				redirect(controller:"entry", view:"show")
 			}
 		}else{
@@ -29,13 +30,17 @@ class UserController {
 	}
 
 	def logout = {
-		flash.message = "Goodbye ${session.user.firstName}"
-		session.user = null
+        println session.user.badges
+        session.user = null
 		redirect(controller:"user", view:"login")
 	}
 
     def settings = {
-        render(view: "settings")
+
+        if(session.user == null)
+            redirect(controller:"user", view:"login")
+        else
+            render(view: "settings")
     }
 
 	def create(){
@@ -46,6 +51,7 @@ class UserController {
 	
 			else{
 				if(user.save()) {
+                    session.user = null
 					redirect(action:'login')
 				}
 				else {
@@ -57,7 +63,9 @@ class UserController {
 		}
 	
 
-	def resetPassword={ render(view:'resetPassword') }
+	def resetPassword= {
+        render(view: 'resetPassword')
+    }
 	
 	def checkUsernameAndEmail(){
 		flash.message = null
@@ -74,14 +82,15 @@ class UserController {
 		}
 	
 	def checkSecurityQuestion(){
-		println(params)
-		def user = session['user']
-		if(user.securityAnswer == params.securityAnswer){
-		render(view:"setNewPassword")}
-		else{
-			flash.message = "Invalid Selection"
-			render(view:'resetPassword')
-		}
+            redirect(controller:"user", view:"login")
+            println(params)
+            def user = session['user']
+            if(user.securityAnswer == params.securityAnswer){
+            render(view:"setNewPassword")}
+            else {
+                flash.message = "Invalid Selection"
+                render(view: 'resetPassword')
+            }
 	}
 	
 	def forgotPassword(){
@@ -93,37 +102,59 @@ class UserController {
 		}
 	
 	
-	def deleteUser(){		
-		def user = session['user']
-		this.logout()
-		user.delete()		
+	def deleteUser(){
+        if (session.user == null)
+            redirect(controller: "user", view: "login")
+
+        else {
+            def user = session['user']
+            this.logout()
+            user.delete()
+        }
 	}
 	
-	def setPassword(){
-		println(params)
-		if(params.password1 != params.password2){
-			flash.message = "Passwords do not match"
-			render(view:"setNewPassword")
-		}else{
-			def user = User.findByLogin(session['user'].login)
-			user.password = params.password1
-			user.password2 = params.password2
-			user.save()
-			flash.message = "Password has been Reset"}
-		}
+	def setPassword() {
+
+        if (session.user == null)
+            redirect(controller: "user", view: "login")
+
+        else {
+            println(params)
+            if (params.password1 != params.password2) {
+                flash.message = "Passwords do not match"
+                render(view: "setNewPassword")
+            } else {
+                def user = User.findByLogin(session['user'].login)
+                user.password = params.password1
+                user.password2 = params.password2
+                user.save()
+                flash.message = "Password has been Reset"
+            }
+        }
+    }
 	def setUserPassword(){
-		
-		this.setPassword()
-		flash.message = "Password Saved"
-		render(view:'settings')
+
+        if (session.user == null)
+            redirect(controller: "user", view: "login")
+
+        else {
+            this.setPassword()
+            flash.message = "Password Saved"
+            render(view: 'settings')
+        }
 	}
 	
-	def setNewEmail(){
-		def user = User.findByLogin(session['user'].login)
-		user.email = params.newEmail
-		user.save()
-		flash.message = "Email Saved"
-		render(view:'settings')
-	}
+	def setNewEmail() {
+        if (session.user == null)
+            redirect(controller: "user", view: "login")
+
+        else {
+            def user = User.findByLogin(session['user'].login)
+            user.email = params.newEmail
+            user.save()
+            flash.message = "Email Saved"
+            render(view: 'settings')
+        }
+    }
 	
 }

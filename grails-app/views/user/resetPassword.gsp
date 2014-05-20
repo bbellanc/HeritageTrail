@@ -24,7 +24,7 @@
 	 <label for="login">
 			<g:message code="user.login.label" default="Username:" />		
 	</label>
-		<g:textField name="username"		
+		<g:textField name="username"
 					 onfocus="if(this.value=='Enter Username')this.value='';" 
 					 onblur="if(this.value=='')this.value='Enter Username';"
 					 value="Enter Username" class="registration"/><br/>
@@ -41,7 +41,7 @@
 		<g:actionSubmit value="Submit" action="checkSecurityQuestion"/>
 		</g:form>	
 	</g:if>
-	
-	
+
+
 </body>
 </html>

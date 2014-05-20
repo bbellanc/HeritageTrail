@@ -14,7 +14,7 @@
 <nav>
     <ul>
         <li>
-            <g:link controller="user" action="about">
+            <g:link controller="entry" action="about">
                 <span>Home</span>
             </g:link>
         </li>
@@ -41,7 +41,7 @@
 	<g:form action="authenticate" method="post">
 	<div id="login">Sign in using your registered account:<br/>
 	<input type="text" name="login"  onblur="if(this.value=='')this.value='Username';" onfocus="if(this.value=='Username')this.value='';" value="Username" class="login user"/>
-	<input type='password' name='password' value='Password'  onfocus="if(this.value=='' || this.value == 'Password') {this.value='';this.type='password'}"  onblur="if(this.value == '') {this.type='text';this.value=this.defaultValue}" class="login password"/>
+    <input type='text' name='password' value='Password'  onfocus="if(this.value=='' || this.value == 'Password') {this.value='';this.type='password'}"  onblur="if(this.value == '') {this.type='text';this.value=this.defaultValue}" class="login password"/>
 	</div>
 	<!-- Green Button -->
 	 <input class="button green" type="submit" value="Login" />

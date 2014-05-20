@@ -5,7 +5,7 @@ package heritagetrail
 import grails.test.mixin.*
 import spock.lang.*
 
-@TestFor(EntryController)
+
 @Mock(Entry)
 class EntryControllerSpec extends Specification {
 

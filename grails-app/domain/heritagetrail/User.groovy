@@ -52,10 +52,10 @@ class User {
 //                       'bike_100.png','other_10.png','run_50.png'])
 	}
 	static {
-		securityQuestion=['What is your mother\'s maiden name',
-						   'What city were you born in',
-						   'What is your father\'s middle name',
-						   'What is the make and model of your first car']
+		securityQuestion=['What is your mother\'s maiden name?',
+						   'What city were you born in?',
+						   'What is your father\'s middle name?',
+						   'What is the make and model of your first car?']
 		
 	}
 	

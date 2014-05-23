@@ -88,8 +88,6 @@ class EntryController {
                 activity.user.activityLevel = 10
                 break
         }
-        println 'AAAAAAA'
-        println activity.user.morningCount
         def badgeList = []
 
         badgeList.add '1_activity.png'

@@ -1,6 +1,5 @@
 package heritagetrail
 
-
 class UserController {
 
 	def index = {
@@ -20,7 +19,6 @@ class UserController {
 				redirect(controller:"admin", view:"index")
 				}
 			else{
-                println session.user.badges
 				redirect(controller:"entry", view:"show")
 			}
 		}else{
@@ -30,7 +28,6 @@ class UserController {
 	}
 
 	def logout = {
-        println session.user.badges
         session.user = null
 		redirect(controller:"user", view:"login")
 	}

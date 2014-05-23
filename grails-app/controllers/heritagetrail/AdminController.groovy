@@ -6,7 +6,6 @@ class AdminController {
 
 	def index = {
 		def allEvents = Event.findAll()
-		println Event.findAll()
 		return new ModelAndView("/admin/admin", [ allEvents : allEvents ])
 //		render(view: "admin")
 	}
@@ -14,7 +13,6 @@ class AdminController {
 	def getProfile() {
 		def startAge;
 		def endAge;
-		println(params.ages.getClass())
 		if(params.ages=='0-18'){
 			startAge = 0;
 			endAge = 18;
@@ -35,7 +33,6 @@ class AdminController {
 		userResultsByUsername.addAll(userResultsByLastName)
 		userResultsByUsername.addAll(userResultsByFirstName)
 		def user = userResultsByUsername.unique()
-		println(user[0].getClass())
 		render(view:"admin", model:[user:user])
 		
 	}

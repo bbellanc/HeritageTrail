@@ -1,4 +1,3 @@
-
 <%@ page import="heritagetrail.Entry" %>
 <!DOCTYPE html>
 <html>
@@ -16,6 +15,7 @@
 		<g:form>
 			Password:<g:passwordField name="password1"/><br/>
 			Confirm: <g:passwordField name="password2"/><br/>
+			<g:hiddenField name="user" id="${user}"/>
 			<g:actionSubmit value="Set Password" action="forgotPassword"/><br/>
 		
 		</g:form>

@@ -1,7 +1,10 @@
 package heritagetrail
 
+
 class UserController {
 
+	static String PASSWORD_AND_USERNAME_MISMATCH_MESSAGE = "Invalid Username or Email"
+	
 	def index = {
 		redirect(action: "login", params: params)
 	}
@@ -20,6 +23,8 @@ class UserController {
 				}
 			else{
 				redirect(controller:"entry", view:"show")
+                println session.user.badges
+				redirect(controller:"entry", view:"show",model:[user:user])
 			}
 		}else{
 			flash.message = "Sorry, ${params.login}. Please try again."
@@ -68,34 +73,30 @@ class UserController {
 		flash.message = null
 		
 		def user = User.findByEmail(params.email)
-//		println(user)
-//		println(params)
 		if(user == null || !user.login.equalsIgnoreCase(params.username)){
 			flash.message = PASSWORD_AND_USERNAME_MISMATCH_MESSAGE
 			render(view:'resetPassword')
 		}else{
-		session['user'] = user
+		session['tempUser'] = user
 		render(controller:'user', view:'resetPassword', model:[user:user]) }
 		}
 	
 	def checkSecurityQuestion(){
-            redirect(controller:"user", view:"login")
-            println(params)
-            def user = session['user']
+            def user =session['tempUser']
             if(user.securityAnswer == params.securityAnswer){
-            render(view:"setNewPassword")}
+            render(view:"setNewPassword",model:[user:user])}
             else {
                 flash.message = "Invalid Selection"
-                render(view: 'resetPassword')
+                render(view: 'resetPassword',model:[user:user])
             }
 	}
 	
 	def forgotPassword(){
+		render(view:"login")
 		flash.message = null
 		setPassword()
-		if(flash.message == null){
-		session['user'] = null
-		render(view:"login")}
+		session['tempUser'] = null
+		
 		}
 	
 	
@@ -111,24 +112,22 @@ class UserController {
 	}
 	
 	def setPassword() {
-
-        if (session.user == null)
-            redirect(controller: "user", view: "login")
-
-        else {
-            println(params)
+		def user
             if (params.password1 != params.password2) {
                 flash.message = "Passwords do not match"
                 render(view: "setNewPassword")
             } else {
-                def user = User.findByLogin(session['user'].login)
+				if(session['user']==null)
+                	user = User.findByLogin(session['tempUser'].login)
+				else
+					user = User.findByLogin(session['user'].login)
                 user.password = params.password1
                 user.password2 = params.password2
                 user.save()
                 flash.message = "Password has been Reset"
             }
         }
-    }
+    
 	def setUserPassword(){
 
         if (session.user == null)

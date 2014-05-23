@@ -39,7 +39,9 @@
 
             <h1 class="blue">Password Reset</h1>
 
-
+			<g:if test ="${flash.message}">
+			<div class="errors">${flash.message}</div>
+		</g:if>
    <g:if test="${user == null}">
     <g:form controller="user">
         <dl>
@@ -73,9 +75,11 @@
         <g:form>
             <input type="text" name="securityAnswer" onfocus="if(this.value=='Answer')this.value='';"
                          onblur="if(this.value=='')this.value='Answer';" value="Answer" class="register"/>
+            <g:hiddenField name="user" value="${user.login}" />
             <g:actionSubmit value="Submit" class="button blue" action="checkSecurityQuestion"/>
         </g:form>
     </g:if>
+    
     </div>
 </div>
 

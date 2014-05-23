@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="349fb81e-313d-4380-a64e-e7214dbacdae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devDb.h2.db" afterPath="$PROJECT_DIR$/devDb.h2.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/conf/Config.groovy" afterPath="$PROJECT_DIR$/grails-app/conf/Config.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -72,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.33415842" vertical-offset="1230" max-vertical-offset="1815">
-              <caret line="91" column="64" selection-start-line="91" selection-start-column="64" selection-end-line="91" selection-end-column="64" />
+              <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -729,7 +728,7 @@
       <workItem from="1400553845427" duration="6180000" />
       <workItem from="1400622803352" duration="206000" />
       <workItem from="1400795756636" duration="214000" />
-      <workItem from="1400809788437" duration="851000" />
+      <workItem from="1400809788437" duration="1479000" />
     </task>
     <task id="LOCAL-00001" summary="working on profile page">
       <created>1400026789510</created>
@@ -799,11 +798,15 @@
       <created>1400809962942</created>
       <updated>1400809962942</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="attempting deployment">
+      <created>1400814970255</created>
+      <updated>1400814970255</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73690000" />
+    <option name="totallyTimeSpent" value="74318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
@@ -873,7 +876,8 @@
     <MESSAGE value="finishing badges logic" />
     <MESSAGE value="working on css" />
     <MESSAGE value="Merge branch 'master' of https://github.com/bbellanc/HeritageTrail&#10;&#10;Conflicts:&#10;&#9;grails-app/controllers/heritagetrail/UserController.groovy&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/bbellanc/HeritageTrail&#10;&#10;Conflicts:&#10;&#9;grails-app/controllers/heritagetrail/UserController.groovy&#10;" />
+    <MESSAGE value="attempting deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempting deployment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1256,7 +1260,7 @@
     <entry file="file://$PROJECT_DIR$/grails-app/conf/Config.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33415842" vertical-offset="1230" max-vertical-offset="1815">
-          <caret line="91" column="64" selection-start-line="91" selection-start-column="64" selection-end-line="91" selection-end-column="64" />
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
           <folding />
         </state>
       </provider>

@@ -89,7 +89,7 @@ environments {
     }
     production {
         grails.logging.jul.usebridge = false
-        grails.serverURL = "http://trekthetrail-neue.rhcloud.com"
+        // TODO: grails.serverURL = "http://www.changeme.com"
     }
 }
 

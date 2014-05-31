@@ -159,6 +159,13 @@ class EntryController {
         def badgeSave = ""
         badgeList.each {badge -> badgeSave+= "${badge} " }
 
+        if ((activity.user.badges+badgeSave).size() > activity.user.badges.size()) {
+            session.badges = badgeSave
+            println "I WORKS!!!"
+        }
+        else
+            session.badges = null
+
         activity.user.badges += badgeSave
 
         if (activity.save(flush:true)) {

@@ -2,93 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="349fb81e-313d-4380-a64e-e7214dbacdae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery.bpopup.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/100_activities.png" afterPath="$PROJECT_DIR$/web-app/images/medals/100_activities.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/levels/10_level.png" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/10_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/1_activity.png" afterPath="$PROJECT_DIR$/web-app/images/medals/1_activity.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/levels/1_level.png" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/1_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/levels/2_level.png" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/2_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/levels/3_level.png" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/3_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/levels/4_level.png" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/4_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/levels/5_level.png" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/5_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/levels/6_level.png" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/6_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/levels/7_level.png" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/7_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/levels/8_level.png" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/8_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/levels/9_level.png" afterPath="$PROJECT_DIR$/web-app/images/medals/levels/9_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/Logo.jpg" afterPath="$PROJECT_DIR$/web-app/images/Logo.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/TailOntheTrail.png" afterPath="$PROJECT_DIR$/web-app/images/medals/TailOntheTrail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/active.png" afterPath="$PROJECT_DIR$/web-app/images/medals/active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/apple-touch-icon-retina.png" afterPath="$PROJECT_DIR$/web-app/images/apple-touch-icon-retina.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/apple-touch-icon.png" afterPath="$PROJECT_DIR$/web-app/images/apple-touch-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/bike_10.png" afterPath="$PROJECT_DIR$/web-app/images/medals/bike_10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/bike_100.png" afterPath="$PROJECT_DIR$/web-app/images/medals/bike_100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/bike_50.png" afterPath="$PROJECT_DIR$/web-app/images/medals/bike_50.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/body-bg.png" afterPath="$PROJECT_DIR$/web-app/images/body-bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/bullet.png" afterPath="$PROJECT_DIR$/web-app/images/bullet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/check.png" afterPath="$PROJECT_DIR$/web-app/images/check.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/database_add.png" afterPath="$PROJECT_DIR$/web-app/images/skin/database_add.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/database_delete.png" afterPath="$PROJECT_DIR$/web-app/images/skin/database_delete.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/database_edit.png" afterPath="$PROJECT_DIR$/web-app/images/skin/database_edit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/database_save.png" afterPath="$PROJECT_DIR$/web-app/images/skin/database_save.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/database_table.png" afterPath="$PROJECT_DIR$/web-app/images/skin/database_table.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devDb.h2.db" afterPath="$PROJECT_DIR$/devDb.h2.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/exclamation.png" afterPath="$PROJECT_DIR$/web-app/images/skin/exclamation.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/favicon.ico" afterPath="$PROJECT_DIR$/web-app/images/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/fb_btn.png" afterPath="$PROJECT_DIR$/web-app/images/fb_btn.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/foursquare-badge.png" afterPath="$PROJECT_DIR$/web-app/images/foursquare-badge.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/friend_avatar_default.jpg" afterPath="$PROJECT_DIR$/web-app/images/friend_avatar_default.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/gowalla.png" afterPath="$PROJECT_DIR$/web-app/images/gowalla.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/grails_logo.png" afterPath="$PROJECT_DIR$/web-app/images/grails_logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/group.png" afterPath="$PROJECT_DIR$/web-app/images/medals/group.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/house.png" afterPath="$PROJECT_DIR$/web-app/images/skin/house.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/icons.png" afterPath="$PROJECT_DIR$/web-app/images/icons.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/icons_hover.png" afterPath="$PROJECT_DIR$/web-app/images/icons_hover.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/information.png" afterPath="$PROJECT_DIR$/web-app/images/skin/information.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/logo.png" afterPath="$PROJECT_DIR$/web-app/images/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/morning.png" afterPath="$PROJECT_DIR$/web-app/images/medals/morning.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/night.png" afterPath="$PROJECT_DIR$/web-app/images/medals/night.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/other_10.png.tmp$$" afterPath="$PROJECT_DIR$/web-app/images/medals/other_10.png.tmp$$" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/other_10.png" afterPath="$PROJECT_DIR$/web-app/images/medals/other_10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/other_100.png" afterPath="$PROJECT_DIR$/web-app/images/medals/other_100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/other_50.png" afterPath="$PROJECT_DIR$/web-app/images/medals/other_50.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/password.png" afterPath="$PROJECT_DIR$/web-app/images/password.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/password_error.png" afterPath="$PROJECT_DIR$/web-app/images/password_error.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/pet.png" afterPath="$PROJECT_DIR$/web-app/images/medals/pet.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/progress10.png" afterPath="$PROJECT_DIR$/web-app/images/progress10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/run_10.png" afterPath="$PROJECT_DIR$/web-app/images/medals/run_10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/run_100.png" afterPath="$PROJECT_DIR$/web-app/images/medals/run_100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/run_50.png" afterPath="$PROJECT_DIR$/web-app/images/medals/run_50.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/shadow.jpg" afterPath="$PROJECT_DIR$/web-app/images/skin/shadow.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/sorted_asc.gif" afterPath="$PROJECT_DIR$/web-app/images/skin/sorted_asc.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/skin/sorted_desc.gif" afterPath="$PROJECT_DIR$/web-app/images/skin/sorted_desc.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/spinner.gif" afterPath="$PROJECT_DIR$/web-app/images/spinner.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/springsource.png" afterPath="$PROJECT_DIR$/web-app/images/springsource.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/twitter.png" afterPath="$PROJECT_DIR$/web-app/images/twitter.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/twitter_btn.png" afterPath="$PROJECT_DIR$/web-app/images/twitter_btn.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/user.png" afterPath="$PROJECT_DIR$/web-app/images/user.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/user_avatar.jpg" afterPath="$PROJECT_DIR$/web-app/images/user_avatar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/user_avatar_s.jpg" afterPath="$PROJECT_DIR$/web-app/images/user_avatar_s.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/user_error.png" afterPath="$PROJECT_DIR$/web-app/images/user_error.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/walk_10.png" afterPath="$PROJECT_DIR$/web-app/images/medals/walk_10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/walk_100.png" afterPath="$PROJECT_DIR$/web-app/images/medals/walk_100.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/walk_50.png" afterPath="$PROJECT_DIR$/web-app/images/medals/walk_50.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/images/medals/water.png" afterPath="$PROJECT_DIR$/web-app/images/medals/water.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/heritagetrail/UserController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/heritagetrail/UserController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/about.html" afterPath="$PROJECT_DIR$/html/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/devDb.trace.db" afterPath="$PROJECT_DIR$/devDb.trace.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/entry/index.gsp" afterPath="$PROJECT_DIR$/grails-app/views/entry/index.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/login.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/login.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/login.html" afterPath="$PROJECT_DIR$/html/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/profile.html" afterPath="$PROJECT_DIR$/html/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/register.css" afterPath="$PROJECT_DIR$/web-app/css/register.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/register.html" afterPath="$PROJECT_DIR$/html/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/resetPassword.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/resetPassword.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/responsive.css" afterPath="$PROJECT_DIR$/web-app/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/settings.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/settings.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/settings.html" afterPath="$PROJECT_DIR$/html/settings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/css/style.css" afterPath="$PROJECT_DIR$/web-app/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -114,21 +30,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.gsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.gsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grails-app/views/entry/index.gsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.4042554" vertical-offset="3474" max-vertical-offset="4172">
-              <caret line="273" column="29" selection-start-line="273" selection-start-column="29" selection-end-line="273" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.85685074" vertical-offset="3221" max-vertical-offset="4032">
+              <caret line="260" column="6" selection-start-line="260" selection-start-column="6" selection-end-line="260" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web-app/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31034482" vertical-offset="348" max-vertical-offset="15825">
-              <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="15840">
+              <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -147,8 +63,8 @@
       <file leaf-file-name="EntryController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-60.0" vertical-offset="0" max-vertical-offset="2670">
-              <caret line="92" column="58" selection-start-line="92" selection-start-column="58" selection-end-line="92" selection-end-column="58" />
+            <state vertical-scroll-proportion="-12.478261" vertical-offset="2203" max-vertical-offset="2775">
+              <caret line="166" column="12" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -220,11 +136,11 @@
         <option value="$PROJECT_DIR$/grails-app/views/user/resetPassword.gsp" />
         <option value="$PROJECT_DIR$/web-app/js/respond.min.js" />
         <option value="$PROJECT_DIR$/grails-app/views/user/login.gsp" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/views/user/settings.gsp" />
         <option value="$PROJECT_DIR$/web-app/js/jquery.bpopup.min.js" />
-        <option value="$PROJECT_DIR$/grails-app/views/entry/index.gsp" />
         <option value="$PROJECT_DIR$/web-app/css/style.css" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/views/entry/index.gsp" />
       </list>
     </option>
   </component>
@@ -832,7 +748,7 @@
       <workItem from="1400795756636" duration="214000" />
       <workItem from="1400809788437" duration="2929000" />
       <workItem from="1401124862050" duration="477000" />
-      <workItem from="1401409986453" duration="9923000" />
+      <workItem from="1401409986453" duration="13924000" />
     </task>
     <task id="LOCAL-00001" summary="working on profile page">
       <created>1400026789510</created>
@@ -910,11 +826,15 @@
       <created>1400815648507</created>
       <updated>1400815648507</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="working on profile page">
+      <created>1401512396486</created>
+      <updated>1401512396486</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86168000" />
+    <option name="totallyTimeSpent" value="90169000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="22" width="1280" height="774" extended-state="0" />
@@ -934,7 +854,7 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23182553" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19386107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17083947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -944,6 +864,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -953,7 +874,6 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991204" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1009,7 +929,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="working on profile page" />
     <MESSAGE value="working profile page actions" />
     <MESSAGE value="working profile page" />
     <MESSAGE value="mysql stuffs" />
@@ -1022,7 +941,8 @@
     <MESSAGE value="working on css" />
     <MESSAGE value="Merge branch 'master' of https://github.com/bbellanc/HeritageTrail&#10;&#10;Conflicts:&#10;&#9;grails-app/controllers/heritagetrail/UserController.groovy&#10;" />
     <MESSAGE value="attempting deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempting deployment" />
+    <MESSAGE value="working on profile page" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on profile page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1350,14 +1270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/EventController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5566406" vertical-offset="0" max-vertical-offset="512">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/images/medals/active.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1371,26 +1283,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-60.0" vertical-offset="0" max-vertical-offset="2670">
-          <caret line="92" column="58" selection-start-line="92" selection-start-column="58" selection-end-line="92" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/views/user/create.gsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.234043" vertical-offset="0" max-vertical-offset="3630">
           <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="57" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1403,18 +1299,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/entry/index.gsp">
+    <entry file="file://$PROJECT_DIR$/web-app/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4042554" vertical-offset="3474" max-vertical-offset="4172">
-          <caret line="273" column="29" selection-start-line="273" selection-start-column="29" selection-end-line="273" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="15840">
+          <caret line="41" column="23" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web-app/css/style.css">
+    <entry file="file://$PROJECT_DIR$/html/settings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31034482" vertical-offset="348" max-vertical-offset="15825">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/EventController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5828221" vertical-offset="0" max-vertical-offset="489">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/heritagetrail/EntryController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.478261" vertical-offset="2203" max-vertical-offset="2775">
+          <caret line="166" column="12" selection-start-line="166" selection-start-column="12" selection-end-line="166" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/entry/index.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85685074" vertical-offset="3221" max-vertical-offset="4032">
+          <caret line="260" column="6" selection-start-line="260" selection-start-column="6" selection-end-line="260" selection-end-column="6" />
           <folding />
         </state>
       </provider>

@@ -16,6 +16,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
     display: block;
 }
 
+
+
 #popup, .bMulti {
     background-color: #FFF;
     border-radius: 10px 10px 10px 10px;
@@ -42,7 +44,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
     top: -7px;
 }
 
-.button_popup {
+.button {
     background-color: #2B91AF;
     border-radius: 10px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
@@ -53,7 +55,6 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
     text-align: center;
     text-decoration: none;
 }
-
 
 
 

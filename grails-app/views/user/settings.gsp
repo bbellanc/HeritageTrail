@@ -15,7 +15,7 @@
     <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-    <script src="js/respond.min.js"></script>
+    <g:javascript src="respond.min.js" />
 </head>
 <body>
     <script	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -70,7 +70,7 @@
                     <ul class="settings">
                         <li><a href="#" class="email">Change Email Address</a></li>
                         	<div class="changeEmail">
-                        		<g:form>
+                        		<g:form><input type="text"/>
                         			New Email<g:textField name="newEmail" />
                         			<g:actionSubmit value="Change Email" action="setNewEmail"/>
                         		</g:form>

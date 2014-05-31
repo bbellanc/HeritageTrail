@@ -3,11 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="X-UA-Compatible" content="IE=9" />
-<title>Heritage Trail Fitness Login</title>
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
+    <title>Heritage Trail Fitness Login</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'register.css')}"  type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'toggle-switch.css')}" type="text/css">
+
 </head>
 
 <body>
@@ -35,9 +37,9 @@
 
 <div id="content">
 	<h1>Sign In</h1>
-	
+
 	<!-- Login Fields -->
-	
+
 	<g:form action="authenticate" method="post">
 	<div id="login">Sign in using your registered account:<br/>
 	<input type="text" name="login"  onblur="if(this.value=='')this.value='Username';" onfocus="if(this.value=='Username')this.value='';" value="Username" class="login user"/>
@@ -46,7 +48,7 @@
 	<!-- Green Button -->
 	 <input class="button green" type="submit" value="Login" />
 	</g:form>
-	
+
 
 <!--	<!-- Checkbox -->
 <!--	<div class="checkbox">-->
@@ -72,7 +74,7 @@
 <div id="bottom_text">
 	Don't have an account? <g:link controller="user" action="create">Sign Up</g:link><br/>
 	Forget your password? <g:link controller="user" action="resetPassword">Password Reset</g:link>
-</div>  
+</div>
 
 
 </body>

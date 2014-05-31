@@ -6,8 +6,9 @@
     <title>Register</title>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'
           rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet"
-          href="${resource(dir: 'css', file: 'register.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'register.css')}" type="text/css">
+
 
 </head>
 

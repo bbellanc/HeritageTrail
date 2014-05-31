@@ -17,12 +17,9 @@ input, textarea { font-family:tahoma, arial; font-size:12px; color:#57595d;}
 a{ text-decoration:none;}
 p{ line-height:20px;}
 
-#box_bg {
-	border: 1px solid #d5d5d5;
-	background: #f9f9f9;
-	width: 380px; display: block;
-	margin: 100px auto 0 auto;
-  padding-bottom: 50px;
+#wrap {
+  margin: 0 auto;
+  width: 50%;
 }
 
 #content {padding: 23px 28px;} 
@@ -55,6 +52,7 @@ p{ line-height:20px;}
 .button.blue {
 	border: 1px solid #2a76a2; 
 	background-color: #3897cd;
+  margin-right: 16px;
 }
 
 .button.blue:hover {background: #3897cd;}
@@ -69,13 +67,10 @@ p{ line-height:20px;}
 	font-family: "Droid Sans";
 	padding: 11px 15px 10px 50px;
 	background-color: #fdfdfd;
-	width: 255px;
+	width: 80%;
 	display: block;
 	border:1px solid #d8d8d8;
 	margin: 13px 0 -3px 0;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
 	box-shadow: inset 2px 2px 4px #f1f1f1;
 }
 
@@ -92,13 +87,10 @@ p{ line-height:20px;}
 	font-family: "Droid Sans";
 	padding: 11px 15px 10px 15px;
 	background-color: #fdfdfd;
-	width: 290px;
+	width: 80%;
 	display: block;
 	border:1px solid #d8d8d8;
-	margin: 13px 0 -3px 0;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	margin: 13px auto -3px auto;
 	box-shadow: inset 2px 2px 4px #f1f1f1;
 }
 
@@ -130,7 +122,7 @@ p{ line-height:20px;}
 }
 
 nav {
-    width: auto;
+    width: 100%;
     background: #2b83b6;
     height: 42px;
     border-bottom: 1px solid #dadada;
@@ -141,18 +133,16 @@ nav ul {
     list-style: none;
     overflow: hidden;
     position: relative;
-    padding: 8px 0 0 8px;
 }
 
 nav ul li {
     float: left;
-    padding: 0 8px 0 0;
 }
 
 nav ul li a {
     display: inline-block;
-    width: 26px;
-    height: 26px;
+    width: 43px;
+    height: 43px;
     background-image: url(../images/icons.png);
     background-repeat: no-repeat;
 }
@@ -162,39 +152,25 @@ nav ul li:nth-child(1) a {
 }
 
 nav ul li:nth-child(2) a {
-    background-position: -26px 0;
+    background-position: -43px 0;
 }
 
 nav ul li:nth-child(3) a {
-    background-position: -52px 0;
+    background-position: -86px 0;
 }
 
 nav ul li a:hover {
     display: block;
-    width: 26px;
-    height: 26px;
-    background-image: url(../images/icons_hover.png);
-    background-repeat: no-repeat;
-}
-
-nav ul li:nth-child(1) a:hover {
-    background-position: 0 0;
-    background-color: rgba(255,255,255,.1);
-}
-
-nav ul li:nth-child(2) a:hover {
-    background-position: -26px 0;
-}
-
-nav ul li:nth-child(3) a:hover {
-    background-position: -52px 0;
+    width: 43px;
+    height: 43px;
+    background-color: rgba(255, 255, 255, 0.1)
 }
 
 nav ul li a span {
     font-size: 16px;
     position: absolute;
-    left: 120px;
-    top: 10px;
+    left: 140px;
+    top: 12px;
     display: none;
 }
 

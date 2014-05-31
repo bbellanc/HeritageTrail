@@ -25,7 +25,7 @@ img, object, embed, video {
 .gridContainer {
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
+	width: 90%;
 	clear: none;
 	float: none;
 }
@@ -60,7 +60,6 @@ font-weight: bold;
 
 #userStats .imager { 
 width: 100%;
-max-width: 200px;
 margin: 0 auto 20px auto;
 }
 
@@ -78,13 +77,13 @@ margin-bottom: 10px;
 display: block;
 }
 
-#left .gcontent .boxy .badgeCount a img { margin: 0 3.5% 3.5% 0; width: 29%; z-index: 1;}
+#left .gcontent .boxy .badgeCount a img { margin: 0 3.3% 3.3% 0; width: 29%; z-index: 1;}
 
 section.footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  max-width: 1232px;
+  width: 90%;
+  max-width: 1084px;
   height: 30px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
@@ -104,13 +103,20 @@ section.footer {
     display: block;
 }
 
+#box_bg {
+	border: 1px solid #d5d5d5;
+	background: #f9f9f9;
+	width: 90%; display: block;
+	margin: 100px auto 0 auto;
+  padding-bottom: 50px;
+}
 
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
 
 .gridContainer {
-	width: 100%;
+	width: 90%;
 	clear: none;
 	float: none;
 	margin-left: auto;
@@ -145,10 +151,14 @@ font-weight: bold;
 }
 
 #userStats .imager { 
-float: left; 
-width: 35%;
-height: auto;
-margin-right: 20px;
+width: 75%;
+max-width: 400px;
+margin: 0 auto 20px auto;
+}
+
+#userStats .imager img { 
+width: 100%;
+margin: 0 auto;
 }
 
 #userStats .data h1 { 
@@ -163,8 +173,8 @@ margin-bottom: 30px;
 section.footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  max-width: 1232px;
+  width: 90%;
+  max-width: 1084px;
   height: 30px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
@@ -172,7 +182,7 @@ section.footer {
 }
 
 .onesquare:nth-child(4n) {
-    margin: 0 2.88% 2.88% 0;
+    margin: 0 2.77% 2.77% 0;
 }
 
 .onesquare:nth-child(8n) {
@@ -181,22 +191,30 @@ section.footer {
 
 .onesquare {
     width: 10%;
-    margin: 0 2.88% 2.88% 0;
+    margin: 0 2.77% 2.77% 0;
     padding-bottom: 10%;
     background-color: red;
     float: left;
     display: block;
 }
 
+#box_bg {
+	border: 1px solid #d5d5d5;
+	background: #f9f9f9;
+	width: 380px; display: block;
+	margin: 100px auto 0 auto;
+  padding-bottom: 50px;
 }
 
-/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+}
+
+/* Desktop Layout: 769px to a max of 1084px.  Inherits styles from: Mobile Layout and Tablet Layout. */
 
 @media only screen and (min-width: 769px) {
 
 .gridContainer {
-	width: 100%;
-	max-width: 1232px;
+	width: 90%;
+	max-width: 1084px;
 	margin: auto;
 	clear: none;
 	float: none;
@@ -250,8 +268,8 @@ font-weight: bold;
 section.footer {
   position: fixed;
   bottom: 0;
-  width: 100%;
-  max-width: 1232px;
+  width: 90%;
+  max-width: 1084px;
   height: 30px;
   background-color: #f9f9f9;
   border: 1px solid #ccc;
@@ -277,6 +295,14 @@ section.footer {
     background-color: red;
     float: left;
     display: block;
+}
+
+#box_bg {
+	border: 1px solid #d5d5d5;
+	background: #f9f9f9;
+	width: 380px; display: block;
+	margin: 100px auto 0 auto;
+  padding-bottom: 50px;
 }
 
 }

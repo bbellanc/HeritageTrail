@@ -16,6 +16,47 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
     display: block;
 }
 
+#popup, .bMulti {
+    background-color: #FFF;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 25px 5px #999;
+    color: #111;
+    display: none;
+    min-width: 450px;
+    min-height: 250px;
+    padding: 25px;
+}
+
+#popup .logo {
+    color: #2B91AF;
+    font: bold 325% 'Petrona',sans;
+}
+
+.button.b-close, .button.bClose {
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: none;
+    font: bold 131% sans-serif;
+    padding: 0 6px 2px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+}
+
+.button_popup {
+    background-color: #2B91AF;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    color: #FFF;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+
 audio,canvas,video {
     display: inline-block;
     display: inline;
@@ -604,6 +645,12 @@ ul#n li.sel a {
 }
 
 /* @group right */
+#left .about {
+    display: block;
+    background-color: #fff;
+    margin: 20px auto 0 auto;
+    padding: 15px;
+}
 #left .gcontent {
     display: block;
     margin-top: 20px;
@@ -625,7 +672,7 @@ ul#n li.sel a {
 #left .gcontent .boxy {
     border: 1px solid #bfbfbf;
     border-top: 0;
-    padding: 2%;
+    padding: 15px;
     background: #f9f9f9;
 }
 
@@ -637,18 +684,16 @@ nav ul {
     list-style: none;
     overflow: hidden;
     position: relative;
-    padding: 8px 0 0 8px;
 }
 
 nav ul li {
     float: left;
-    padding: 0 8px 0 0;
 }
 
 nav ul li a {
     display: inline-block;
-    width: 26px;
-    height: 26px;
+    width: 43px;
+    height: 43px;
     background-image: url(../images/icons.png);
     background-repeat: no-repeat;
 }
@@ -658,46 +703,30 @@ nav ul li:nth-child(1) a {
 }
 
 nav ul li:nth-child(2) a {
-    background-position: -26px 0;
+    background-position: -43px 0;
 }
 
 nav ul li:nth-child(3) a {
-    background-position: -52px 0;
+    background-position: -86px 0;
 }
 
 nav ul li a:hover {
     display: block;
-    width: 26px;
-    height: 26px;
-    background-image: url(../images/icons_hover.png);
-    background-repeat: no-repeat;
-}
-
-nav ul li:nth-child(1) a:hover {
-    background-position: 0 0;
-    background-color: rgba(255,255,255,.1);
-}
-
-nav ul li:nth-child(2) a:hover {
-    background-position: -26px 0;
-}
-
-nav ul li:nth-child(3) a:hover {
-    background-position: -52px 0;
+    width: 43px;
+    height: 43px;
+    background-color: rgba(255, 255, 255, 0.1)
 }
 
 nav ul li a span {
     font-size: 16px;
     position: absolute;
-    left: 120px;
-    top: 10px;
+    left: 140px;
+    top: 12px;
     display: none;
-    transition: all 0.3s ease;
 }
 
 nav ul li a:hover span {
     display: block;
-    transition: all 0.3s ease;
 }
 
 nav ul li a span {
@@ -884,7 +913,7 @@ input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
 div#logo {
     width:296px;
     height: 208px;
-    margin: 40px auto 40px auto;
+    margin: 80px auto 40px auto;
     background-image: url(../images/logo.png);
 }
 

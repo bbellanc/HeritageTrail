@@ -24,7 +24,7 @@ class UserController {
 			else{
 				redirect(controller:"entry", view:"show")
                 println session.user.badges
-				redirect(controller:"entry", view:"show",model:[user:user])
+//				redirect(controller:"entry", view:"show",model:[user:user])
 			}
 		}else{
 			flash.message = "Sorry, ${params.login}. Please try again."

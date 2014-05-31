@@ -90,66 +90,67 @@ class EntryController {
         }
         def badgeList = []
 
+        if(!activity.user.badges.contains('1_activity.png'))
         badgeList.add '1_activity.png'
 
-        if(activity.user.morningCount >= 10)
+        if(activity.user.morningCount >= 10 && !activity.user.badges.contains('morning.png'))
             badgeList.add 'morning.png'
 
-        if(activity.user.eveningCount >= 10)
+        if(activity.user.eveningCount >= 10 && !activity.user.badges.contains('night.png'))
             badgeList.add 'night.png'
 
-        if(activity.user.groupCount >= 5)
+        if(activity.user.groupCount >= 5 && !activity.user.badges.contains('group.png'))
             badgeList.add 'group.png'
 
-        if(activity.user.petCount >= 5)
+        if(activity.user.petCount >= 5 && !activity.user.badges.contains('pet.png'))
             badgeList.add 'pet.png'
 
-        if(activity.user.waterCount >= 5)
+        if(activity.user.waterCount >= 5 && !activity.user.badges.contains('water.png'))
             badgeList.add 'water.png'
 
 //        if(activity.user.morningCount >= 10)
 //            badgeList.add 'active.png'
 
-        if(activity.user.walkCount >= 10)
+        if(activity.user.walkCount >= 10 && !activity.user.badges.contains('walk_10.png'))
             badgeList.add 'walk_10.png'
 
-        if(activity.user.walkCount >= 50)
+        if(activity.user.walkCount >= 50 && !activity.user.badges.contains('walk_50.png'))
             badgeList.add 'walk_50.png'
 
-        if(activity.user.walkCount >= 100)
+        if(activity.user.walkCount >= 100 && !activity.user.badges.contains('walk_100.png'))
             badgeList.add 'walk_100.png'
 
 
-        if(activity.user.runCount >= 10)
+        if(activity.user.runCount >= 10 && !activity.user.badges.contains('run_10.png'))
             badgeList.add 'run_10.png'
 
-        if(activity.user.runCount >= 50)
+        if(activity.user.runCount >= 50 && !activity.user.badges.contains('run_50.png'))
             badgeList.add 'run_50.png'
 
-        if(activity.user.runCount >= 100)
+        if(activity.user.runCount >= 100 && !activity.user.badges.contains('run_100.png'))
             badgeList.add 'run_100.png'
 
 
-        if(activity.user.cyclingCount >= 10)
+        if(activity.user.cyclingCount >= 10 && !activity.user.badges.contains('bike_10.png'))
             badgeList.add 'bike_10.png'
 
-        if(activity.user.cyclingCount >= 50)
+        if(activity.user.cyclingCount >= 50 && !activity.user.badges.contains('bike_50.png'))
             badgeList.add 'bike_50.png'
 
-        if(activity.user.cyclingCount >= 100)
+        if(activity.user.cyclingCount >= 100 && !activity.user.badges.contains('bike_100.png'))
             badgeList.add 'bike_100.png'
 
 
-        if(activity.user.otherCount >= 10)
+        if(activity.user.otherCount >= 10 && !activity.user.badges.contains('other_10.png'))
             badgeList.add 'other_10.png'
 
-        if(activity.user.otherCount >= 50)
+        if(activity.user.otherCount >= 50 && !activity.user.badges.contains('other_50.png'))
             badgeList.add 'other_50.png'
 
-        if(activity.user.otherCount >= 100)
+        if(activity.user.otherCount >= 100 && !activity.user.badges.contains('other_100.png'))
             badgeList.add 'other_100.png'
 
-        if(activity.user.totalNumberOfActivities >= 100)
+        if(activity.user.totalNumberOfActivities >= 100 && !activity.user.badges.contains('100_activities.png'))
             badgeList.add '100_activities.png'
 
 
@@ -158,7 +159,7 @@ class EntryController {
         def badgeSave = ""
         badgeList.each {badge -> badgeSave+= "${badge} " }
 
-        activity.user.badges = badgeSave
+        activity.user.badges += badgeSave
 
         if (activity.save(flush:true)) {
             session.user = activity.user

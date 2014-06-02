@@ -1,5 +1,6 @@
 package heritagetrail
 
+
 class User {
 	String firstName
 	String lastName
@@ -26,7 +27,9 @@ class User {
 	String securityAnswer
 	String question
     String badges = ""
-	static hasMany = [entries:Entry]
+
+
+    static hasMany = [entries:Entry]
 	
 	static constraints = {
 

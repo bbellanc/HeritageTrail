@@ -149,11 +149,10 @@
 
     <div class="boxy">
         <ul class="recent">
-            <li>5/15/2014 You ran 5 miles.</li>
-            <li>5/13/2014 You walked 2 miles.</li>
-            <li>5/12/2014 You cycled 12 miles.</li>
-            <li>5/10/2014 You exercised 5 miles.</li>
-            <li>5/7/2014 You ran 6 miles.</li>
+
+            <g:each in="${activities}">
+            <li>${it.activityDate} You ${it.activity} ${it.distanceTraveled} miles.</li>
+        </g:each>
         </ul>
     </div>
 
@@ -254,8 +253,8 @@
 
 <g:if test="${session.badges != null}">
 <g:each in="${session.badges.split(' ')}" var="badge">
-    <span class="logo"><img style="margin-left: auto;
-    margin-right: auto" src="${resource(dir: 'images/medals', file: badge)}"/></span>
+    <img style="margin-left: auto;
+    margin-right: auto" src="${resource(dir: 'images/medals', file: badge)}"/>
 </g:each>
 
 </div>

@@ -7,7 +7,7 @@ class Entry {
     boolean groupActivity
     boolean pet
     Integer distanceTraveled
-    Date activityDate
+    String activityDate
 
     static belongsTo = [user:User]
 

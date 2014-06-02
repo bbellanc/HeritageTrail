@@ -123,7 +123,7 @@ fi
 if [ -z "$STARTER_CONF" ]; then
     STARTER_CONF="$GRAILS_HOME/conf/groovy-starter.conf"
 fi
-STARTER_CLASSPATH="wrapper/grails-wrapper-runtime-2.3.5.jar:wrapper:."
+STARTER_CLASSPATH="grailsWrapper/grails-wrapper-runtime-2.3.5.jar:grailsWrapper:."
 
 # Allow access to Cocoa classes on OS X
 if $darwin; then
@@ -199,7 +199,7 @@ if [ ! -d "$GRAILS_AGENT_CACHE_DIR" ]; then
 fi
 
 # Process JVM args
-AGENT_STRING="-javaagent:wrapper/springloaded-core-1.1.4.jar -noverify -Dspringloaded.synchronize=true -Djdk.reflect.allowGetCallerClass=true -Dspringloaded=$SPRINGLOADED_PARAMS"
+AGENT_STRING="-javaagent:grailsWrapper/springloaded-core-1.1.4.jar -noverify -Dspringloaded.synchronize=true -Djdk.reflect.allowGetCallerClass=true -Dspringloaded=$SPRINGLOADED_PARAMS"
 CMD_LINE_ARGS=""
 DISABLE_RELOADING=true
 

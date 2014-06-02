@@ -20,26 +20,41 @@ hibernate {
 //environments {
 //    development {
 //        dataSource {
-//            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-//            url = "jdbc:mysql://127.9.221.2:3306/"
-//            username = "admin7BGnf5V"
-//            password = "jZKqMx3DGk7v"
+//            username = "neue"
+//            password = "password"
+//            pooled = true
+//            dbCreate = "create-drop"
+//            driverClassName = "com.mysql.jdbc.Driver"
+//            url = "jdbc:mysql://aag984g2u10k1v.cjnty1aqdt2l.us-west-2.rds.amazonaws.com:3306/ebdb?user=neue&password=password"
+//            dialect = org.hibernate.dialect.MySQL5InnoDBDialect
 //        }
 //    }
 //    test {
 //        dataSource {
 //            dbCreate = "update"
-//            url = "jdbc:mysql://localhost/sec_treasurer_prod?useUnicode=yes&characterEncoding=UTF-8"
-//            username = "admin7BGnf5V"
-//            password = "jZKqMx3DGk7v"
+//            url = "jdbc:mysql://aag984g2u10k1v.cjnty1aqdt2l.us-west-2.rds.amazonaws.com:3306"
+//            username = "neue"
+//            password = "password"
 //        }
 //    }
 //    production {
 //        dataSource {
+//            username = "neue"
+//            password = "password"
+//            pooled = true
 //            dbCreate = "update"
-//            url = "jdbc:mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/"
-//            username = "admin7BGnf5V"
-//            password = "jZKqMx3DGk7v"
+//            driverClassName = "com.mysql.jdbc.Driver"
+//            url = "jdbc:mysql://aag984g2u10k1v.cjnty1aqdt2l.us-west-2.rds.amazonaws.com:3306/ebdb?user=neue&password=password"
+//            dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+//            properties {
+//                validationQuery = "SELECT 1"
+//                testOnBorrow = true
+//                testOnReturn = true
+//                testWhileIdle = true
+//                timeBetweenEvictionRunsMillis = 1800000
+//                numTestsPerEvictionRun = 3
+//                minEvictableIdleTimeMillis = 1800000
+//            }
 //        }
 //    }
 //}

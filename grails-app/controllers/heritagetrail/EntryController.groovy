@@ -1,5 +1,7 @@
 package heritagetrail
 
+import org.springframework.web.servlet.ModelAndView
+
 
 class EntryController {
 
@@ -14,7 +16,10 @@ class EntryController {
 
     def about() { render(view:'about')}
 
-    def index() {}
+    def index() {
+
+
+    }
 
     def addActivity() {
 
@@ -31,7 +36,7 @@ class EntryController {
 
         def activity = new Entry(params)
 
-        activity.activityDate = new Date();
+        activity.activityDate = new Date().format('MM/dd/yy');
 
         activity.user = User.findById(session.user.id)
 
@@ -161,7 +166,6 @@ class EntryController {
 
         if ((activity.user.badges+badgeSave).size() > activity.user.badges.size()) {
             session.badges = badgeSave
-            println "I WORKS!!!"
         }
         else
             session.badges = null
@@ -170,7 +174,10 @@ class EntryController {
 
         if (activity.save(flush:true)) {
             session.user = activity.user
-            redirect(controller: 'entry', action:'index')
+            def activities = Entry.findAllByUser(session.user);
+            println activities
+            return new ModelAndView("/entry/index", [activities: activities])
+
         } else
             flash.message = "error(s) creating user"
             render(view: 'index', model: [activity: activity])

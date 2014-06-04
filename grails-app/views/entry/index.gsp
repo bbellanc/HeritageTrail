@@ -151,7 +151,7 @@
         <ul class="recent">
 
             <g:each in="${activities}">
-            <li>${it.activityDate} You ${it.activity} ${it.distanceTraveled} miles.</li>
+            <li>${it.activityDate} You ${it.activity} ${it.distanceTraveled} mile(s).</li>
         </g:each>
         </ul>
     </div>

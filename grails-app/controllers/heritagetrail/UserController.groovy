@@ -1,7 +1,5 @@
 package heritagetrail
 
-import org.springframework.web.servlet.ModelAndView
-
 
 class UserController {
 
@@ -24,9 +22,7 @@ class UserController {
 				redirect(controller:"admin", view:"index")
 				}
 			else{
-                def activities = Entry.findAllByUser(session.user);
-                return new ModelAndView("/entry/index", [activities: activities])
-//				redirect(controller:"entry", view:"show")
+				redirect(controller:"entry", view:"show")
 //				redirect(controller:"entry", view:"show",model:[user:user])
 			}
 		}else{

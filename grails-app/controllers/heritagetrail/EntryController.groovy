@@ -17,8 +17,14 @@ class EntryController {
     def about() { render(view:'about')}
 
     def index() {
-
-
+        def activities = Entry.findAllByUser(session.user, [max:5, sort:"id", order:"desc"]);
+        activities.each {
+            if(it.activity == "walking") it.activity = "walked";
+            else if(it.activity == "running") it.activity = "ran";
+            else if(it.activity == "cycling") it.activity = "cycled";
+            else if(it.activity == "other") it.activity = "were active for";
+        }
+        return new ModelAndView("/entry/index", [activities: activities])
     }
 
     def addActivity() {
@@ -174,10 +180,7 @@ class EntryController {
 
         if (activity.save(flush:true)) {
             session.user = activity.user
-            def activities = Entry.findAllByUser(session.user);
-            println activities
-            return new ModelAndView("/entry/index", [activities: activities])
-
+            redirect(controller: 'entry', action:'index')
         } else
             flash.message = "error(s) creating user"
             render(view: 'index', model: [activity: activity])

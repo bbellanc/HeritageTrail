@@ -59,7 +59,7 @@ p{ line-height:20px;}
 .button.blue:active {margin-top: 19px;}
 
 /** Login Fields **/
-#login {padding: 13px 0 0 0; border-top: 1px solid #e0e0e0;}
+#userLogin {padding: 13px 0 0 0; border-top: 1px solid #e0e0e0;}
 
 .login {
 	font-size: 14px;
@@ -79,7 +79,7 @@ p{ line-height:20px;}
 
 .password {background: url(../images/password.png) no-repeat;}
 .password.error {background: url(../images/password_error.png) no-repeat; border:1px solid #f19d9d; background-color: #ffe0e0; box-shadow: inset 0px 0px 0px #fff ; color: #d95e5e;}
-
+#create {width:289px}
 /** Register Fields **/
 .register {
 	font-size: 14px;
@@ -87,7 +87,7 @@ p{ line-height:20px;}
 	font-family: "Droid Sans";
 	padding: 11px 15px 10px 15px;
 	background-color: #fdfdfd;
-	width: 80%;
+	width: 90%;
 	display: block;
 	border:1px solid #d8d8d8;
 	margin: 13px auto -3px auto;
@@ -194,6 +194,6 @@ div#logo {
 #bottom_text #link:hover {cursor: pointer; color: #878787; -webkit-transition:all 0.2s linear; -moz-transition:all 0.2s linear; -o-transition:all 0.3s linear; -transition:all 0.2s linear}
 #blue {color:#2b83b6 !important;}
 #blue:hover {color: #878787 !important;}
-
+#ages {width:300px}
 
 

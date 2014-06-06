@@ -5,8 +5,8 @@ import org.springframework.web.servlet.ModelAndView
 class AdminController {
 
 	def index = {
-		def allEvents = Event.findAll()
-		return new ModelAndView("/admin/admin", [ allEvents : allEvents ])
+		def emailList = this.getAllEmailAddresses()
+		return new ModelAndView("/admin/admin", [ emailList : emailList ])
 //		render(view: "admin")
 	}
 
@@ -40,5 +40,14 @@ class AdminController {
 	def createEvent(){
 		
 	}
+	def getAllEmailAddresses(){
+		def userArray = User.findAll()
+		println(userArray*.email)
+		def emailList = (userArray*.email).join(',')
+		println(emailList)
+		return emailList
+		
+	}
+
 	
 }

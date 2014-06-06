@@ -38,11 +38,13 @@ class User {
 		lastName(nullable:false, blank:false)
 		login(nullable:false, blank:false, unique:true)
 		email(nullable:false, blank:false, unique:true, email:true)
-		password(nullable:false, blank:false, password:true, validator: {password, obj ->
+		password(nullable:false, blank:false, password:true)
+		password2(nullable:false, blank:false, password:true, validator: {password, obj ->
          def password2 = obj.properties['password2']
          if(password2 == null) return true // skip matching password validation (only important when setting/resetting pass)
-         password2 == password ? true : ['invalid.matchingpasswords']
+         password2 == password ? true : ['heritagetrail.User.invalid.validator']
      })
+
 		age(nullable:false, blank:false, size: 1..100)
 		role(inList:["admin", "user"])
 		securityAnswer(nullable:false,blank:false)

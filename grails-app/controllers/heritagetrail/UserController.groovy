@@ -56,7 +56,6 @@ class UserController {
 					redirect(action:'login')
 				}
 				else {
-					flash.message = "error(s) creating user"
 					render(view:'create',model:[user:user])
 				}
 			}

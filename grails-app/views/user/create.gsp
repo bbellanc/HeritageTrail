@@ -41,92 +41,142 @@
 
             <g:form controller="user" action="create">
                 <dl>
+                   
+                   
+                   
                     <dd>
-                        <input type="text" name="firstName"
-                               onblur="if (this.value == '')this.value = 'First Name';"
-                               onfocus="if (this.value == 'First Name')this.value = '';"
-                               value="First Name" class="register"/>
-                        <g:hasErrors bean="${user}"><br/>
-                            <li><g:message code='heritagetrail.user.firstName.blank'/></li>
-                        </g:hasErrors>
+                    	<div class="fieldcontain ${hasErrors(bean: user, field: 'firstName', 'error')} ">
+                        	<g:textField name="firstName" value="${user?.firstName}" 
+                        				 class="register" placeholder="First Name"/>
+                        	<g:hasErrors bean="${user}" field="firstName">
+							<div class="field-error"><br/>
+								<li><g:renderErrors bean="${user}" as="list" field="firstName"/></li>
+							</div>
+							</g:hasErrors>
+						</div>
+                    </dd>
+                    
+                    
+                    
+                    
 
-                    </dd>
-                    <dd>
-                        <input type="text" name="lastName"
-                               onblur="if (this.value == '')this.value = 'Last Name';"
-                               onfocus="if (this.value == 'Last Name')this.value = '';"
-                               value="Last Name" class="register"/>
-                        <g:hasErrors bean="${user}"><br/>
-                            <li><g:message code='heritagetrail.user.lastName.blank'/></li>
-                        </g:hasErrors>
-                    </dd>
-                    <dd>
-                        <input type="text" name="login"
-                               onblur="if (this.value == '')this.value = 'Username';"
-                               onfocus="if (this.value == 'Username')this.value = '';"
-                               value="Username" class="register"/>
-                        <g:hasErrors bean="${user}" class="errors"><br/>
-                            <li><g:message code='heritagetrail.user.login.blank'/></li>
-                        </g:hasErrors>
-                    </dd>
-                    <dd>
-
-                        <input name="email" type="text"
-                               onblur="if (this.value == '')this.value = 'Email';"
-                               onfocus="if (this.value == 'Email')this.value = '';" value="Email"
-                               class="register"/>
-                        <g:hasErrors bean="${user}"><br/>
-                            <li><g:message code='heritagetrail.user.email.blank'/></li>
-                        </g:hasErrors>
+                   <dd>
+                    	<div class="fieldcontain ${hasErrors(bean: user, field: 'lastName', 'error')} ">
+                        	<g:textField name="lastName" value="${user?.lastName}" 
+                        				 class="register" placeholder="Last Name"/>
+							<g:hasErrors bean="${user}" field="lastName">
+							<div class="field-error"><br/>
+								<li><g:renderErrors bean="${user}" as="list" field="lastName"/></li>
+							</div>
+							</g:hasErrors>
+						</div>
                     </dd>
 
+                    
+                    
+                    
+                    
                     <dd>
+                    	<div class="fieldcontain ${hasErrors(bean: user, field: 'login', 'error')} ">
+                        	<g:textField name="login" value="${user?.login}" class="register" placeholder="Username"/>
+							<g:hasErrors bean="${user}" field="login">
+							<div class="field-error"><br/>
+								<li><g:renderErrors bean="${user}" as="list" field="login"/></li>
+							</div>
+							</g:hasErrors>
+						</div>
+                    </dd>
+                    
+                    
+                    
 
-                        <input type='text' name='password' value='Password'
-                               onfocus="if (this.value == '' || this.value == 'Password') {
-                                   this.value = '';
-                                   this.type = 'password'
-                               }" onblur="if (this.value == '') {
-                            this.type = 'text';
-                            this.value = this.defaultValue
-                        }" class="register"/>
-
-                        <input type='text' name='password2' value='Confirm Password'
-                               onfocus="if (this.value == '' || this.value == 'Confirm Password') {
-                                   this.value = '';
-                                   this.type = 'password'
-                               }" onblur="if (this.value == '') {
-                            this.type = 'text';
-                            this.value = this.defaultValue
-                        }" class="register"/>
-
-
-                        <input name="age" type="text"
-                               onblur="if (this.value == '')this.value = 'Age';"
-                               onfocus="if (this.value == 'Age')this.value = '';" value="Age"
-                               class="register"/>
-                        <g:hasErrors bean="${user}"><br/>
-                            <li><g:message code='heritagetrail.user.age.blank'/></li>
-                        </g:hasErrors>
+                    
+                    
+                    
+                    
+                    <dd>
+                    	<div class="fieldcontain ${hasErrors(bean: user, field: 'email', 'error')} ">
+                        	<g:textField name="email" value="${user?.email}" class="register" placeholder="Email Address"/>
+							<g:hasErrors bean="${user}" field="email">
+							<div class="field-error"><br/>
+								<li><g:renderErrors bean="${user}" as="list" field="email"/></li>
+							</div>
+							</g:hasErrors>
+						</div>
                     </dd>
 
-                    <dd><br/>
-                        <label for="question">
-                            <g:message code="user.securityQuestion.label" default="Security Question"/>
-                        </label>
+
+
+
+                                       
+
+                    <dd>
+                    	<div class="fieldcontain ${hasErrors(bean: user, field: 'password', 'error')} ">
+                        	<g:passwordField name="password" value="${user?.password}" class="register" placeholder="Password"/>
+							<g:hasErrors bean="${user}" field="password">
+							<div class="field-error"><br/>
+								<li><g:renderErrors bean="${user}" as="list" field="password"/></li>
+							</div>
+							</g:hasErrors>
+						</div>
+                    </dd>
+
+
+
+
+
+                    <dd>
+                    	<div class="fieldcontain ${hasErrors(bean: user, field: 'password2', 'error')} ">
+                        	<g:passwordField name="password2" value="${user?.password2}" class="register" placeholder="Confirm Password"/>
+							<g:hasErrors bean="${user}" field="password2">
+							<div class="field-error"><br/>
+								<li><g:renderErrors bean="${user}" as="list" field="password2"/></li>
+							</div>
+							</g:hasErrors>
+						</div>
+					</dd>
+					
+					
+					
+					<dd>
+                    	<div class="fieldcontain ${hasErrors(bean: user, field: 'age', 'error')} ">
+                        	<g:textField name="age" value="${user?.age}" 
+                        				 class="register" placeholder="Age" />
+							<g:hasErrors bean="${user}" field="age">
+							<div class="field-error"><br/>
+								<li><g:renderErrors bean="${user}" as="list" field="age"/></li>
+							</div>
+							</g:hasErrors>
+						</div>
+					</dd>
+
+
+
+                    <dd>
+                    <div class="fieldcontain ${hasErrors(bean: user, field: 'question', 'error')} ">
                         <g:select class="register" name="question" from="${user.securityQuestion.sort()}"
-                                  noSelection="${['': "Select One"]}" style="width:320px"/>
+                                  noSelection="${['': "Security Question"]}" style="width:320px"/>
+                        <g:hasErrors bean="${user}" field="question">
                         <div class="field-error"><br/>
-                            <g:renderErrors bean="${user}" as="list" field="question"/>
+                            <li><g:renderErrors bean="${user}" as="list" field="question"/></li>
                         </div>
-                        <input name="securityAnswer" type="text"
-                               onblur="if (this.value == '')this.value = 'Answer';"
-                               onfocus="if (this.value == 'Answer')this.value = '';" value="Answer"
-                               class="register"></input>
-                        <g:hasErrors bean="${user}"><br/>
-                            <li><g:message code='heritagetrail.user.securityquestion.blank'/></li>
                         </g:hasErrors>
-                    </dd>
+                      </dd>
+                       
+                       
+                       
+                       
+					<dd>
+                    	<div class="fieldcontain ${hasErrors(bean: user, field: 'securityAnswer', 'error')} ">
+                        	<g:textField name="securityAnswer" value="${user?.securityAnswer}" class="register" placeholder="Security Answer"/>
+							<g:hasErrors bean="${user}" field="securityAnswer">
+							<div class="field-error"><br/>
+								<li><g:renderErrors bean="${user}" as="list" field="securityAnswer"/></li>
+							</div>
+							</g:hasErrors>
+						</div>
+					</dd>
+
 
                 </dl>
 

@@ -41,7 +41,7 @@
 	<!-- Login Fields -->
 
 	<g:form action="authenticate" method="post">
-	<div id="login">Sign in using your registered account:<br/>
+	<div id="userLogin">Sign in using your registered account:<br/>
 	<input type="text" name="login"  onblur="if(this.value=='')this.value='Username';" onfocus="if(this.value=='Username')this.value='';" value="Username" class="login user"/>
     <input type='text' name='password' value='Password'  onfocus="if(this.value=='' || this.value == 'Password') {this.value='';this.type='password'}"  onblur="if(this.value == '') {this.type='text';this.value=this.defaultValue}" class="login password"/>
 	</div>

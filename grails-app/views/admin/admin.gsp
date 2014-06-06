@@ -54,17 +54,19 @@
             <br/>
 
             <div class="boxy">
-
+				
                 <g:form controller="admin" method="post">
                     <h2>User Search</h2><br/>
                     Search Users by Username, First Name, Last name, or Email:<br/>
-
-                    <g:textField class="register" name='value'/><br/>
-
+					<div style="width:300px">
+                    <g:textField class="register" name='value' placeholder="Search"/><br/>
+					
                     <g:select class="register" name="ages" from="${Admin.ageBracket.sort()}"
-                              noSelection="${['': "Select One"]}"/><br/><br/>
+                              noSelection="${['': "Select Age Range"]}" /><br/><br/>
                     <g:actionSubmit value="Find User" action="getProfile"/><br/>
+                    </div>
                 </g:form>
+                
                 <br/>
 
                 <g:if test="${user != null}">
@@ -105,5 +107,6 @@
 
             </div>
         </div>
+        <a id="emailUsers" href="mailto:${emailList}">Email All Users</a>
 </body>
 </html>

@@ -26,6 +26,11 @@
                 <span>Profile</span>
             </g:link>
         </li>
+        <li>
+            <g:link controller="user" action="settings">
+                <span>Settings</span>
+            </g:link>
+        </li>
     </ul>
 </nav>
 
@@ -86,12 +91,10 @@
 </div>
 
 <!-- Text Under Box -->
-    <br/>
-    <br/>
+</div>
 
     <div id="bottom_text">
         Remember your login? <a id="blue" href="login.html">Sign In</a><br/>
-    </div>
     </div>
 </body>
 </html>

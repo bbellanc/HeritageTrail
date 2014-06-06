@@ -6,6 +6,8 @@
     <title>Register</title>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'
           rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
+
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'register.css')}" type="text/css">
 
@@ -23,6 +25,11 @@
         <li>
             <g:link controller="entry" action="index">
                 <span>Profile</span>
+            </g:link>
+        </li>
+        <li>
+            <g:link controller="user" action="settings">
+                <span>Settings</span>
             </g:link>
         </li>
     </ul>
@@ -186,14 +193,13 @@
 
         </div>
     </div>
+</div>
 
     <!-- Text Under Box -->
-    <br />
-    <br />
+
     <div id="bottom_text">
         Already have an account? <a id="blue" href="login.html">Sign In</a><br/>
     </div>
-</div>
 </body>
 </html>
 <%--

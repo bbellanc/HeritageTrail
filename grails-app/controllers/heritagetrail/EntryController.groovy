@@ -2,12 +2,13 @@ package heritagetrail
 
 import org.springframework.web.servlet.ModelAndView
 
-
 class EntryController {
 
     def beforeInterceptor = [action: this.&auth, except: ['about']]
 
     def auth() {
+        if(session.user != null && session.user.role == 'admin')
+            redirect(controller: "admin", action: "index")
         if (!session.user) {
             redirect(controller: "user", action: "login")
             return false
@@ -17,6 +18,52 @@ class EntryController {
     def about() { render(view:'about')}
 
     def index() {
+
+        ArrayList badgeList = []
+
+
+        badgeList << [session.user.morningCount,10,'morning.png','morning activity points']
+
+        badgeList << [session.user.eveningCount,10,'night.png', 'evening activity points']
+
+        badgeList << [session.user.groupCount,5,'group.png', 'group activity points']
+
+        badgeList << [session.user.petCount,5,'pet.png', 'pet activity points']
+
+        badgeList << [session.user.waterCount,5,'water.png','water activity points']
+
+//        activity.user.morningCount , 10)
+//            badgeList.add 'active.png'
+
+        badgeList << [session.user.walkCount , 10,'walk_10.png', 'walking points']
+
+        badgeList << [session.user.walkCount , 50,'walk_50.png', 'walking points']
+
+        badgeList << [session.user.walkCount , 100, 'walk_100.png', 'walking points']
+
+        badgeList << [session.user.runCount , 10, 'run_10.png', 'running points']
+
+        badgeList << [session.user.runCount , 50, 'run_50.png', 'running points']
+
+        badgeList << [session.user.runCount , 100, 'run_100.png', 'running points']
+
+        badgeList << [session.user.cyclingCount , 10, 'bike_10.png', 'cycling points']
+
+        badgeList << [session.user.cyclingCount , 50, 'bike_50.png', 'cycling points']
+
+        badgeList << [session.user.cyclingCount , 100,  'bike_100.png', 'cycling points']
+
+        badgeList << [session.user.otherCount , 10, 'other_10.png', 'other points']
+
+        badgeList << [session.user.otherCount , 50, 'other_50.png', 'other points']
+
+        badgeList << [session.user.otherCount,100,'other_100.png', 'other points']
+
+        badgeList << [session.user.totalNumberOfActivities,100,'100_activities.png', 'activities logged']
+
+        badgeList << [0,0,'active.png', '"days in a row" points']
+
+
         def activities = Entry.findAllByUser(session.user, [max:5, sort:"id", order:"desc"]);
         activities.each {
             if(it.activity == "walking") it.activity = "walked";
@@ -24,7 +71,7 @@ class EntryController {
             else if(it.activity == "cycling") it.activity = "cycled";
             else if(it.activity == "other") it.activity = "were active for";
         }
-        return new ModelAndView("/entry/index", [activities: activities])
+        return new ModelAndView("/entry/index", [activities: activities, allBadges: badgeList ])
     }
 
     def addActivity() {

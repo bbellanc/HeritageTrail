@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Trek the Trail Fitness Tracker</title>
 
-
+    <tooltip:resources/>
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'toggle-switch.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
@@ -181,66 +181,23 @@
             <section>
             </section>
 
+
             <section>
 
-                <div class="onesquare"><img
-                        src="${resource(dir: 'images/medals', file: '1_activity.png')}"/></div>
+                <div class="onesquare">
+                    <tooltip:tip value="Log your first activity to earn this badge!">
+                    <img src="${resource(dir: 'images/medals', file: '1_activity.png')}"/></div>
+                    </tooltip:tip>
 
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'morning.png')}"/>
-                </div>
+                <g:each in="${allBadges}">
+                <div class="onesquare">
+                    <tooltip:tip value="You have earned ${it[0]}/${it[1]} ${it[3]} needed to earn this badge!">
+                     <img src="${resource(dir: 'images/medals', file: it[2])}"/></div>
+                    </tooltip:tip>
+                </g:each>
 
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'night.png')}"/>
-                </div>
 
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'group.png')}"/>
-                </div>
 
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'pet.png')}"/></div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'water.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'walk_10.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'walk_50.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'walk_100.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'run_10.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'run_50.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'run_100.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'bike_10.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'bike_50.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'bike_100.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'other_10.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'other_50.png')}"/>
-                </div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'other_100.png')}"/>
-                </div>
-
-                <div class="onesquare"><img
-                        src="${resource(dir: 'images/medals', file: '100_activities.png')}"/></div>
-
-                <div class="onesquare"><img src="${resource(dir: 'images/medals', file: 'active.png')}"/>
-                </div>
             </section>
         </article>
 

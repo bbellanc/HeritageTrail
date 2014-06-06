@@ -26,19 +26,21 @@
             </g:link>
         </li>
         <li>
-           <g:if test="${session.user != null}">
-            <g:if test="${session.user.role == 'admin'}">
-                <g:link controller="admin" action="index">
-                    <span>Admin Panel</span>
-                </g:link>
-            </g:if>
-
+                <g:if test="${session.user !=null && session.user.role == 'admin'}">
+                    <g:link controller="admin" action="index">
+                        <span>Admin Panel</span>
+                    </g:link>
+                </g:if>
             <g:else>
-                <g:link controller="entry" action="index">
-                    <span>Profile</span>
-                </g:link>
-            </g:else>
-            </g:if>
+                    <g:link controller="entry" action="index">
+                        <span>Profile</span>
+                    </g:link>
+                </g:else>
+        </li>
+        <li>
+            <g:link controller="user" action="settings">
+                <span>Settings</span>
+            </g:link>
         </li>
     </ul>
 </nav>

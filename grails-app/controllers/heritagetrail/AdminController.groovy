@@ -4,6 +4,13 @@ import org.springframework.web.servlet.ModelAndView
 
 class AdminController {
 
+    def beforeInterceptor = {
+        if(session.user != null && session.user.role != 'admin')
+            redirect(controller: "entry", action: "index")
+        if(session.user == null)
+            redirect(controller: "user", action: "login")
+    }
+
 	def index = {
 		def emailList = this.getAllEmailAddresses()
 		return new ModelAndView("/admin/admin", [ emailList : emailList ])
@@ -40,14 +47,5 @@ class AdminController {
 	def createEvent(){
 		
 	}
-	def getAllEmailAddresses(){
-		def userArray = User.findAll()
-		println(userArray*.email)
-		def emailList = (userArray*.email).join(',')
-		println(emailList)
-		return emailList
-		
-	}
-
 	
 }

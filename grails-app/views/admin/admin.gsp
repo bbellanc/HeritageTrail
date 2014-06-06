@@ -50,7 +50,7 @@
     <section id="left">
 
         <div class="gcontent">
-            <div class="head"><h1>Admin Control</h1></div>
+            <div class="head"><h1>Admin Panel</h1></div>
             <br/>
 
             <div class="boxy">

@@ -191,9 +191,18 @@
 
                 <g:each in="${allBadges}">
                 <div class="onesquare">
-                    <tooltip:tip value="You have earned ${it[0]}/${it[1]} ${it[3]} needed to earn this badge!">
-                     <img src="${resource(dir: 'images/medals', file: it[2])}"/></div>
-                    </tooltip:tip>
+                    <g:if test="${it[0] >= it[1]}">
+                        <tooltip:tip value="You have earned the ${it[1]}/${it[1]} ${it[3]} needed to earn this badge!">
+                            <img src="${resource(dir: 'images/medals', file: it[2])}"/></div>
+                        </tooltip:tip>
+                    </g:if>
+                    <g:else>
+                        <tooltip:tip value="You have earned the ${it[0]}/${it[1]} ${it[3]} needed to earn this badge!">
+                            <img src="${resource(dir: 'images/medals', file: it[2])}"/></div>
+                        </tooltip:tip>
+                    </g:else>
+
+
                 </g:each>
 
 

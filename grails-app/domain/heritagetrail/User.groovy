@@ -40,8 +40,7 @@ class User {
 		email(nullable:false, blank:false, unique:true, email:true)
 		password(nullable:false, blank:false, password:true)
 		password2(nullable:false, blank:false, password:true, validator: {password, obj ->
-         def password2 = obj.properties['password2']
-         if(password2 == null) return true // skip matching password validation (only important when setting/resetting pass)
+         def password2 = obj.properties['password']
          password2 == password ? true : ['heritagetrail.User.invalid.validator']
      })
 

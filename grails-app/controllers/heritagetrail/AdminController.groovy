@@ -33,7 +33,8 @@ class AdminController {
 		userResultsByUsername.addAll(userResultsByLastName)
 		userResultsByUsername.addAll(userResultsByFirstName)
 		def user = userResultsByUsername.unique()
-		render(view:"admin", model:[user:user])
+		def emailList = this.getAllEmailAddresses()
+		render(view:"admin", model:[user:user, emailList : emailList])
 		
 	}
 	
@@ -42,9 +43,7 @@ class AdminController {
 	}
 	def getAllEmailAddresses(){
 		def userArray = User.findAll()
-		println(userArray*.email)
 		def emailList = (userArray*.email).join(',')
-		println(emailList)
 		return emailList
 		
 	}

@@ -42,16 +42,18 @@
     </ul>
 </nav>
 
-<div id=loginControl style="position: absolute; right: 0px;">
-    <g:loginControl></g:loginControl>
-</div>
+
 
 <div id="div1" class="fluid">
     <section id="left">
 
         <div class="gcontent">
             <div class="head"><h1>Admin Control</h1></div>
-            <br/>
+          <br/>
+          <div id=loginControl style="position: absolute; right: 0px;">
+    		<g:loginControl></g:loginControl>
+		  </div>
+          
 
             <div class="boxy">
 				

@@ -11,6 +11,7 @@
     <title>Trek the Trail Fitness Tracker</title>
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'register.css')}" type="text/css">
 
     <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,10 +41,17 @@
                 <span>Home</span>
             </g:link>
         </li>
-        <li>
+        <li><g:if test ="${session.user.role=='user'}">
             <g:link controller="entry" action="index">
                 <span>Profile</span>
             </g:link>
+            </g:if>
+            
+            <g:if test ="${session.user.role=='admin'}">
+            <g:link controller="admin" action="index">
+                <span>Admin Panel</span>
+            </g:link>
+            </g:if>
         </li>
         <li>
             <g:link controller="user" action="settings">
@@ -64,28 +72,38 @@
             <div class="gcontent">
                 <div class="head"><h1>Settings</h1></div>
                 <div class="boxy">
+                
+               
+				
+				
                 <g:if test ="${flash.message}">
-					<div class="errors">${flash.message}</div>
+					<div class="errors" style="color:red">${flash.message}</div>
 				</g:if>
+				
+				
                     <ul class="settings">
                         <li><a href="#" class="email">Change Email Address</a></li>
                         	<div class="changeEmail">
-                        		<g:form><input type="text"/>
-                        			New Email<g:textField name="newEmail" />
+                        		
+                        		<g:form>
+                        			<g:textField name="email" placeholder="New Email" class="register"/><br/>
                         			<g:actionSubmit value="Change Email" action="setNewEmail"/>
                         		</g:form>
-                        	
+                        		
+                	        	<br/>
                         	</div>
       
                         <li><a href="#" class="reset">Reset Password</a></li>
                         	<div class="resetPassword">
                         		<g:form>
-                        			Password<g:passwordField type="password" name="password1"/><br/>
-                        			Confirm Password<g:passwordField type="password" name="password2"/><br/>
+                        			<g:passwordField type="password" name="password1" placeholder="Password" class="register"/><br/>
+                        			<g:passwordField type="password" name="password2" placeholder="Confirm Password" class="register"/><br/>
                         			<g:actionSubmit value="Change Password" action="setUserPassword"/><br/>
                         	
                         		</g:form>
-                        
+                        		
+
+                        <br/>
                         </div>
                         
                         

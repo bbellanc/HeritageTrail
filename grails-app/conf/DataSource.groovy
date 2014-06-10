@@ -1,12 +1,12 @@
 dataSource {
-    pooled = true
-    driverClassName = "org.h2.Driver"
-    username = "sa"
-    password = ""
-
 //    pooled = true
-//    driverClassName = "com.mysql.jdbc.Driver"
-//    dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
+//    driverClassName = "org.h2.Driver"
+//    username = "sa"
+//    password = ""
+
+    pooled = true
+    driverClassName = "com.mysql.jdbc.Driver"
+    dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -17,77 +17,77 @@ hibernate {
 
 // environment specific settings
 
-//environments {
-//    development {
-//        dataSource {
-//            username = "neue"
-//            password = "password"
-//            pooled = true
-//            dbCreate = "create-drop"
-//            driverClassName = "com.mysql.jdbc.Driver"
-//            url = "jdbc:mysql://aag984g2u10k1v.cjnty1aqdt2l.us-west-2.rds.amazonaws.com:3306/ebdb?user=neue&password=password"
-//            dialect = org.hibernate.dialect.MySQL5InnoDBDialect
-//        }
-//    }
-//    test {
-//        dataSource {
-//            dbCreate = "update"
-//            url = "jdbc:mysql://aag984g2u10k1v.cjnty1aqdt2l.us-west-2.rds.amazonaws.com:3306"
-//            username = "neue"
-//            password = "password"
-//        }
-//    }
-//    production {
-//        dataSource {
-//            username = "neue"
-//            password = "password"
-//            pooled = true
-//            dbCreate = "update"
-//            driverClassName = "com.mysql.jdbc.Driver"
-//            url = "jdbc:mysql://aag984g2u10k1v.cjnty1aqdt2l.us-west-2.rds.amazonaws.com:3306/ebdb?user=neue&password=password"
-//            dialect = org.hibernate.dialect.MySQL5InnoDBDialect
-//            properties {
-//                validationQuery = "SELECT 1"
-//                testOnBorrow = true
-//                testOnReturn = true
-//                testWhileIdle = true
-//                timeBetweenEvictionRunsMillis = 1800000
-//                numTestsPerEvictionRun = 3
-//                minEvictableIdleTimeMillis = 1800000
-//            }
-//        }
-//    }
-//}
-
 environments {
     development {
         dataSource {
-            dbCreate = "update" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            username = "neue"
+            password = "password"
+            pooled = true
+            dbCreate = "create-drop"
+            driverClassName = "com.mysql.jdbc.Driver"
+            url = "jdbc:mysql://aa1wzpr1sl1cpf2.cjnty1aqdt2l.us-west-2.rds.amazonaws.com:3306/ebdb?user=neue&password=password"
+            dialect = org.hibernate.dialect.MySQL5InnoDBDialect
         }
     }
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            url = "jdbc:mysql://aag984g2u10k1v.cjnty1aqdt2l.us-west-2.rds.amazonaws.com:3306"
+            username = "neue"
+            password = "password"
         }
     }
     production {
         dataSource {
-            dbCreate = "update"
-            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+            username = "neue"
+            password = "password"
             pooled = true
+            dbCreate = "update"
+            driverClassName = "com.mysql.jdbc.Driver"
+            url = "jdbc:mysql://aa1wzpr1sl1cpf2.cjnty1aqdt2l.us-west-2.rds.amazonaws.com:3306/ebdb?user=neue&password=password"
+            dialect = org.hibernate.dialect.MySQL5InnoDBDialect
             properties {
-               maxActive = -1
-               minEvictableIdleTimeMillis=1800000
-               timeBetweenEvictionRunsMillis=1800000
-               numTestsPerEvictionRun=3
-               testOnBorrow=true
-               testWhileIdle=true
-               testOnReturn=false
-               validationQuery="SELECT 1"
-               jdbcInterceptors="ConnectionState"
+                validationQuery = "SELECT 1"
+                testOnBorrow = true
+                testOnReturn = true
+                testWhileIdle = true
+                timeBetweenEvictionRunsMillis = 1800000
+                numTestsPerEvictionRun = 3
+                minEvictableIdleTimeMillis = 1800000
             }
         }
     }
 }
+//
+//environments {
+//    development {
+//        dataSource {
+//            dbCreate = "create" // one of 'create', 'create-drop', 'update', 'validate', ''
+//            url = "jdbc:h2:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+//        }
+//    }
+//    test {
+//        dataSource {
+//            dbCreate = "update"
+//            url = "jdbc:h2:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+//        }
+//    }
+//    production {
+//        dataSource {
+//            dbCreate = "update"
+//            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
+//            pooled = true
+//            properties {
+//               maxActive = -1
+//               minEvictableIdleTimeMillis=1800000
+//               timeBetweenEvictionRunsMillis=1800000
+//               numTestsPerEvictionRun=3
+//               testOnBorrow=true
+//               testWhileIdle=true
+//               testOnReturn=false
+//               validationQuery="SELECT 1"
+//               jdbcInterceptors="ConnectionState"
+//            }
+//        }
+//    }
+//}

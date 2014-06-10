@@ -84,9 +84,7 @@
 </div>
 
 <!-- Text Under Box -->
-    <br/>
-    <br/>
-
+</div>
     <div id="bottom_text">
         Remember your login? <a id="blue" href="login.html">Sign In</a><br/>
     </div>

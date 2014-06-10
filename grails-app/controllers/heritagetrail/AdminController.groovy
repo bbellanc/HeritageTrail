@@ -14,7 +14,6 @@ class AdminController {
 	def index = {
 		def emailList = this.getAllEmailAddresses()
 		return new ModelAndView("/admin/admin", [ emailList : emailList ])
-//		render(view: "admin")
 	}
 
 	def getProfile() {

@@ -45,7 +45,7 @@
 
         
 
-            <h1 class="blue">Set new password</h1>
+            <h1 class="blue">Set New Password</h1>
 		<g:form>
 			<g:passwordField name="password1" placeholder="New Password" class="register"/><br/>
 			<g:passwordField name="password2" placeholder="Confirm Password" class="register"/><br/>
@@ -59,12 +59,7 @@
     </div>
 </div>
 
-
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
+    </div>
     <div id="bottom_text">
         Remember your login? <a id="blue" href="login.html">Sign In</a><br/>
     </div>

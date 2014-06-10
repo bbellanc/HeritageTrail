@@ -37,7 +37,7 @@
 <!-- Box Start-->
 <div id="box_bg">
 		<g:if test ="${flash.message}">
-			<div class="errors">${flash.message}</div>
+			<div class="errors" style="color:red">${flash.message}</div>
 		</g:if>
 
 <div id="content">
@@ -47,8 +47,8 @@
 
 	<g:form action="authenticate" method="post">
 	<div id="userLogin">Sign in using your registered account:<br/>
-	<input type="text" name="login"  onblur="if(this.value=='')this.value='Username';" onfocus="if(this.value=='Username')this.value='';" value="Username" class="login user"/>
-    <input type='text' name='password' value='Password'  onfocus="if(this.value=='' || this.value == 'Password') {this.value='';this.type='password'}"  onblur="if(this.value == '') {this.type='text';this.value=this.defaultValue}" class="login password"/>
+	<g:textField name="login" placeholder="Username" class="login user"/>
+    <g:passwordField name='password' placeholder="Password" class="login password"/>
 	</div>
 	<!-- Green Button -->
 	 <input class="button green" type="submit" value="Login" />

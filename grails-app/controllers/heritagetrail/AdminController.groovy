@@ -40,12 +40,20 @@ class AdminController {
 		userResultsByUsername.addAll(userResultsByLastName)
 		userResultsByUsername.addAll(userResultsByFirstName)
 		def user = userResultsByUsername.unique()
-		render(view:"admin", model:[user:user])
+		def emailList = this.getAllEmailAddresses()
+		render(view:"admin", model:[user:user, emailList : emailList])
 		
 	}
 	
 	def createEvent(){
 		
 	}
+	def getAllEmailAddresses(){
+		def userArray = User.findAll()
+		def emailList = (userArray*.email).join(',')
+		return emailList
+		
+	}
+
 	
 }

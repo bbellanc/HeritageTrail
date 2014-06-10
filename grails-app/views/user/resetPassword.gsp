@@ -47,24 +47,18 @@
             <h1 class="blue">Password Reset</h1>
 
 			<g:if test ="${flash.message}">
-			<div class="errors">${flash.message}</div>
+			<div class="errors" style="color:red">${flash.message}</div>
 		</g:if>
    <g:if test="${user == null}">
     <g:form controller="user">
         <dl>
             <dd>
-                <input type="text" name="email"
-                       onfocus="if (this.value == 'Enter Email')this.value = '';"
-                       onblur="if (this.value == '')this.value = 'Enter Email';"
-                       value="Enter Email" class="register"/><br/>
-
+                <g:textField name="email" class="register" placeholder="Enter Email" />      
+                <br/>
             </dd>
             <dd>
-                <input type="text" name="username"
-                       onfocus="if (this.value == 'Enter Username')this.value = '';"
-                       onblur="if (this.value == '')this.value = 'Enter Username';"
-                       value="Enter Username" class="register"/>
-                <g:actionSubmit class="button blue" value="Submit" action="checkUsernameAndEmail"/>
+            	<g:textField name="username" class="register" placeholder="Enter Username" />    
+             	<g:actionSubmit class="button blue" value="Submit" action="checkUsernameAndEmail"/>
             </dd>
             <dd>
             </dd>
@@ -80,8 +74,7 @@
 
         <div><br /><h4>${user.question}</h4></div>
         <g:form>
-            <input type="text" name="securityAnswer" onfocus="if(this.value=='Answer')this.value='';"
-                         onblur="if(this.value=='')this.value='Answer';" value="Answer" class="register"/>
+        	<g:textField name="securityAnswer" class="register" placeholder="Answer" />    
             <g:hiddenField name="user" value="${user.login}" />
             <g:actionSubmit value="Submit" class="button blue" action="checkSecurityQuestion"/>
         </g:form>
@@ -91,10 +84,12 @@
 </div>
 
 <!-- Text Under Box -->
-</div>
+    <br/>
+    <br/>
 
     <div id="bottom_text">
         Remember your login? <a id="blue" href="login.html">Sign In</a><br/>
+    </div>
     </div>
 </body>
 </html>

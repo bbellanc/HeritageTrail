@@ -1,4 +1,4 @@
-<%@ page import="heritagetrail.User" %>
+heritagetrail.User.email.unique<%@ page import="heritagetrail.User" %>
 
 
 

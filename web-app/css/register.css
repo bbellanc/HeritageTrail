@@ -195,5 +195,13 @@ div#logo {
 #blue {color:#2b83b6 !important;}
 #blue:hover {color: #878787 !important;}
 #ages {width:300px}
-
-
+.changeEmail{width:300px}
+.resetPassword{width:300px}
+.field-error{
+	color:red;
+}
+.error input, .error select, .error textarea {
+	background: #fff3f3;
+	border-color: #ffaaaa;
+	color: #cc0000;
+}

@@ -26,7 +26,7 @@ class UserController {
 //				redirect(controller:"entry", view:"show",model:[user:user])
 			}
 		}else{
-			flash.message = "Sorry, ${params.login}. Please try again."
+			flash.message = PASSWORD_AND_USERNAME_MISMATCH_MESSAGE
 			redirect(action:"login")
 		}
 	}
@@ -46,11 +46,15 @@ class UserController {
 
 	def create(){
 		def user = new User(params)
+
+		
 			if(params.size() <= 3){
 				render(view:'create',model:[user:user])
 			}
 	
 			else{
+//				user.firstName = user.firstName.capitalize()
+//				user.lastName = user.lastName.capitalize()
 				if(user.save()) {
                     session.user = null
 					redirect(action:'login')
@@ -64,6 +68,7 @@ class UserController {
 	
 
 	def resetPassword= {
+		flash.message = null
         render(view: 'resetPassword')
     }
 	
@@ -80,8 +85,9 @@ class UserController {
 		}
 	
 	def checkSecurityQuestion(){
+		flash.message = null
             def user =session['tempUser']
-            if(user.securityAnswer == params.securityAnswer){
+            if(user.securityAnswer.equalsIgnoreCase(params.securityAnswer)){
             render(view:"setNewPassword",model:[user:user])}
             else {
                 flash.message = "Invalid Selection"
@@ -90,10 +96,10 @@ class UserController {
 	}
 	
 	def forgotPassword(){
-		render(view:"login")
 		flash.message = null
+		render(view:"login")
 		setPassword()
-		session['tempUser'] = null
+		//session['tempUser'] = null
 		
 		}
 	
@@ -101,7 +107,6 @@ class UserController {
 	def deleteUser(){
         if (session.user == null)
             redirect(controller: "user", view: "login")
-
         else {
             def user = session['user']
             this.logout()
@@ -114,7 +119,11 @@ class UserController {
             if (params.password1 != params.password2) {
                 flash.message = "Passwords do not match"
                 render(view: "setNewPassword")
-            } else {
+            }else if(params.password1==''||params.password2==''){
+			    flash.message = "Invalid password"
+                render(view: "setNewPassword")
+			}
+			 else {
 				if(session['user']==null)
                 	user = User.findByLogin(session['tempUser'].login)
 				else
@@ -133,7 +142,6 @@ class UserController {
 
         else {
             this.setPassword()
-            flash.message = "Password Saved"
             render(view: 'settings')
         }
 	}
@@ -144,10 +152,17 @@ class UserController {
 
         else {
             def user = User.findByLogin(session['user'].login)
-            user.email = params.newEmail
-            user.save()
-            flash.message = "Email Saved"
-            render(view: 'settings')
+            user.email = params.email
+			if(user.save())
+            	flash.message = "Email Saved"
+			else{
+				if(User.findByEmail(params.email)!= null)
+					flash.message="Email address already exists"
+				else
+					flash.message= "Invalid Email Address"
+				}			
+				
+			render(view: 'settings')
         }
     }
 	

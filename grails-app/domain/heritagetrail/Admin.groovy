@@ -7,11 +7,7 @@ class Admin {
     static constraints = {
     }
 	static {
-		ageBracket=['All',
-					'0-18',
-				    '19-50',
-				    '50+']
-		
+		ageBracket=['All','2-5','6-10','11-16','17-30','31-51','51-65','66+']
 	}
 	
 }

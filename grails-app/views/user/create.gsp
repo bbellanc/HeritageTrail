@@ -188,7 +188,7 @@
                 </dl>
 
 
-                <g:submitButton class="button blue" name="submit" value="Register"/>
+                <g:submitButton class="button green" name="submit" value="Register"/>
             </g:form>
 
         </div>

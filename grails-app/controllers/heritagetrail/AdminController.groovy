@@ -19,14 +19,26 @@ class AdminController {
 	def getProfile() {
 		def startAge;
 		def endAge;
-		if(params.ages=='0-18'){
+		if(params.ages=='0-5'){
 			startAge = 0;
-			endAge = 18;
-		}else if(params.ages == '19-50'){
-			startAge = 19
+			endAge = 5;
+		}else if(params.ages == '6-10'){
+			startAge = 6
+			endAge = 10
+		}else if(params.ages=='11-16'){
+			startAge = 11
+			endAge = 16
+		}else if(params.ages=='17-30'){
+			startAge = 17
+			endAge = 30
+		}else if(params.ages=='31-50'){
+			startAge = 31
 			endAge = 50
-		}else if(params.ages=='50+'){
+		}else if(params.ages=='51-65'){
 			startAge = 51
+			endAge = 65
+		}else if(params.ages=='66+'){
+			startAge = 65
 			endAge = 110
 		}else if(params.ages =='All'){
 			startAge = 0

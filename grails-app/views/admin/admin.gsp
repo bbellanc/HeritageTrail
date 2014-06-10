@@ -60,7 +60,7 @@
                     Search Users by Username, First Name, Last name, or Email:<br/>
 
                     <div style="width:300px">
-                        <g:select class="register" name="ages" from="${Admin.ageBracket.sort()}"
+                        <g:select class="register" name="ages" from="${Admin.ageBracket}"
                                   noSelection="${['': "Select Age Range"]}"/><br />
                         <div style=" width: 20%;
                         margin: 0 auto;">

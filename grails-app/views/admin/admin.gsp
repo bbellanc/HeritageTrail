@@ -7,9 +7,14 @@
 <html>
 <!--<![endif]-->
 <head>
+	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Heritage Trail Fitness - Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>Heritage Trail Fitness - Admin Panel</title>
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'toggle-switch.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
@@ -18,8 +23,7 @@
     <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-    <script src="respond.min.js"></script>
-
+    <g:javascript src="sorttable.js" />
 <body>
 
 <nav>
@@ -39,33 +43,31 @@
                 <span>Settings</span>
             </g:link>
         </li>
+        
+        <a class="fb2" href="https://www.facebook.com/groups/566890070098865" target="_blank"></a>
+        <div class="hello"><div id="logout"><g:loginControl id="logout"></g:loginControl></div></div>
     </ul>
+
+</div>
+
 </nav>
 
-<div id=loginControl style="position: absolute; right: 0px;">
-    <g:loginControl></g:loginControl>
-</div>
 
 <div id="div1" class="fluid">
     <section id="left">
-
+    <div style="padding-left:10px">
+		<a id="emailUsers" href="mailto:${emailList}">Email All Users</a>
+	</div>
         <div class="gcontent">
-            <div class="head"><h1>Admin Control</h1></div>
-            <br/>
-
+            <div class="head"><h1>Admin Panel</h1></div>
             <div class="boxy">
 
                 <g:form controller="admin" method="post">
                     <h2>User Search</h2><br/>
-                    Search Users by Username, First Name, Last name, or Email:<br/>
+                    Search for users by Username, First Name, Last name, or Email:<br/>
 
                     <div style="width:300px">
-                        <g:select class="register" name="ages" from="${Admin.ageBracket}"
-                                  noSelection="${['': "Select Age Range"]}"/><br />
-                        <div style=" width: 20%;
-                        margin: 0 auto;">
-                            <h4 style="position: center">--AND--</h4>
-                        </div>
+
                         <g:textField class="register" name='value' placeholder="Search"/><br/>
 
                         <g:actionSubmit value="Find User" action="getProfile"/><br/>
@@ -75,7 +77,7 @@
                 <br/>
 
                 <g:if test="${user != null}">
-                    <table id="userDataTable">
+                    <table id="userDataTable" class="sortable">
                         <tr>
                             <th><h3>First Name</h3></th>
                             <th><h3>Last Name</h3></th>
@@ -102,23 +104,22 @@
                                 </td>
                                 <td>
                                     ${it.points}
+                                   		
+		
+			&nbsp;<g:link action="removeUser" params="[login:it.login]" onclick="return confirm('Are you sure? Profile deletion cannot be undone.')">
+						Delete User
+				  </g:link>&nbsp;
                                 </td>
                             </tr>
                         </g:each>
                     </table>
                 </g:if>
                 <br/>
-
-                <div>
-                    <h2>Email All User</h2><br/>
-
-                    <div>
-                        <a id="emailUsers" href="mailto:${emailList}">Email All Users</a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 </div>
+
+
 </body>
 </html>

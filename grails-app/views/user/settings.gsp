@@ -8,6 +8,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
     <title>Trek the Trail Fitness Tracker</title>
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
@@ -17,6 +19,8 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
     <g:javascript src="respond.min.js" />
+    <g:javascript src="application.js" />
+
 </head>
 <body>
     <script	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -60,11 +64,11 @@
                 <span>Settings</span>
             </g:link>
         </li>
+        <a class="fb2" href="https://www.facebook.com/groups/566890070098865" target="_blank"></a>
+        <div class="hello"><g:loginControl></g:loginControl></div>
     </ul>
+
 </nav>
-<div id=loginControl style="position: absolute; right: 0px;">
-    <div class="hello"><g:loginControl></g:loginControl></div>
-</div>
 <br /><br />
 <div class="gridContainer clearfix">
 
@@ -82,7 +86,9 @@
                         	<div class="changeEmail">
                         		
                         		<g:form>
-                        			<g:textField name="email" placeholder="New Email" class="register"/><br/>
+                        			<g:textField name="email" class="register" value="New Email"
+			onkeydown="startDefaultVal(this.id,'New Email')"
+			onblur="placeHolder(this.id,'New Email')" /><br/>
                         			<g:actionSubmit value="Change Email" action="setNewEmail"/>
                         		</g:form>
                         		
@@ -105,7 +111,9 @@
                         
                         
                         <li>
-        					<g:link controller="user" action="deleteUser" onclick="return confirm('Are you sure you want to delete your profile?(Changes cannot be undone)')">Delete Profile</g:link>
+                        	<g:if test="${session.user.role != 'admin'}">
+        						<g:link controller="user" action="deleteUser" onclick="return confirm('Are you sure you want to delete your profile?(Changes cannot be undone)')">Delete Profile</g:link>
+        					</g:if>
         				</li>
                     </ul>
                 </div>

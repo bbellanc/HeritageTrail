@@ -7,8 +7,12 @@
 <html>
 <!--<![endif]-->
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Trek the Trail Fitness Tracker</title>
 
     <tooltip:resources/>
@@ -43,10 +47,13 @@
                 <span>Settings</span>
             </g:link>
         </li>
+        <a class="fb2" href="https://www.facebook.com/groups/566890070098865" target="_blank"></a>
+        <div class="hello"><g:loginControl></g:loginControl></div>
     </ul>
 
-    <div class="hello"><g:loginControl></g:loginControl></div>
 </nav>
+
+<div id="logo"></div>
 
 <div class="gridContainer clearfix">
 <div id="div1" class="fluid">
@@ -129,10 +136,11 @@
 
 
             <div class="slider">
-                <h4>Miles Traveled</h4>
-                <input name="distanceTraveled" type="range" step="1" min="1" max="25" value="1"
-                       onchange="rangevalue.value = value"/>
-                <output id="rangevalue">1</output>
+                <h4>Miles Traveled </h4><p id="rangevalue">1</p>
+                <input id="distanceSlider" name="distanceTraveled" type="range" step="1" min="1" max="25" value="1"
+                       onchange="rangevalue.text = value"/><br/>
+               <!-- <output id="rangevalue">1</output>-->
+               
             </div>
 
             <g:hiddenField name="login" value="${session.user.login}"/>
@@ -183,7 +191,9 @@
 
 
             <section>
-
+              <p>Medals are earned by completing certain milestones. The following medals are available to 
+              earn. To track your progress, read the tooltip on each medal!
+              <div class="squares">
                 <div class="onesquare">
                     <tooltip:tip value="Log your first activity to earn this badge!">
                     <img src="${resource(dir: 'images/medals', file: '1_activity.png')}"/></div>
@@ -192,19 +202,18 @@
                 <g:each in="${allBadges}">
                 <div class="onesquare">
                     <g:if test="${it[0] >= it[1]}">
-                        <tooltip:tip value="You have earned the ${it[1]}/${it[1]} ${it[3]} needed to earn this badge!">
+                        <tooltip:tip value="You have earned ${it[1]}/${it[1]} ${it[3]}.">
                             <img src="${resource(dir: 'images/medals', file: it[2])}"/></div>
                         </tooltip:tip>
                     </g:if>
                     <g:else>
-                        <tooltip:tip value="You have earned the ${it[0]}/${it[1]} ${it[3]} needed to earn this badge!">
+                        <tooltip:tip value="You have earned ${it[0]}/${it[1]} ${it[3]}.">
                             <img src="${resource(dir: 'images/medals', file: it[2])}"/></div>
                         </tooltip:tip>
                     </g:else>
 
 
                 </g:each>
-
 
 
             </section>
@@ -215,12 +224,12 @@
 
 <div id="popup" style="display: none;">
     <span class="button b-close"><span>X</span></span>
-<span class="logo">Congratulation! You've a new badge!</span><br/><br/>
+<span class="logo">Congratulations!</span>
+<span class="sub">You've earned a new medal!</span><br/><br/>
 
 <g:if test="${session.badges != null}">
 <g:each in="${session.badges.split(' ')}" var="badge">
-    <img style="margin-left: auto;
-    margin-right: auto" src="${resource(dir: 'images/medals', file: badge)}"/>
+    <img style="margin-left: auto; margin-right: auto;" src="${resource(dir: 'images/medals', file: badge)}"/>
 </g:each>
 
 </div>
@@ -234,7 +243,6 @@
 
     ${session.badges = null}
 </g:if>
-
 </section>
 <section class="footer">
     <p>&copy; 2014</p>
@@ -243,5 +251,14 @@
 </section>
 </div>
 </div>
+	<script>
+		$("#distanceSlider").change(function(){
+			$("#rangevalue").text($("#distanceSlider").val());
+			});
+		$("#distanceSlider").keyup(function(){
+			$("#rangevalue").text($("#distanceSlider").val());
+			});
+</script>
+
 </body>
 </html>

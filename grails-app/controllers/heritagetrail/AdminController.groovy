@@ -19,38 +19,16 @@ class AdminController {
 	def getProfile() {
 		def startAge;
 		def endAge;
-		if(params.ages=='0-5'){
-			startAge = 0;
-			endAge = 5;
-		}else if(params.ages == '6-10'){
-			startAge = 6
-			endAge = 10
-		}else if(params.ages=='11-16'){
-			startAge = 11
-			endAge = 16
-		}else if(params.ages=='17-30'){
-			startAge = 17
-			endAge = 30
-		}else if(params.ages=='31-50'){
-			startAge = 31
-			endAge = 50
-		}else if(params.ages=='51-65'){
-			startAge = 51
-			endAge = 65
-		}else if(params.ages=='66+'){
-			startAge = 65
-			endAge = 110
-		}else if(params.ages =='All'){
-			startAge = 0
-			endAge = 110
-		}
-		def userResultsByUsername = User.findAllByLoginIlikeAndAgeBetween("${params.value}%",startAge,endAge,[sort:'age'])
-		def userResultsByLastName = User.findAllByLastNameIlikeAndAgeBetween("${params.value}%",startAge,endAge,[sort:'age'])
-		def userResultsByFirstName = User.findAllByFirstNameIlikeAndAgeBetween("${params.value}%",startAge,endAge,[sort:'age'])
+		println(params.value);
+		println('aaaaaaaaaaaaaaaaaaaa');
+		def userResultsByUsername = User.findAllByLoginIlike("${params.value}%");
+		def userResultsByLastName = User.findAllByLastNameIlike("${params.value}%");
+		def userResultsByFirstName = User.findAllByFirstNameIlike("${params.value}%");
+		def admins = User.findAllByRole("admin");
 		
 		userResultsByUsername.addAll(userResultsByLastName)
 		userResultsByUsername.addAll(userResultsByFirstName)
-		def user = userResultsByUsername.unique()
+		def user = userResultsByUsername.unique()- admins
 		def emailList = this.getAllEmailAddresses()
 		render(view:"admin", model:[user:user, emailList : emailList])
 		
@@ -63,6 +41,13 @@ class AdminController {
 		def userArray = User.findAll()
 		def emailList = (userArray*.email).join(',')
 		return emailList
+		
+	}
+	
+	def removeUser(){
+		def user = User.findByLogin(params.login)
+		user.delete()
+		redirect(action:'getProfile',params: [value:''])
 		
 	}
 

@@ -44,7 +44,7 @@ class User {
          password2 == password ? true : ['heritagetrail.User.invalid.validator']
      })
 
-		age(nullable:false, blank:false, size: 1..100)
+		
 		role(inList:["admin", "user"])
 		securityAnswer(nullable:false,blank:false)
 		question(blank:false)

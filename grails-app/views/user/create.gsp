@@ -20,26 +20,43 @@
 </head>
 
 <body>
-<nav>
-    <ul>
-        <li>
-            <g:link controller="entry" action="about">
-                <span>Home</span>
-            </g:link>
-        </li>
-        <li>
-            <g:link controller="entry" action="index">
-                <span>Profile</span>
-            </g:link>
-        </li>
-        <li>
-            <g:link controller="user" action="settings">
-                <span>Settings</span>
-            </g:link>
-        </li>
-        <a class="fb2" href="https://www.facebook.com/groups/566890070098865" target="_blank"></a>
-    </ul>
-</nav>
+ <nav>
+  <div class="hello"><g:loginControl></g:loginControl></div>
+    <div id="logo">
+      
+      <img src="http://neue.rocks/wp-content/uploads/2015/05/trek_logo.png" alt="Trek The Trail" title="Trek The Trail">
+      
+      </div>
+      
+      <div id="social">
+        <ul class="social-links horizontal">
+							<li class="social-link-item faceboox image-icon icon-large">
+								<a href="https://www.facebook.com/groups/566890070098865" title="Faceboox" target="_blank"> <img src="http://neue.rocks/wp-content/uploads/2015/05/Untitled-1-01.png"> </a>
+							</li>
+							
+							<li class="social-link-item twitter image-icon icon-large">
+								<a href="https://twitter.com/TrekTheTrail" title="Twitter" target="_blank"> <img src="http://neue.rocks/wp-content/uploads/2015/05/Twitter-01.png"> </a>
+							</li>
+							
+							<li class="social-link-item instagram image-icon icon-large">
+								<a href="https://instagram.com/trekthetrail/" title="Instagram" target="_blank"> <img src="http://neue.rocks/wp-content/uploads/2015/05/instagram1.png"> </a>
+							</li>
+				</ul>
+       </div>
+      
+    <div id="menu">
+    
+       <ul class="menu">
+        
+        <li class="home"><a href="http://neue.rocks" title="Home">Home</a></li>
+        <li class="photos"><a href="http://neue.rocks/#photos" title="Photos">Photos</a></li>
+        <li class="blog"><a href="http://neue.rocks/blog-2/" title="Blog">Blog</a></li>
+          <li class="events"><a href="http://neue.rocks/#events" title="Blog">Events</a></li> 
+        <li class="profile"><a href="http://127.0.0.1:55250/profile.html" title="Profile">Profile</a></li>
+        </ul>
+    
+    </div>
+  </nav>
 
 <!-- Box Start-->
 <div id="box_bg">
@@ -49,10 +66,10 @@
 
         <div class="inner">
 
-            <h1 class="blue">Register</h1>
+            <h1>Register</h1>
 
 
-            <g:form controller="user" action="create">
+            <g:form action="create">
                 <dl>
                    
                    
@@ -192,7 +209,7 @@
                 </dl>
 
 
-                <g:submitButton class="button green" name="submit" value="Register"/>
+                <input class="button green" type="submit" value="Login" />
             </g:form>
 
         </div>
@@ -202,96 +219,25 @@
     <!-- Text Under Box -->
 
     <div id="bottom_text">
-        Already have an account? <a id="blue" href="login.html">Sign In</a><br/>
+        Already have an account? <a class="green" href="login.html">Sign In</a><br/>
     </div>
+    <div class="footwrap">
+<div id="foot">
+
+    <div id="widget">
+    
+    </div>
+    <p class="back-top">
+				<a href="#header">
+					<img src="http://neue.rocks/wp-content/themes/flat/images/back-top.png" alt="Back to Top">
+				</a>
+			</p>
+    <div class="footer-text clearfix">
+				<div class="one">© <a href="http://neue.rocks">Trek The Trail</a> 2015</div>				<div class="two">Designed by <a href="http://neueideas.com" target="_blank">Chiselbox</a>.</div>			
+    
+    </div>
+    
+    </div>
+</div>
 </body>
 </html>
-<%--
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta http-equiv="X-UA-Compatible" content="IE=9" />
-<title>Register</title>
-<link href="css/register.css" rel="stylesheet" type="text/css" />
-<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
-</head>
-
-<body>
-
-<!-- Box Start-->
-<div id="box_bg">
-
-<div id="content">
-
-	<h1 class="blue">Register</h1>
-
-	<!-- Register Fields -->
-	<div id="reg">
-    <g:form controller="user" action="create">
-      
-      <g:textField name="login"/>
-      <g:hasErrors bean="${user}">
-    <input type="text" onblur="if(this.value=='')this.value='Username';" onfocus="if(this.value=='Username')this.value='';" value="Username" class="register"><g:message code='heritagetrail.user.login.blank' /></input>
-      </g:hasErrors>
-
-      <g:textField name="firstName"/>
-      <g:hasErrors bean="${user}">
-    <input type="text" onblur="if(this.value=='')this.value='First Name';" onfocus="if(this.value=='First Name')this.value='';" value="First Name" class="register"><g:message code='heritagetrail.user.firstName.blank' /></input>
-      </g:hasErrors>
-      
-      <g:textField name="lastName"/>
-      <g:hasErrors bean="${user}">
-    <input type="text" onblur="if(this.value=='')this.value='Last Name';" onfocus="if(this.value=='Last Name')this.value='';" value="Last Name" class="register"><g:message code='heritagetrail.user.lastName.blank' /></input>
-      </g:hasErrors>
-
-      <g:textField name="email"/>
-      <g:hasErrors bean="${user}">
-    <input type="text" onblur="if(this.value=='')this.value='Email';" onfocus="if(this.value=='Email')this.value='';" value="Email" class="register"><g:message code='heritagetrail.user.email.blank' /></input>
-      </g:hasErrors>
-
-      <g:textField name="password"/>
-      <g:hasErrors bean="${user}">
-    <input type="text" onblur="if(this.value=='')this.value='Password';" onfocus="if(this.value=='Password')this.value='';" value="Password" class="register"><g:message code='heritagetrail.user.password.blank' /></input>
-      </g:hasErrors>
-
-      <g:textField name="password2"/>
-      <g:hasErrors bean="${user}">
-    <input type="text" onblur="if(this.value=='')this.value='Confirm Password';" onfocus="if(this.value=='Confirm Password')this.value='';" value="Confirm Password" class="register"><g:message code='heritagetrail.user.password2.blank' /></input>
-      </g:hasErrors>
-      
-      <g:textField name="age"/>
-      <g:hasErrors bean="${user}">
-    <input type="text" onblur="if(this.value=='')this.value='Age';" onfocus="if(this.value=='Age')this.value='';" value="Age" class="register"><g:message code='heritagetrail.user.age.blank' /></input>
-      </g:hasErrors>
-
-	<!-- Blue Button -->
-	<div class="button blue"><a href="#">Register</a></div>
-</g:form>
-  <!--
-  <input type="text" onblur="if(this.value=='')this.value='First Name';" onfocus="if(this.value=='First Name')this.value='';" value="First Name" class="register"/>
-  <input type="text" onblur="if(this.value=='')this.value='Last Name';" onfocus="if(this.value=='Last Name')this.value='';" value="Last Name" class="register"/>
-	<input type='text' name='password' value='Password'  onfocus="if(this.value=='' || this.value == 'Password') {this.value='';this.type='password'}"  onblur="if(this.value == '') {this.type='text';this.value=this.defaultValue}" class="register"/>
-	<input type='text' name='password' value="Confirm Password"  onfocus="if(this.value=='' || this.value == 'Confirm Password') {this.value='';this.type='password'}"  onblur="if(this.value == '') {this.type='text';this.value=this.defaultValue}" class="register"/>
-	<input type="text" onblur="if(this.value=='')this.value='Email';" onfocus="if(this.value=='Email')this.value='';" value="Email"  class="register"/>
-  <input type="text" onblur="if(this.value=='')this.value='Age';" onfocus="if(this.value=='Age')this.value='';" value="Age" class="register"/>
-  </g:form>
-	</div>
-	-->
-  	
-</div>
-</div>
-
-<!-- Text Under Box -->
-<div id="bottom_text">
-	Already have an account? <g:link controller="user" action="login">Sign In</g:link><br/>
-</div>
-
-</body>
-</html>
-
-
-
---%>

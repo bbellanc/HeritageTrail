@@ -31,32 +31,41 @@
 </head>
 <body>
 <nav>
-    <ul>
-        <li>
-            <g:link controller="entry" action="about">
-                <span>Home</span>
-            </g:link>
-        </li>
-        <li>
-                <g:if test="${session.user !=null && session.user.role == 'admin'}">
-                    <g:link controller="admin" action="index">
-                        <span>Admin Panel</span>
-                    </g:link>
-                </g:if>
-            <g:else>
-                    <g:link controller="entry" action="index">
-                        <span>Profile</span>
-                    </g:link>
-                </g:else>
-        </li>
-        <li>
-            <g:link controller="user" action="settings">
-                <span>Settings</span>
-            </g:link>
-        </li>
-        <a class="fb2" href="https://www.facebook.com/groups/566890070098865" target="_blank"></a>
-        <div class="hello"><g:loginControl></g:loginControl></div>
-    </ul>
+  <div class="hello"><g:loginControl></g:loginControl></div>
+    <div id="logo">
+      
+      <img src="http://neue.rocks/wp-content/uploads/2015/05/trek_logo.png" alt="Trek The Trail" title="Trek The Trail">
+      
+      </div>
+      
+      <div id="social">
+        <ul class="social-links horizontal">
+							<li class="social-link-item faceboox image-icon icon-large">
+								<a href="https://www.facebook.com/groups/566890070098865" title="Faceboox" target="_blank"> <img src="http://neue.rocks/wp-content/uploads/2015/05/Untitled-1-01.png"> </a>
+							</li>
+							
+							<li class="social-link-item twitter image-icon icon-large">
+								<a href="https://twitter.com/TrekTheTrail" title="Twitter" target="_blank"> <img src="http://neue.rocks/wp-content/uploads/2015/05/Twitter-01.png"> </a>
+							</li>
+							
+							<li class="social-link-item instagram image-icon icon-large">
+								<a href="https://instagram.com/trekthetrail/" title="Instagram" target="_blank"> <img src="http://neue.rocks/wp-content/uploads/2015/05/instagram1.png"> </a>
+							</li>
+				</ul>
+       </div>
+      
+    <div id="menu">
+    
+       <ul class="menu">
+        
+        <li class="home"><a href="http://neue.rocks" title="Home">Home</a></li>
+        <li class="photos"><a href="http://neue.rocks/#photos" title="Photos">Photos</a></li>
+        <li class="blog"><a href="http://neue.rocks/blog-2/" title="Blog">Blog</a></li>
+          <li class="events"><a href="http://neue.rocks/#events" title="Blog">Events</a></li> 
+        <li class="profile"><a href="http://127.0.0.1:55250/profile.html" title="Profile">Profile</a></li>
+        </ul>
+    
+    </div>
 </nav>
           <!--[if lte IE 9]>
       <div class="about_error">
@@ -70,20 +79,20 @@
 
 <div class="gridContainer clearfix">
     <div id="div1" class="fluid">
-      <div class="buttonwrap">
-      <g:link controller="user" action="login"><button class="green button">Login</button></g:link>
-      <g:link controller="user" action="create"><button class="blue button">Sign Up</button></g:link>
+      <div class="buttonwrap" style="margin-left:40%">
+      	<g:link controller="user" action="login"><button class="button green">Login</button></g:link>
+      	<g:link controller="user" action="create"><button class="button green">Sign Up</button></g:link>
       </div>
       <section id="left">
 
-          <img src="${resource(dir: 'images', file: "running_820.jpg")}" style="margin-top: 30px;"/>
+          <img src="${resource(dir: 'images', file: "running_820.jpg")}" style="margin-top: 30px; margin-left:15%;"/>
 
           
         <div class="about">
           <h2>About Trek the Trail</h2>
           <p>Participants who register on the Trek the Trail website can record their 
           mileage and earn points for staying active. Visit 
-          <a href="https://www.facebook.com/groups/566890070098865/" target="_blank"><em>Trek the Trail 
+          <a style="color:#000" href="https://www.facebook.com/groups/566890070098865/" target="_blank"><em>Trek the Trail 
           Wheeling</em> on Facebook</a> to see upcoming 
           events and trail tips.
           
@@ -109,11 +118,26 @@
           (Tunnel Green).
         </div>
       </section>
-<section class="footer">
-    <p>&copy; 2014</p>
 
-    <p class="right">version 1.0</p>
-</section>
+    </div>
+</div>
+
+<div class="footwrap">
+<div id="foot">
+
+    <div id="widget">
+    
+    </div>
+    <p class="back-top">
+				<a href="#header">
+					<img src="http://neue.rocks/wp-content/themes/flat/images/back-top.png" alt="Back to Top">
+				</a>
+			</p>
+    <div class="footer-text clearfix">
+				<div class="one">© <a href="http://neue.rocks">Trek The Trail</a> 2015</div>				<div class="two">Designed by <a href="http://neueideas.com" target="_blank">Chiselbox</a>.</div>			
+    
+    </div>
+    
     </div>
 </div>
 </body>

@@ -31,26 +31,41 @@
 
 <body>
 <nav>
-    <ul>
-        <li>
-            <g:link controller="entry" action="about">
-                <span>Home</span>
-            </g:link>
-        </li>
-        <li>
-            <g:link controller="entry" action="index">
-                <span>Profile</span>
-            </g:link>
-        </li>
-        <li>
-            <g:link controller="user" action="settings">
-                <span>Settings</span>
-            </g:link>
-        </li>
-        <a class="fb2" href="https://www.facebook.com/groups/566890070098865" target="_blank"></a>
-        <div class="hello"><g:loginControl></g:loginControl></div>
-    </ul>
-
+ <div class="hello"><g:loginControl></g:loginControl></div>
+    <div id="logo">
+      
+      <img src="http://neue.rocks/wp-content/uploads/2015/05/trek_logo.png" alt="Trek The Trail" title="Trek The Trail">
+      
+      </div>
+      
+      <div id="social">
+        <ul class="social-links horizontal">
+							<li class="social-link-item faceboox image-icon icon-large">
+								<a href="https://www.facebook.com/groups/566890070098865" title="Faceboox" target="_blank"> <img src="http://neue.rocks/wp-content/uploads/2015/05/Untitled-1-01.png"> </a>
+							</li>
+							
+							<li class="social-link-item twitter image-icon icon-large">
+								<a href="https://twitter.com/TrekTheTrail" title="Twitter" target="_blank"> <img src="http://neue.rocks/wp-content/uploads/2015/05/Twitter-01.png"> </a>
+							</li>
+							
+							<li class="social-link-item instagram image-icon icon-large">
+								<a href="https://instagram.com/trekthetrail/" title="Instagram" target="_blank"> <img src="http://neue.rocks/wp-content/uploads/2015/05/instagram1.png"> </a>
+							</li>
+				</ul>
+       </div>
+      
+    <div id="menu">
+    
+       <ul class="menu">
+        
+        <li class="home"><a href="http://neue.rocks" title="Home">Home</a></li>
+        <li class="photos"><a href="http://neue.rocks/#photos" title="Photos">Photos</a></li>
+        <li class="blog"><a href="http://neue.rocks/blog-2/" title="Blog">Blog</a></li>
+          <li class="events"><a href="http://neue.rocks/#events" title="Blog">Events</a></li> 
+        <li class="profile"><a href="http://127.0.0.1:55250/profile.html" title="Profile">Profile</a></li>
+        </ul>
+    
+    </div>
 </nav>
 
 <div id="logo"></div>
@@ -136,8 +151,8 @@
 
 
             <div class="slider">
-                <h4>Miles Traveled </h4><p id="rangevalue">1</p>
-                <input id="distanceSlider" name="distanceTraveled" type="range" step="1" min="1" max="25" value="1"
+                <h4>Miles Traveled </h4><p id="rangevalue">1</p><br/>
+                <input id="distanceSlider" name="distanceTraveled" type="range" step="1" min="1" max="50" value="1"
                        onchange="rangevalue.text = value"/><br/>
                <!-- <output id="rangevalue">1</output>-->
                
@@ -244,11 +259,7 @@
     ${session.badges = null}
 </g:if>
 </section>
-<section class="footer">
-    <p>&copy; 2014</p>
 
-    <p class="right">version 1.0</p>
-</section>
 </div>
 </div>
 	<script>
@@ -259,6 +270,25 @@
 			$("#rangevalue").text($("#distanceSlider").val());
 			});
 </script>
+
+<div class="footwrap">
+<div id="foot">
+
+    <div id="widget">
+    
+    </div>
+    <p class="back-top">
+				<a href="#header">
+					<img src="http://neue.rocks/wp-content/themes/flat/images/back-top.png" alt="Back to Top">
+				</a>
+			</p>
+    <div class="footer-text clearfix">
+				<div class="one">© <a href="http://neue.rocks">Trek The Trail</a> 2015</div>				<div class="two">Designed by <a href="http://neueideas.com" target="_blank">Chiselbox</a>.</div>			
+    
+    </div>
+    
+    </div>
+</div>
 
 </body>
 </html>

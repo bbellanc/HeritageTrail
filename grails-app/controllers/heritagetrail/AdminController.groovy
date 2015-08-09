@@ -19,8 +19,6 @@ class AdminController {
 	def getProfile() {
 		def startAge;
 		def endAge;
-		println(params.value);
-		println('aaaaaaaaaaaaaaaaaaaa');
 		def userResultsByUsername = User.findAllByLoginIlike("${params.value}%");
 		def userResultsByLastName = User.findAllByLastNameIlike("${params.value}%");
 		def userResultsByFirstName = User.findAllByFirstNameIlike("${params.value}%");

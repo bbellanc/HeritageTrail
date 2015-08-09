@@ -8,8 +8,8 @@ class User {
 	String password
 	String password2
 	String email
+	Integer age = 1
 	Integer points = 0
-	Integer age
     Integer activityLevel = 1
 	String role = "user"
     Integer waterCount = 0
@@ -34,8 +34,8 @@ class User {
 	static constraints = {
 
         activityLevel(nullable:false,blank:false, size: 1..10)
-		firstName(blank:false)
-		lastName(nullable:false, blank:false)
+		firstName(nullable:false,blank:false)
+		lastName(nullable:false,blank:false)
 		login(nullable:false, blank:false, unique:true)
 		email(nullable:false, blank:false, unique:true, email:true)
 		password(nullable:false, blank:false, password:true)

@@ -3,7 +3,7 @@ package heritagetrail
 
 class UserController {
 
-	static String PASSWORD_AND_USERNAME_MISMATCH_MESSAGE = "Invalid Username or Email"
+	static String PASSWORD_AND_USERNAME_MISMATCH_MESSAGE = "Invalid Username or Password"
 	
 	def index = {
 		redirect(action: "login", params: params)
@@ -37,34 +37,32 @@ class UserController {
 	}
 
     def settings = {
-
         if(session.user == null)
             redirect(controller:"user", view:"login")
         else
             render(view: "settings")
     }
 
-	def create(){
-		def user = new User(params)
-
+	def create = {
 		
-			if(params.size() <= 3){
+		def user = new User(params)
+		if(params.size() <= 3){
+			render(view:'create',model:[user:user])
+		}
+		else{
+			if(user.save()) {
+                session.user = null
+				redirect(action:'login')
+			}
+			else {
+				    user.errors.each {
+						println it
+					}
 				render(view:'create',model:[user:user])
 			}
-	
-			else{
-//				user.firstName = user.firstName.capitalize()
-//				user.lastName = user.lastName.capitalize()
-				if(user.save()) {
-                    session.user = null
-					redirect(action:'login')
-				}
-				else {
-					render(view:'create',model:[user:user])
-				}
-			}
-			//login
 		}
+			//login
+	}
 	
 
 	def resetPassword= {

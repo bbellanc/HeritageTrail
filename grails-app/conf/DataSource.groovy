@@ -3,7 +3,7 @@ dataSource {
 //    driverClassName = "org.h2.Driver"
 //    username = "sa"
 //    password = ""
-
+//Below for prod
     pooled = true
     driverClassName = "com.mysql.jdbc.Driver"
     dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
@@ -20,13 +20,8 @@ hibernate {
 environments {
     development {
         dataSource {
-            username = "neue"
-            password = "password"
-            pooled = true
-            dbCreate = "create-drop"
-            driverClassName = "com.mysql.jdbc.Driver"
-            url = "jdbc:mysql://aa1wzpr1sl1cpf2.cjnty1aqdt2l.us-west-2.rds.amazonaws.com:3306/ebdb?user=neue&password=password"
-            dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+            dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
+            url = "jdbc:h2:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
         }
     }
     test {
@@ -58,36 +53,3 @@ environments {
         }
     }
 }
-//
-//environments {
-//    development {
-//        dataSource {
-//            dbCreate = "create" // one of 'create', 'create-drop', 'update', 'validate', ''
-//            url = "jdbc:h2:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
-//        }
-//    }
-//    test {
-//        dataSource {
-//            dbCreate = "update"
-//            url = "jdbc:h2:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
-//        }
-//    }
-//    production {
-//        dataSource {
-//            dbCreate = "update"
-//            url = "jdbc:h2:prodDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
-//            pooled = true
-//            properties {
-//               maxActive = -1
-//               minEvictableIdleTimeMillis=1800000
-//               timeBetweenEvictionRunsMillis=1800000
-//               numTestsPerEvictionRun=3
-//               testOnBorrow=true
-//               testWhileIdle=true
-//               testOnReturn=false
-//               validationQuery="SELECT 1"
-//               jdbcInterceptors="ConnectionState"
-//            }
-//        }
-//    }
-//}

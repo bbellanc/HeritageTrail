@@ -12,6 +12,9 @@ class BootStrap {
 		def defaultUser = new User(firstName:"Joe", lastName:"Schmo",login:"user", password:"password",password2:"password",email:"user@blank.com", age: 25, securityAnswer:'password', question:'cats?' )
 		defaultUser.save()
 
+		def defaultUser2 = new User(firstName:"Joe1", lastName:"Schmo1",login:"user2", password:"password",password2:"password",email:"user2@blank.com", age: 25, securityAnswer:'password', question:'cats?' )
+		defaultUser.save()
+		
 		def currentEvent = new Event(title:"Trek the Trail: Memorial Day Event",description:"Get fit on Wheeling's Heritage trail this summer!",currentEvent:true)
 		currentEvent.save()
 

@@ -17,9 +17,6 @@ class EventController {
 	}
 	
 	def setEvent() {
-		println "AAAAAAA"
-		println params
-		println "AAAAAAA"
 	  
 	}
 }

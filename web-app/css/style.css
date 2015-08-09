@@ -1,5 +1,256 @@
-/*== normalize ==========================================================
- */
+/* Custom CSS  ====================================================*/
+
+nav {
+    width: 100%;
+    background: #91ffa0;
+    background-image: url(http://trekthetrail.org/wp-content/uploads/2015/05/dots.png);
+    height: 453px;
+    text-align: center;
+
+}
+
+div#logo {
+    width: 350px;
+    line-height: 110%;
+	font-family: 'Josefin Sans', sans-serif; 
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding: 65px 0 43px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#social { 
+
+display: inline-block;
+text-align: center;
+ 
+    
+}
+
+#menu {
+	
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 15px;
+    padding-top: 2px;
+
+}
+.menu a {
+    letter-spacing:1px;
+    padding: 10px 2px 7px;
+    display: block;
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #648e3d;
+    margin-right: auto;
+    margin-left: auto;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+}
+
+.menu a:hover {
+	color:white;
+}
+
+.menu  {
+
+    display: inline-block;
+    
+}
+
+
+.home {
+    
+    padding-right: 20px;
+    padding-left: 20px;
+   
+    
+}
+
+.photos {
+    
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+    
+.blog {
+
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.events {
+    
+    padding-right: 20px;
+    padding-left: 20px;
+    
+}
+
+.profile {
+    
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    background-color: #648b1a;
+}
+
+.profile a {
+ 
+    color: #fff;
+    border-radius: 5px;
+    background-color: #648b1a;
+    
+}
+
+.profile a:hover {
+    color: #fff;
+}
+
+
+#settings_bar {
+
+    text-align: center;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 15px;
+    padding-top: 2px;
+    text-decoration: none;
+    
+    
+}
+
+
+.settings {
+    
+    text-align: center;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #392e2c;
+    letter-spacing: 1px;
+    list-style: none;
+    list-style-image: none;
+    margin-top: 30px
+    
+}
+
+.settings a {
+    color: #648e3d;
+}
+
+.settings span {
+    color: #648e3d;
+}
+
+.settings a:hover{
+
+    color: #2b83b6;
+
+}
+
+.footwrap {
+    padding-bottom: 0 !important;
+    width: 100%;
+    height: auto;
+    background-color: #392e2c;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 75px;
+    
+
+}
+
+#foot {
+
+padding-bottom: 5%;
+padding-top: 5%
+    
+}
+
+.back-top {
+
+  background: #91ffa0;
+  border-radius: 100%;
+  width: 60px;
+  height: 40px;
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 3px;
+  margin: 0 auto 5%;
+
+}
+
+.back-top a {
+
+    width: 30;
+    height: 18px;
+    
+}
+
+
+
+.footer-text {
+
+    clear: left;
+font-size: .75em;
+
+}
+
+.footer-text a {
+
+    color: #ccc;
+text-decoration: none;
+
+}
+
+.one {
+
+    height: 27px;
+
+}
+
+.two {
+
+    height: 27px;
+
+}
+
+
+#userLogin {
+    
+    padding-top: 13px;
+    
+    border-top: 1px solid #e0e0e0;
+
+
+}
+
+/* social widgets ====================================================*/
+
+
+
+.social-links.horizontal li {
+	display: inline-block;
+	margin: 0 9px 10px 0;
+	
+	list-style: none;
+	border: none;
+}
+
+/* image icon sizes */
+.social-links .icon-large img {
+	max-width: 32px;
+	max-height: 32px;
+}
+
+/*== normalize ==========================================================*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin: 0;
     padding: 0;
@@ -45,9 +296,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section {
 }
 
 .button {
-    background-color: #2B91AF;
-    
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    background-color: #49ac47;
     color: #FFF;
     cursor: pointer;
     display: inline-block;
@@ -83,7 +332,7 @@ html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    background: url(../images/body-bg.png);
+    
 }
 
 html,button,input,select,textarea {
@@ -92,7 +341,7 @@ html,button,input,select,textarea {
 }
 
 body {
-    margin: 0 0 50px;
+    background: url(../images/body-bg.png); 
     font-size: 1em;
     line-height: 1.4;
 }
@@ -118,24 +367,32 @@ body {
    Links
    ========================================================================== */
 a {
-    color: #00e;
+    color: #648e3d;
+    text-decoration: none;
 }
 
 a:visited {
-    color: #00e;
+    
 }
 
 a:hover {
-    color: #06e;
+    color: #000;
 }
 
 a:focus {
     outline: thin dotted;
 }
 
+a:active {
+    
+   
+
+}
+
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
 a:hover,a:active {
     outline: 0;
+    
 }
 
 /* =============================================================================
@@ -476,19 +733,7 @@ h4 {
 }
 
 /* @group navigation */
-nav {
-    width: auto;
-    background: #2b83b6;
-    height: 42px;
-    border-bottom: 1px solid #dadada;
-}
 
-ul#n {
-    width: 850px;
-    margin: 0 auto;
-    display: block;
-    list-style: none;
-}
 
 ul#n li {
     float: left;
@@ -524,12 +769,12 @@ ul#n li.sel a {
     display: block;
     width: auto;
     background-color: #f9f9f9;
-    margin-top: 20px;
+    margin-top: 75px;
     border: 1px solid #bfbfbf;
     overflow: hidden;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    padding: 20px;
+    padding: 20px; 
 }
 
 #userStats .pic {
@@ -647,7 +892,6 @@ ul#n li.sel a {
 
 /* @group right */
 #left .about {
-    display: block;
     background-color: #fff;
     margin: 20px auto 0 auto;
     padding: 15px;
@@ -655,11 +899,17 @@ ul#n li.sel a {
 #left .gcontent {
     display: block;
     margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    
 }
 
 #left .gcontent .head {
-    background: #2b83b6;
-    border: 1px solid #3e82a7;
+    background: #2d932b;
+    border: 1px solid #2d932b;
     padding-left: 8px;
     height: 40px;
 }
@@ -693,46 +943,9 @@ nav ul li {
 
 nav ul li a {
     display: inline-block;
-    width: 43px;
-    height: 43px;
-    background-image: url(../images/icons.png);
-    background-repeat: no-repeat;
+    
 }
 
-nav ul li:nth-child(1) a {
-    background-position: 0 0;
-}
-
-nav ul li:nth-child(2) a {
-    background-position: -43px 0;
-}
-
-nav ul li:nth-child(3) a {
-    background-position: -86px 0;
-}
-
-nav ul li a:hover {
-    display: block;
-    width: 43px;
-    height: 43px;
-    background-color: rgba(255, 255, 255, 0.1)
-}
-
-nav ul li a span {
-    font-size: 16px;
-    position: absolute;
-    left: 140px;
-    top: 12px;
-    display: none;
-}
-
-nav ul li a:hover span {
-    display: block;
-}
-
-nav ul li a span {
-    color: #fff;
-}
 
 #left .gcontent .boxy input[type=submit] {
     border: 1px solid #e6e6e6;
@@ -911,12 +1124,7 @@ input[type=checkbox]:checked ~ [for="read_more"] span:last-of-type {
     visibility: visible;
 }
 
-div#logo {
-    width:296px;
-    height: 208px;
-    margin: 80px auto 40px auto;
-    background-image: url(../images/logo.png);
-}
+
 
 /* ==|== non-semantic helper classes ========================================
    Please define your styles before this section.
@@ -1048,4 +1256,14 @@ div#logo {
         page-break-after: avoid;
     }
 
+}
+
+
+/* orientation */
+
+ul#n {
+    width: 850px;
+    margin: 0 auto;
+    display: block;
+    list-style: none;
 }

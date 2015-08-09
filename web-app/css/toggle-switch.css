@@ -174,10 +174,12 @@
     .switch-toggle.switch-5 input:checked:last-of-type ~ a {
       left: 80%; }
   .switch-android {
-    background-color: #bfbfbf;
-    color: white;
-    box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
-    /* Selected ON switch-light
+		  background-color: #bfbfbf;
+		  margin-left: auto;
+		  margin-right: auto;
+		  color: white;
+		  /* box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0; */
+		  /* Selected ON switch-light
 		 */ }
     .switch-android label {
       color: white; }
@@ -230,7 +232,7 @@ input[type="range"] {
   width: 100%;
   height: 15px;
   background-color: #bfbfbf;
-  box-shadow: inset rgba(0, 0, 0, 0.1) 0 1px 0;
+  
   margin: auto;
   transition: all 0.3s ease;
   cursor: pointer;

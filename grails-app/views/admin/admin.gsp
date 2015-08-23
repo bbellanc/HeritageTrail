@@ -17,10 +17,16 @@
     <title>Heritage Trail Fitness - Admin Panel</title>
     
     
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'  rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'toggle-switch.css')}" type="text/css">
+<link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap-theme.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'register.css')}" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <g:javascript src="application.js" />
+	<g:javascript src="bootstrap.js" />
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'main_table.css')}" type="text/css">
     <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,59 +34,25 @@
     <g:javascript src="sorttable.js" />
 <body>
 
-<nav>
-   <div class="hello"><g:loginControl></g:loginControl></div>
-    <div id="logo">
-      
-      <img src="http://trekthetrail.org/wp-content/uploads/2015/05/trek_logo.png" alt="Trek The Trail" title="Trek The Trail">
-      
-      </div>
-      
-      <div id="social">
-        <ul class="social-links horizontal">
-							<li class="social-link-item faceboox image-icon icon-large">
-								<a href="https://www.facebook.com/groups/566890070098865" title="Faceboox" target="_blank"> <img src="http://trekthetrail.org/wp-content/uploads/2015/05/Untitled-1-01.png"> </a>
-							</li>
-							
-							<li class="social-link-item twitter image-icon icon-large">
-								<a href="https://twitter.com/TrekTheTrail" title="Twitter" target="_blank"> <img src="http://trekthetrail.org/wp-content/uploads/2015/05/Twitter-01.png"> </a>
-							</li>
-							
-							<li class="social-link-item instagram image-icon icon-large">
-								<a href="https://instagram.com/trekthetrail/" title="Instagram" target="_blank"> <img src="http://trekthetrail.org/wp-content/uploads/2015/05/instagram1.png"> </a>
-							</li>
-				</ul>
-       </div>
-      
-    <div id="menu">
-    
-       <ul class="menu">
-        
-        <li class="home"><a href="http://trekthetrail.org" title="Home">Home</a></li>
-        <li class="photos"><a href="http://trekthetrail.org/#photos" title="Photos">Photos</a></li>
-        <li class="blog"><a href="http://trekthetrail.org/blog-2/" title="Blog">Blog</a></li>
-          <li class="events"><a href="http://trekthetrail.org/#events" title="Blog">Events</a></li> 
-        <li class="profile"><a href="${createLink(controller:'Entry', action:'index')}" title="Profile">Profile</a></li>
-        </ul>
-    
-    </div>
-</nav>
+<g:render template="../navbar" />
 
 
 <div id="div1" class="fluid">
+
     <section id="left">
     <div style="padding-left:10px">
-		<a id="emailUsers" href="mailto:${emailList}">Email All Users</a>
+		<a class="emailUsers" href="mailto:${emailList}">Email All Users</a><br/>
+		<g:link class="emailUsers" controller="user" action="logout">LOG OUT</g:link>
 	</div>
         <div class="gcontent">
             <div class="head"><h1>Admin Panel</h1></div>
             <div class="boxy">
-
+			
                 <g:form controller="admin" method="post">
                     <h2>User Search</h2><br/>
                     Search for users by Username, First Name, Last name, or Email:<br/>
 
-                    <div style="width:300px;padding-left:37.5%">
+                    <div style="width:300px;margin:auto">
 
                         <g:textField class="register" name='value' placeholder="Search"/><br/>
 

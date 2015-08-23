@@ -10,52 +10,21 @@
     <title>Register</title>
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'
           rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
-
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700'  rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'toggle-switch.css')}" type="text/css">
+<link rel="stylesheet" href="${resource(dir: 'css', file: 'style.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'responsive.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css">
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'bootstrap-theme.css')}" type="text/css">
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'register.css')}" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<g:javascript src="application.js" />
+    <g:javascript src="application.js" />
+	<g:javascript src="bootstrap.js" />
 
 </head>
 
 <body>
- <nav>
-    <div id="logo">
-      
-      <img src="http://trekthetrail.org/wp-content/uploads/2015/05/trek_logo.png" alt="Trek The Trail" title="Trek The Trail">
-      
-      </div>
-      
-      <div id="social">
-        <ul class="social-links horizontal">
-							<li class="social-link-item faceboox image-icon icon-large">
-								<a href="https://www.facebook.com/groups/566890070098865" title="Faceboox" target="_blank"> <img src="http://trekthetrail.org/wp-content/uploads/2015/05/Untitled-1-01.png"> </a>
-							</li>
-							
-							<li class="social-link-item twitter image-icon icon-large">
-								<a href="https://twitter.com/TrekTheTrail" title="Twitter" target="_blank"> <img src="http://trekthetrail.org/wp-content/uploads/2015/05/Twitter-01.png"> </a>
-							</li>
-							
-							<li class="social-link-item instagram image-icon icon-large">
-								<a href="https://instagram.com/trekthetrail/" title="Instagram" target="_blank"> <img src="http://trekthetrail.org/wp-content/uploads/2015/05/instagram1.png"> </a>
-							</li>
-				</ul>
-       </div>
-      
-    <div id="menu">
-    
-       <ul class="menu">
-        
-        <li class="home"><a href="http://trekthetrail.org" title="Home">Home</a></li>
-        <li class="photos"><a href="http://trekthetrail.org/#photos" title="Photos">Photos</a></li>
-        <li class="blog"><a href="http://trekthetrail.org/blog-2/" title="Blog">Blog</a></li>
-          <li class="events"><a href="http://trekthetrail.org/#events" title="Blog">Events</a></li> 
-        <li class="profile"><a href="${createLink(controller:'Entry', action:'index')}" title="Profile">Profile</a></li>
-        </ul>
-    
-    </div>
-  </nav>
+ <g:render template="../navbar" />
 
 <!-- Box Start-->
 <div id="box_bg">

@@ -1,12 +1,12 @@
 dataSource {
-//    pooled = true
-//    driverClassName = "org.h2.Driver"
-//    username = "sa"
-//    password = ""
-//Below for prod
     pooled = true
-    driverClassName = "com.mysql.jdbc.Driver"
-    dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
+    driverClassName = "org.h2.Driver"
+    username = "sa"
+    password = ""
+//Below for prod
+//    pooled = true
+//    driverClassName = "com.mysql.jdbc.Driver"
+//    dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
 }
 hibernate {
     cache.use_second_level_cache = true

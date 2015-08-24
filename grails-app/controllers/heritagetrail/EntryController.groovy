@@ -115,37 +115,40 @@ class EntryController {
 
 
         switch(activity.user.points) {
-            case{it < 10}:
+            case{(it < 10) || (it >= 510 && it <= 515) || (it >= 1010 && it <= 1015) || (it >= 1510 && it <= 1515)}:
                 activity.user.activityLevel = 1
                 break
-            case {it >= 10 && it < 15}:
+            case {(it >= 10 && it < 15) || (it >= 515 && it <= 525) || (it >= 1015 && it <= 1025) || (it >= 1515 && it <= 1525)}:
                 activity.user.activityLevel = 2
                 break
-            case {it >= 15 && it < 25}:
+            case {(it >= 15 && it < 25) || (it >= 525 && it <= 545) || (it >= 1025 && it <= 1045) || (it >= 1525 && it <= 1545)}:
                 activity.user.activityLevel = 3
                 break
-            case {it >= 25 && it < 45}:
+            case {(it >= 25 && it < 45) || (it >= 540 && it <= 575) || (it >= 1045 && it <= 1075) || (it >= 1545 && it <= 1575)}:
                 activity.user.activityLevel = 4
                 break
-            case {it >= 45 && it < 75}:
+            case {(it >= 45 && it < 75) || (it >= 575 && it < 615) || (it >= 1075 && it < 1115) || (it >= 1575 && it < 1615)}:
                 activity.user.activityLevel = 5
                 break
-            case {it >= 75 && it < 115}:
+            case {(it >= 75 && it < 115) || (it >= 615 && it < 700) || (it >= 1115 && it < 1200) || (it >= 1615 && it < 1700)}:
                 activity.user.activityLevel = 6
                 break
-            case {it >= 115 && it < 200}:
+            case {(it >= 115 && it < 200) || (it >= 700 && it < 825) || (it >= 1200 && it < 1325) || (it >= 1700 && it < 1825)}:
                 activity.user.activityLevel = 7
                 break
-            case {it >= 200 && it < 325}:
+            case {(it >= 200 && it < 325) || (it >= 825 && it < 900) || (it >= 1325 && it < 1400) || (it >= 1825 && it < 1900)}:
                 activity.user.activityLevel = 8
                 break
-            case {it >= 325 && it < 500}:
+            case {(it >= 325 && it < 500) || (it >= 900 && it < 1000) || (it >= 1400 && it < 1500) || (it >= 1900 && it < 2000)}:
                 activity.user.activityLevel = 9
                 break
-            case {it >= 500}:
+            case {(it >= 500 && it < 510) || (it >= 1500 && it < 1510) || (it >= 2000)}:
                 activity.user.activityLevel = 10
                 break
         }
+
+
+
         def badgeList = []
 
         if(!activity.user.badges.contains('1_activity.png'))
